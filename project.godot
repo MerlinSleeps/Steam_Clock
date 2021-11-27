@@ -87,6 +87,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Steam_Clock"
+run/main_scene="res://TestScene.tscn"
 config/icon="res://icon.png"
 
 [autoload]
@@ -98,7 +99,7 @@ RestHandler="*res://addons/github-integration/scenes/RestHandler.tscn"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/github-integration/plugin.cfg" )
+enabled=PoolStringArray( "res://addons/dialogic/plugin.cfg", "res://addons/github-integration/plugin.cfg" )
 
 [physics]
 
