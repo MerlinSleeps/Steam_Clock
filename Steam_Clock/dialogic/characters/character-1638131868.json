@@ -1,0 +1,24 @@
+{
+	"color": "#ffce7f1a",
+	"description": "Main Character. Alendra ist eine junge, intelligente und exzentrische\nLaborantin. Sie arbeitet zusammen mit ihrer besten Freundin Cassidy in\nihrer kleinen Werkstatt. Sie besitzt eine große Faszination für das Konzept\nder Zeit",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1638131868.json",
+	"mirror_portraits": false,
+	"name": "Alendra",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 150,
+	"offset_y": 200,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://Art/portraits/IMG_7950.png"
+		},
+		{
+			"name": "",
+			"path": ""
+		}
+	],
+	"scale": 15
+}

@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://addons/dialogic/Documentation/Theme/DocumentationH1.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Scripts/MemoryCard.gd" type="Script" id=2]
+
+[node name="MemoryCard" type="ColorRect" groups=["MemoryCards"]]
+margin_right = 150.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+focus_mode = 1
+color = Color( 0, 0, 0, 1 )
+script = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 150, 150 )
+custom_fonts/font = ExtResource( 1 )
+text = "Value"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="card_selected" from="." to="." method="_on_MemoryCard_card_selected"]
+[connection signal="mouse_entered" from="." to="." method="_on_MemoryCard_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_MemoryCard_mouse_exited"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

@@ -1,0 +1,123 @@
+{
+	"events": [
+		{
+			"background": "res://Art/backgrounds/werkstatt bg.jpg",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "(Don't change)",
+			"text": "WUMMMMSSSSS!!!!!"
+		},
+		{
+			"action": "join",
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_002",
+			"mirror": false,
+			"portrait": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			}
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Nunja, dass war ...."
+		},
+		{
+			"choice": "Unerwartet",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Tut mir leid. Ich schätze ich hab die Schraube am Beschleunigungsmodul nicht richtig festgezogen.\nZumindest  wissen wir jetzt, was passiert wenn wir auf über 300 Umdrehungen schalten"
+		},
+		{
+			"character": "character-1638132302.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Mich hätte es ja mehr interessiert was passiert, wenn das Teil einmal nicht in die Luft fliegt. Ich bin es allmählich leid ständig die halbe Werkstatt aufzuräumen.\nBist du dir denn wirklich sicher, dass es lohnt so viel Mühe hierfür aufzuwenden?\nImmerhin müssen wir uns noch um die Handschuhe für die Dysnomia kümmern."
+		},
+		{
+			"choice": "Überraschend",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Endlich 300 Umdrehungen pro Sekunde! Das muss ein neuer Rekord sein. \nUnd die Explosionen werden auch immer kleiner. Diesmal hats auch nur die kleine Werkbank erwischt...\nUnd den Materialschrank...\nUnd den Teller mit deinem Mittagessen..."
+		},
+		{
+			"character": "character-1638132302.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Mein Kuchen?!? Alendra, den wirst du mir bezahlen!"
+		},
+		{
+			"character": "character-1638132302.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Tzzz. Ich habe langsam das Gefühl du hast dich zu sehr in dieses Projekt hinein gesteigert.\nWir arbeiten nun über schon seit über nem Jahr an dem Teil und alles was wir davon haben sind mehr blaue Flecken als ich zählen kann."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Aber Cass kannst du es nicht fühlen? Wir sind ganz nah dran. Der Durchbruch steht bevor!\nAllein der Gedanke macht mich ganz hippelig. Ich weiß, dass es möglich ist, aber ich kann es nicht ohne dich schaffen.\nIch brauche dich, Cass. Wer soll sonst darauf aufpassen, dass ich nicht die Stadt in die Luft jage?"
+		},
+		{
+			"character": "character-1638132302.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nagut. Aber nur weil ich um die Konditorei Sorgen habe.\nWenn die Stadt sich verabeschiedet wegen dir, kann ich mich auch direkt von Miss Violets Cupcakes verabschieden.\nDas ändert trotzdem nicht daran, dass wir noch den Dysnomia Auftrag erledigen müssen.\nUnd ganz nebenbei diese Kupfermuttern können wir vergessen, selbst die an den äußeren Gelenken halten nicht bei dieser Zentrifugalkraft.\nAußerdem ist da ja noch....\n"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Jaja. Lass mich nur mal machen. Ich wollte sowieso nochmal bei unsererem werten Herr Grafen vorbei schauen.\nDer schuldet mir ja sowieso noch was vom letzten Mal. Hoffe wir nur mal das Will es schafft ihn zumindest heute mal dabei zu überreden Klamotten anzuziehen."
+		},
+		{
+			"character": "character-1638132302.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hey, aber wie wärs mit Memory vorher?"
+		},
+		{
+			"call_node": {
+				"arguments": [
+					"res://Scenes/MemoryGame.tscn"
+				],
+				"method_name": "load_scene",
+				"target_node_path": "Global"
+			},
+			"event_id": "dialogic_042"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4 - DEV",
+		"file": "timeline-1638391517.json",
+		"name": "Labor 1"
+	}
+}

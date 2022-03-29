@@ -1,0 +1,20 @@
+{
+	"color": "#ff203dd9",
+	"description": "Cassidy (Cass genannt) kommt aus einer disfunktionalen Familien. Sie rannte\nschon früh von Daheim weg und verdiente sich mit diversen dubiosen Jobs\ngenug Geld, um eine eigene kleine Werkstatt zu gründen. Einige Zeit\nspäter erwischte sie einen Eindringling schlafend in ihrer Werkstatt. Zu\nihrer Überraschung wurde jedoch nichts verwüstet oder geklaut. Stattdessen\nfand Cass vollendete Projekte vor. In der selben Nacht wurde Alendra ihre\nPartnerin.",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1638132302.json",
+	"mirror_portraits": false,
+	"name": "Cassidy",
+	"nickname": "Cass",
+	"nickname_bool": true,
+	"offset_x": -100,
+	"offset_y": 200,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://portraits/IMG_7950.png"
+		}
+	],
+	"scale": 15
+}
