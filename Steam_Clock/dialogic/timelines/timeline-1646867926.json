@@ -1,18 +1,21 @@
 {
 	"events": [
 		{
-			"action": "join",
+			"animation": "[Default]",
+			"animation_length": 0.5,
 			"character": "character-1638131868.json",
 			"event_id": "dialogic_002",
-			"mirror": false,
-			"portrait": "",
+			"mirror_portrait": false,
+			"portrait": "Default",
 			"position": {
 				"0": false,
 				"1": false,
 				"2": false,
 				"3": false,
 				"4": false
-			}
+			},
+			"type": 0,
+			"z_index": 0
 		},
 		{
 			"character": "character-1638131868.json",
@@ -22,7 +25,7 @@
 		}
 	],
 	"metadata": {
-		"dialogic-version": "1.4 - DEV",
+		"dialogic-version": "1.4.1",
 		"file": "timeline-1646867926.json",
 		"name": "Labor 2"
 	}

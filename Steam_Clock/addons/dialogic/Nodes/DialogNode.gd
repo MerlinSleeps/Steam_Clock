@@ -26,13 +26,13 @@ var dialog_faded_in_already = false
 var definition_visible: bool = false
 # used to reset the mouse mode after questions:
 var last_mouse_mode = null
+# this is for switching back after a custom character theme was loaded
+var current_default_theme = null
 
 ### SETTINGS
 var settings: ConfigFile
 var custom_events = {}
-
-var hovering_action_mode: bool = false
-var hovering_action_time: float = false
+var record_history: bool = false
 
 ### DATA
 var definitions = {}
@@ -46,11 +46,14 @@ var current_timeline: String = ''
 var dialog_script: Dictionary = {}
 var current_event: Dictionary
 var dialog_index: int = 0
+var is_last_text: bool
 
 var current_background = ""
 
 # Theme and Audio
 var current_theme: ConfigFile
+var current_theme_file_name = null
+var history_theme: ConfigFile
 var audio_data = {}
 
 # References
@@ -62,7 +65,7 @@ var button_container = null
 onready var ChoiceButton = load("res://addons/dialogic/Nodes/ChoiceButton.tscn")
 onready var Portrait = load("res://addons/dialogic/Nodes/Portrait.tscn")
 onready var Background = load("res://addons/dialogic/Nodes/Background.tscn")
-
+onready var HistoryTimeline = $History
 
 ## -----------------------------------------------------------------------------
 ## 						SIGNALS
@@ -124,11 +127,6 @@ func _ready():
 			$DefinitionInfo.in_theme_editor = true
 	else:
 		if do_fade_in: _hide_dialog()
-		# setup hovering mode
-		hovering_action_mode = settings.get_value('input', 'enable_hovering_mode')
-		hovering_action_time = settings.get_value('input', 'delay_after_hovering', 2.0)
-		#$TextBubble/NextIndicatorContainer/NextIndicator.set_hovering_mode(hovering_action_mode)
-		#$TextBubble/NextIndicatorContainer/NextIndicator.set_hovering_time(hovering_action_time)
 		_init_dialog()
 
 
@@ -145,7 +143,19 @@ func load_config_files():
 	var theme_file = 'res://addons/dialogic/Editor/ThemeEditor/default-theme.cfg'
 	if settings.has_section('theme'):
 		theme_file = settings.get_value('theme', 'default')
+		current_default_theme = theme_file
 	current_theme = load_theme(theme_file)
+	
+	# history
+	if settings.has_section('history'):
+		record_history = settings.get_value('history', 'enable_history_logging', false)
+		if settings.has_section_key('history', 'history_theme'):
+			theme_file = settings.get_value('history', 'history_theme')
+		history_theme = load_theme(theme_file)
+		HistoryTimeline.load_theme(history_theme)
+		if settings.has_section_key('history', 'enable_history_logging'):
+			if settings.get_value('history', 'enable_history_logging'):
+				HistoryTimeline.initalize_history()
 
 
 ## -----------------------------------------------------------------------------
@@ -298,12 +308,16 @@ func deferred_resize(current_size, result):
 
 # loads the given theme file
 func load_theme(filename):
-	var theme = DialogicResources.get_theme_config(filename)
-	
+	var load_theme = DialogicResources.get_theme_config(filename)
+	if not load_theme:
+		return current_theme 
+	var theme = load_theme
+	current_theme_file_name = filename
 	# Box size
 	call_deferred('deferred_resize', $TextBubble.rect_size, theme.get_value('box', 'size', Vector2(910, 167)))
 	
 	$TextBubble.load_theme(theme)
+	HistoryTimeline.change_theme(theme)
 	$DefinitionInfo.load_theme(theme)
 	
 	if theme.get_value('buttons', 'layout', 0) == 0:
@@ -318,6 +332,11 @@ func load_theme(filename):
 	$Options.add_child(button_container)
 	
 	load_audio(theme)
+	
+	if theme.get_value('box', 'portraits_behind_dialog_box', true):
+		move_child($Portraits, 0)
+	else:
+		move_child($Portraits, 1)
 	
 	return theme
 
@@ -399,14 +418,21 @@ func _process(delta):
 	if current_event.has('text'):
 		if '[nw]' in current_event['text'] or '[nw=' in current_event['text']:
 			$TextBubble/NextIndicatorContainer/NextIndicator.visible = false
+		
+	# Hide if "Don't Close After Last Event" is checked and event is last text
+	if current_theme.get_value('settings', 'dont_close_after_last_event', false) and is_last_text:
+		$TextBubble/NextIndicatorContainer/NextIndicator.visible = false
 	
 	# Hide if fading in
 	if is_state(state.ANIMATING):
 		$TextBubble/NextIndicatorContainer/NextIndicator.visible = false
+	
 
 # checks for the "input_next" action
 func _input(event: InputEvent) -> void:
 	if not Engine.is_editor_hint() and event.is_action_pressed(Dialogic.get_action_button()):
+		if HistoryTimeline.block_dialog_advance:
+			return
 		if is_state(state.WAITING):
 			if not current_event:
 				return
@@ -420,16 +446,26 @@ func _input(event: InputEvent) -> void:
 				# Cut the voice
 				$FX/CharacterVoice.stop_voice()
 			else:
-				if is_state(state.WAITING_INPUT):
+				if current_event.has('options') and !is_state(state.WAITING_INPUT):
 					pass
-				else:
+				elif is_state(state.WAITING_INPUT) or is_state(state.ANIMATING):
+					pass
+				elif $TextBubble/NextIndicatorContainer/NextIndicator.is_visible():
 					$FX/CharacterVoice.stop_voice() # stop the current voice as well
 					play_audio("passing")
 					_load_next_event()
+				else:
+					next_event(false)
 			if settings.has_section_key('dialog', 'propagate_input'):
 				var propagate_input: bool = settings.get_value('dialog', 'propagate_input')
 				if not propagate_input  and not is_state(state.WAITING_INPUT):
 					get_tree().set_input_as_handled()
+
+func next_event(discreetly: bool):
+	$FX/CharacterVoice.stop_voice() # stop the current voice as well
+	if !discreetly:
+		play_audio("passing")
+	_load_next_event()
 
 # when the text finished showing
 # plays audio, adds buttons, handles [nw]
@@ -444,7 +480,6 @@ func _on_text_completed():
 		set_state(state.WAITING_INPUT)
 		
 		var waiting_until_options_enabled = float(settings.get_value('input', 'delay_after_options', 0.1))
-		print(waiting_until_options_enabled)
 		$OptionsDelayedInput.start(waiting_until_options_enabled)
 
 		for o in current_event['options']:
@@ -478,7 +513,7 @@ func _on_text_completed():
 					waiting_time = $"FX/CharacterVoice".remaining_time()
 				else:
 					waiting_time = float(waiting_time)
-				print("Waiting time: " + String(waiting_time))
+				#print("Waiting time: " + String(waiting_time))
 				#Remove these comments once replaced with proper code.				
 				# - KvaGram
 				#original line
@@ -543,6 +578,30 @@ func _is_dialog_finished():
 
 # calls the event_handler 
 func _load_event():
+	# Updates whether the event is the last text box
+	if dialog_index + 1 >= dialog_script['events'].size():
+		is_last_text = true
+	else:
+		# Get next event
+		var next_event = dialog_script['events'][dialog_index + 1]
+		
+		# If next event is Text Event, is_last_text is false
+		if next_event['event_id'] == "dialogic_001":
+			is_last_text = false
+		
+		# Else, if next event is End Branch, set is_last_text to whether the next after exceeds the size of events.
+		elif 'end_branch_of' in next_event:
+			is_last_text = dialog_index + 2 >= dialog_script['events'].size()
+			
+		# Else, if next event is Choice (and current event is not a Question)
+		elif 'choice' in next_event and not 'options' in dialog_script['events'][dialog_index]:
+			# Get Question
+			var index_in_questions = next_event['question_idx']
+			var question = questions[index_in_questions]
+			var index_in_events = dialog_script['events'].rfind(question, dialog_index)
+			var end_index = question['end_idx']
+			is_last_text = end_index + 1 >= dialog_script['events'].size()
+	
 	_emit_timeline_signals()
 	_hide_definition_popup()
 	
@@ -554,8 +613,9 @@ func _load_event():
 			#	print(func_state)
 			#	yield(func_state, "completed")
 		elif not Engine.is_editor_hint():
-			# Do not free the dialog if we are in the preview
-			queue_free()
+			# If setting 'Don't Close After Last Event' is not checked, free it.
+			if not current_theme.get_value('settings', 'dont_close_after_last_event', false):
+				queue_free()
 
 # Handling an event and updating the available nodes accordingly.
 func event_handler(event: Dictionary):
@@ -563,75 +623,124 @@ func event_handler(event: Dictionary):
 	clear_options()
 	
 	current_event = event
+	
+	if record_history:
+		HistoryTimeline.add_history_row_event(current_event)
+	
 	match event['event_id']:
 		# MAIN EVENTS
 		# Text Event
 		'dialogic_001':
 			emit_signal("event_start", "text", event)
-			fade_in_dialog()
+			if fade_in_dialog():
+				yield(get_node('fade_in_tween_show_time'), 'tween_completed')
 			set_state(state.TYPING)
 			if event.has('character'):
 				var character_data = DialogicUtil.get_character(event['character'])
 				update_name(character_data)
 				grab_portrait_focus(character_data, event)
+				if character_data.get('data', {}).get('theme', '') and current_theme_file_name != character_data.get('data', {}).get('theme', ''):
+					current_theme = load_theme(character_data.get('data', {}).get('theme', ''))
+				elif !character_data.get('data', {}).get('theme', '') and current_default_theme and  current_theme_file_name != current_default_theme:
+					current_theme = load_theme(current_default_theme)
+
 			#voice 
 			handle_voice(event)
 			update_text(event['text'])
-		# Join event
+		# Character event
 		'dialogic_002':
 			## PLEASE UPDATE THIS! BUT HOW? 
 			emit_signal("event_start", "action", event)
+			set_state(state.WAITING)
 			if event['character'] == '':# No character found on the event. Skip.
 				_load_next_event()
 			else:
 				var character_data = DialogicUtil.get_character(event['character'])
-				if portrait_exists(character_data):
-					for portrait in $Portraits.get_children():
-						if portrait.character_data == character_data:
-							portrait.move_to_position(get_character_position(event['position']))
-							portrait.set_mirror(event.get('mirror', false))
-							portrait.current_state['position'] = event['position']
-				else:
+				# JOIN MODE -------------------------------------------
+				if event.get('type', 0) == 0 and not portrait_exists(character_data):
+					# CREATE NEW PORTRAIT 
 					var p = Portrait.instance()
-					var char_portrait = event['portrait']
-					if char_portrait == '':
-						char_portrait = 'Default'
 					
-					if char_portrait == '[Definition]' and event.has('port_defn'):
-						var portrait_definition = event['port_defn']
-						if portrait_definition != '':
-							for d in DialogicResources.get_default_definitions()['variables']:
-								if d['id'] == portrait_definition:
-									char_portrait = d['value']
-									break
-					
+					# SET DATA
 					if current_theme.get_value('settings', 'single_portrait_mode', false):
 						p.single_portrait_mode = true
 					p.character_data = character_data
+					p.dim_time = current_theme.get_value('animation', 'dim_time', 0.5)
+					
+					var char_portrait = get_portrait_name(event)
 					p.init(char_portrait)
-					p.set_mirror(event.get('mirror', false))
+					p.set_mirror(event.get('mirror_portrait', false))
+					
+					# ADD IT TO THE SCENE
 					$Portraits.add_child(p)
 					p.move_to_position(get_character_position(event['position']))
+					event = insert_animation_data(event, 'join', 'fade_in_up.gd')
+					p.animate(event.get('animation', '[No Animation]'), event.get('animation_length', 1))
 					p.current_state['character'] = event['character']
 					p.current_state['position'] = event['position']
-			_load_next_event()
-		# Character Leave event 
-		'dialogic_003':
-			## PLEASE UPDATE THIS! BUT HOW? 
-			emit_signal("event_start", "action", event)
-			if event['character'] == '[All]':
-				characters_leave_all()
-			else:
-				for p in $Portraits.get_children():
-					if p.character_data['file'] == event['character']:
-						p.fade_out()
-			_load_next_event()
+					
+					# z_index
+					$Portraits.move_child(p, get_portrait_z_index_point(event.get('z_index', 0)))
+					p.z_index = event.get('z_index', 0)
+					
+					if event.get('animation_wait', false):
+						yield(p, 'animation_finished')
+					
+			
+				# LEAVE MODE -------------------------------------------
+				elif event.get('type', 0) == 1:
+					if event['character'] == '[All]':
+						event = insert_animation_data(event, 'leave', 'fade_out_down.gd')
+						characters_leave_all(event.get('animation', '[No Animation]'), event.get('animation_length', -1))
+						if event.get('animation_wait', false):
+							$DialogicTimer.start(event.get('animation_duration', 1))
+							yield($DialogicTimer, "timeout")
+					else:
+						for p in $Portraits.get_children():
+							if is_instance_valid(p) and p.character_data['file'] == event['character']:
+								event = insert_animation_data(event, 'leave', 'fade_out_down.gd')
+								p.animate(event.get('animation', 'instant_out.gd'), event.get('animation_length', 1), 1, true)
+								if event.get('animation_wait', false):
+									yield(p, 'animation_finished')
+				
+				# UPDATE MODE -------------------------------------------
+				else:
+					if portrait_exists(character_data):
+						for portrait in $Portraits.get_children():
+							if portrait.character_data.get('file', true) == character_data.get('file', false):
+								# UPDATE PORTRAIT
+								var portrait_name = get_portrait_name(event)
+								if portrait_name != portrait.current_state['portrait']:
+									portrait.set_portrait(portrait_name)
+									# recalculate the position of the portrait with an instant animation
+									portrait.move_to_position(get_character_position(portrait.current_state['position']))
+								
+								# UPDATE POSITION
+								if event.get('change_position', false):
+									if event['position'] != portrait.current_state['position']:
+										portrait.move_to_position(get_character_position(event['position']))
+										portrait.current_state['position'] = event['position']
+								
+								if event.get('change_mirror_portrait', false):
+									portrait.set_mirror(event.get('mirror_portrait', false))
+								
+								if event.get('change_z_index', false):
+									$Portraits.move_child(portrait, get_portrait_z_index_point(event.get('z_index', 0)))
+									portrait.z_index = event.get('z_index', 0)
+								
+								portrait.animate(event.get('animation', '[No Animation]'), event.get('animation_length', 1), event.get('animation_repeat', 1))
+								
+								if event.get('animation_wait', false) and event.get('animation', '[No Animation]') != "[No Animation]":
+									yield(portrait, 'animation_finished')
+				set_state(state.READY)
+				_load_next_event()
 		
 		# LOGIC EVENTS
 		# Question event
 		'dialogic_010':
 			emit_signal("event_start", "question", event)
-			fade_in_dialog()
+			if fade_in_dialog():
+				yield(get_node('fade_in_tween_show_time'), 'tween_completed')
 			set_state(state.TYPING)
 			if event.has('name'):
 				update_name(event['name'])
@@ -639,6 +748,11 @@ func event_handler(event: Dictionary):
 				var character_data = DialogicUtil.get_character(event['character'])
 				update_name(character_data)
 				grab_portrait_focus(character_data, event)
+				
+				if character_data.get('data', {}).get('theme', '') and current_theme_file_name != character_data.get('data', {}).get('theme', ''):
+					current_theme = load_theme(character_data.get('data', {}).get('theme', ''))
+				elif !character_data.get('data', {}).get('theme', '') and current_default_theme and  current_theme_file_name != current_default_theme:
+					current_theme = load_theme(current_default_theme)
 			#voice 
 			handle_voice(event)
 			update_text(event['question'])
@@ -698,8 +812,8 @@ func event_handler(event: Dictionary):
 		# TIMELINE EVENTS
 		# Change Timeline event
 		'dialogic_020':
-			dialog_script = set_current_dialog(event['change_timeline'])
-			_init_dialog()
+			if !event['change_timeline'].empty():
+				change_timeline(event['change_timeline'])
 		# Change Backround event
 		'dialogic_021':
 			emit_signal("event_start", "background", event)
@@ -710,7 +824,10 @@ func event_handler(event: Dictionary):
 			current_background = event['background']
 			if background != null:
 				background.name = "BackgroundFadingOut"
-				background.fade_out(fade_time)
+				if !value:
+					background.fade_out(fade_time)
+				else:
+					background.remove_with_delay(fade_time)
 				background = null
 			
 			if value != '':
@@ -735,7 +852,8 @@ func event_handler(event: Dictionary):
 			var transition_duration = event.get('transition_duration', 1.0)
 			
 			# fade out characters
-			characters_leave_all()
+			insert_animation_data(event, 'leave', 'fade_out_down')
+			characters_leave_all(event['animation'], event['animation_length'])
 			
 			# fade out background
 			var background = get_node_or_null('Background')
@@ -757,7 +875,8 @@ func event_handler(event: Dictionary):
 		# Wait seconds event
 		'dialogic_023':
 			emit_signal("event_start", "wait", event)
-			$TextBubble.visible = false
+			if event.get('hide_dialogbox', true):
+				$TextBubble.visible = false
 			set_state(state.WAITING)
 			var timer = get_tree().create_timer(event['wait_seconds'])
 			if event.get('waiting_skippable', false):
@@ -773,6 +892,7 @@ func event_handler(event: Dictionary):
 			emit_signal("event_start", "set_theme", event)
 			if event['set_theme'] != '':
 				current_theme = load_theme(event['set_theme'])
+				current_default_theme = event['set_theme']
 			resize_main()
 			_load_next_event()
 		# Set Glossary event
@@ -858,16 +978,12 @@ func event_handler(event: Dictionary):
 			if (not args is Array):
 				args = []
 
-			if (target != null):
-				if (target.has_method(method_name)):
-					if (args.empty()):
-						var func_result = target.call(method_name)
-						if (func_result is GDScriptFunctionState):
-							yield(func_result, "completed")
-					else:
-						var func_result = target.call(method_name, args)
-						if (func_result is GDScriptFunctionState):
-							yield(func_result, "completed")
+			if is_instance_valid(target):
+				if target.has_method(method_name):
+					var func_result = target.callv(method_name, args)
+					
+					if (func_result is GDScriptFunctionState):
+						yield(func_result, "completed")
 
 			set_state(state.IDLE)
 			$TextBubble.visible = true
@@ -879,6 +995,11 @@ func event_handler(event: Dictionary):
 				handler.handle_event(event, self)
 			else:
 				visible = false
+				
+func change_timeline(timeline):
+	dialog_script = set_current_dialog(timeline)
+	_init_dialog()
+
 
 ## -----------------------------------------------------------------------------
 ## 					TEXTBOX-FUNCTIONALITY
@@ -887,7 +1008,7 @@ func event_handler(event: Dictionary):
 func update_name(character) -> void:
 	if character.has('name'):
 		var parsed_name = character['name']
-		if character.has('display_name'):
+		if character['data'].get('display_name_bool', false):
 			if character['display_name'] != '':
 				parsed_name = character['display_name']
 		parsed_name = DialogicParser.parse_definitions(self, parsed_name, true, false)
@@ -926,6 +1047,9 @@ func answer_question(i, event_idx, question_idx):
 	questions[question_idx]['answered'] = true
 	_load_event_at_index(event_idx + 1)
 	
+	if record_history:
+		HistoryTimeline.add_answer_to_question(str(i.text))
+	
 	# Revert to last mouse mode when selection is done
 	if last_mouse_mode != null:
 		Input.set_mouse_mode(last_mouse_mode) 
@@ -947,9 +1071,6 @@ func add_choice_button(option: Dictionary) -> Button:
 	var buttonCount = button_container.get_child_count()
 	var hotkeyOption = settings.get_value('input', str('choice_hotkey_', buttonCount), '')
 	
-	button.set_hovering_mode(hovering_action_mode)
-	button.set_hovering_time(hovering_action_time)
-	
 	# If there is a hotkey, use that key
 	if hotkeyOption != '' and hotkeyOption != '[Default]':
 		hotkey = InputEventAction.new()
@@ -965,6 +1086,7 @@ func add_choice_button(option: Dictionary) -> Button:
 	shortcut.set_shortcut(hotkey)
 	
 	button.set_shortcut(shortcut)
+	button.shortcut_in_tooltip = false
 	
 	# Selecting the first button added
 	if settings.get_value('input', 'autofocus_choices', true):
@@ -1135,11 +1257,9 @@ func grab_portrait_focus(character_data, event: Dictionary = {}) -> bool:
 		# check if it's the same character
 		if portrait.character_data.get("file", "something") == character_data.get("file", "none"):
 			exists = true
-			
 			portrait.focus()
 			if event.has('portrait'):
-				if event['portrait'] != '':
-					portrait.set_portrait(event['portrait'])
+				portrait.set_portrait(get_portrait_name(event))
 		else:
 			portrait.focusout(Color(current_theme.get_value('animation', 'dim_color', '#ff808080')))
 	return exists
@@ -1148,7 +1268,7 @@ func grab_portrait_focus(character_data, event: Dictionary = {}) -> bool:
 func portrait_exists(character_data) -> bool:
 	var exists = false
 	for portrait in $Portraits.get_children():
-		if portrait.character_data == character_data:
+		if portrait.character_data.get('file', true) == character_data.get('file', false):
 			exists = true
 	return exists
 
@@ -1166,13 +1286,45 @@ func get_character_position(positions) -> String:
 		return 'right'
 	return 'left'
 
+# returns the portrait name or the definition value (id definition is enabled)
+func get_portrait_name(event_data):
+	var char_portrait = event_data['portrait']
+	if char_portrait == '':
+		char_portrait = "(Don't change)"
+	
+	if char_portrait == '[Definition]' and event_data.has('port_defn'):
+		var portrait_definition = event_data['port_defn']
+		if portrait_definition != '':
+			for d in Dialogic._get_definitions()['variables']:
+				if d['id'] == portrait_definition:
+					char_portrait = d['value']
+					break
+	return char_portrait
+
+
+func insert_animation_data(event_data, type = 'join', default = 'fade_in_up'):
+	var animation = event_data.get('animation', '[Default]')
+	var length = event_data.get('animation_length', 0.5)
+	if animation == '[Default]':
+		animation = DialogicResources.get_settings_value('animations', 'default_'+type+'_animation', default)
+		length = DialogicResources.get_settings_value('animations', 'default_'+type+'_animation_length', 0.5)
+	event_data['animation'] = animation
+	event_data['animation_length'] = length
+	return event_data
+	
 # moves out all portraits
-func characters_leave_all():
+func characters_leave_all(animation, time):
 	var portraits = get_node_or_null('Portraits')
 	if portraits != null:
 		for p in portraits.get_children():
-			p.fade_out()
+			p.animate(animation, time, 1, true)
 
+# returns where to move the portrait, so the fake-z-index looks good 
+func get_portrait_z_index_point(z_index):
+	for i in range($Portraits.get_child_count()):
+		if $Portraits.get_child(i).z_index >= z_index:
+			return i
+	return $Portraits.get_child_count()
 ## -----------------------------------------------------------------------------
 ## 						GLOSSARY POPUP
 ## -----------------------------------------------------------------------------
@@ -1224,7 +1376,7 @@ func _on_Definition_Timer_timeout():
 # This will reset the text, reset any modulation it might have, and
 # set the variables that handle the fade in to the start position
 func _hide_dialog():
-	$TextBubble.update_text('') # Clearing the text
+	$TextBubble.clear() # Clearing the text
 	$TextBubble.modulate = Color(1,1,1,0)
 	dialog_faded_in_already = false
 
@@ -1235,7 +1387,7 @@ func fade_in_dialog(time = 0.5):
 	var has_tween = false
 	
 	if Engine.is_editor_hint() == false:
-		if dialog_faded_in_already == false:
+		if dialog_faded_in_already == false and do_fade_in:
 			var tween = Tween.new()
 			add_child(tween)
 			# The tween created ('fade_in_tween_show_time') is also reference for the $TextBubble
@@ -1252,11 +1404,14 @@ func fade_in_dialog(time = 0.5):
 		if has_tween:
 			set_state(state.ANIMATING)
 			dialog_faded_in_already = true
+			return true
+	return false
 
 # at the end of fade animation, reset flags
 func finished_fade_in_dialog(object, key, node):
 	node.queue_free()
-	set_state(state.IDLE)
+	if !current_event.has('options'):
+		set_state(state.IDLE)
 	dialog_faded_in_already = true
 
 ## -----------------------------------------------------------------------------
@@ -1270,6 +1425,7 @@ func get_current_state_info():
 	state["portraits"] = []
 	for portrait in $Portraits.get_children():
 		state['portraits'].append(portrait.current_state)
+		state['portraits'][-1]['z_index'] = portrait.z_index
 
 	# background music:
 	state['background_music'] = $FX/BackgroundMusic.get_current_info()
@@ -1320,12 +1476,14 @@ func resume_state_from_info(state_info):
 
 			if current_theme.get_value('settings', 'single_portrait_mode', false):
 				p.single_portrait_mode = true
+			p.dim_time = current_theme.get_value('animation', 'dim_time', 0.5)
 			p.character_data = character_data
 			p.init(char_portrait)
 
 			p.set_mirror(event.get('mirror', false))
 			$Portraits.add_child(p)
-			p.move_to_position(get_character_position(event['position']), 0)
+			$Portraits.move_child(p, get_portrait_z_index_point(saved_portrait.get('z_index', 0)))
+			p.move_to_position(get_character_position(event['position']))
 			# this info is only used to save the state later
 			p.current_state['character'] = event['character']
 			p.current_state['position'] = event['position']

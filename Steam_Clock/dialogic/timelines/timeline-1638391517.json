@@ -11,22 +11,51 @@
 			"text": "WUMMMMSSSSS!!!!!"
 		},
 		{
+			"definition": "1648561636-366",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "0"
+		},
+		{
 			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
 			"wait_seconds": 0.5
 		},
 		{
-			"action": "join",
+			"animation": "[Default]",
+			"animation_length": 0.5,
 			"character": "character-1638131868.json",
 			"event_id": "dialogic_002",
-			"mirror": false,
-			"portrait": "",
+			"mirror_portrait": false,
+			"portrait": "Default",
 			"position": {
 				"0": true,
 				"1": false,
 				"2": false,
 				"3": false,
 				"4": false
-			}
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0.5,
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "[Definition]",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
 		},
 		{
 			"character": "character-1638131868.json",
@@ -144,7 +173,7 @@
 		}
 	],
 	"metadata": {
-		"dialogic-version": "1.4 - DEV",
+		"dialogic-version": "1.4.1",
 		"file": "timeline-1638391517.json",
 		"name": "Labor 1"
 	}

@@ -29,6 +29,11 @@ signal signal_request(arg)
 
 
 func update_name(name: String, color: Color = Color.white, autocolor: bool=false) -> void:
+	var name_is_hidden = _theme.get_value('name', 'is_hidden', false)
+	if name_is_hidden:
+		name_label.visible = false
+		return
+	
 	if not name.empty():
 		name_label.visible = true
 		# Hack to reset the size
@@ -43,14 +48,16 @@ func update_name(name: String, color: Color = Color.white, autocolor: bool=false
 	else:
 		name_label.visible = false
 
+func clear():
+	text_label.bbcode_text = ""
+	name_label.text = ""
+	$WritingTimer.stop()
 
 func update_text(text:String):
 	
 	var orig_text = text
-	var text_bbcodefree = text
-	
-	for result in bbcoderemoverregex.search_all(text_bbcodefree):
-		text_bbcodefree = text_bbcodefree.replace(result.get_string(), "")
+	text_label.bbcode_text = text
+	var text_bbcodefree = text_label.text
 	
 	#regex moved from func scope to class scope
 	#regex compilation moved to _ready
@@ -61,7 +68,7 @@ func update_text(text:String):
 	commands = []
 	
 	### remove commands from text, and store where and what they are
-	#current regex: \[(nw|(nw|speed|signal|play|pause)=(.+?))\](.*?)
+	#current regex: \[\s*(nw|(nw|speed|signal|play|pause)\s*=\s*(.+?)\s*)\](.*?)
 	#Note: The version defined in _ready will have aditional escape characers.
 	#      DO NOT JUST COPY/PASTE
 	#remeber regex101.com is your friend. Do not shoot it. You may ask it to verify the code.
@@ -81,12 +88,12 @@ func update_text(text:String):
 			pass
 		else:
 			#Store an assigned varible command as an array by 0 index in text, 1 command-name, 2 argument
-			commands.append([result.get_start()-1, result.get_string(2), result.get_string(3)])
+			commands.append([result.get_start()-1, result.get_string(2).strip_edges(), result.get_string(3).strip_edges()])
 		text_bbcodefree = text_bbcodefree.substr(0, result.get_start()) + text_bbcodefree.substr(result.get_end())
 		text = text.replace(result.get_string(), "")
 		
 		result = regex.search(text_bbcodefree)
-	
+
 	text_label.bbcode_text = text
 	text_label.visible_characters = 0
 
@@ -133,12 +140,14 @@ func handle_command(command:Array):
 			var audio:AudioStream = ResourceLoader.load(path, "AudioStream")
 			$sounds.stream = audio
 			$sounds.play()
-			#yield(get_tree().create_timer(audio.get_length()), "timeout")
-			#$sounds.stop()
 	elif(command[1] == "pause"):
 		$WritingTimer.stop()
-		yield(get_tree().create_timer(float(command[2])), "timeout")
-		start_text_timer()
+		var x = text_label.visible_characters
+		get_parent().get_node("DialogicTimer").start(float(command[2]))
+		yield(get_parent().get_node("DialogicTimer"), "timeout")
+		# only continue, if no skip was performed
+		if text_label.visible_characters == x: 
+			start_text_timer()
 		
 
 func skip():
@@ -234,6 +243,7 @@ func load_theme(theme: ConfigFile):
 	name_style.set('content_margin_left', name_padding.x)
 	name_style.set('content_margin_right', name_padding.x)
 	name_style.set('content_margin_bottom', name_padding.y)
+	name_style.set('content_margin_top', name_padding.y)
 	
 	var name_shadow_offset = theme.get_value('name', 'shadow_offset', Vector2(2,2))
 	if theme.get_value('name', 'shadow_visible', true):
@@ -261,22 +271,20 @@ func load_theme(theme: ConfigFile):
 
 
 func _on_writing_timer_timeout():
-	# Checks for the 'fade_in_tween_show_time' which only exists during the fade in animation
-	# if that node doesn't exists, it won't start the letter by letter animation.
-	if get_parent().has_node('fade_in_tween_show_time') == false:
-		if _finished == false:
-			text_label.visible_characters += 1
-			if(commands.size()>0 && commands[0][0] <= text_label.visible_characters):
-				handle_command(commands.pop_front()) #handles the command, and removes it from the queue
-			if text_label.visible_characters > text_label.get_total_character_count():
-				_handle_text_completed()
-			elif (
-				text_label.visible_characters > 0 and
-				text_label.text[text_label.visible_characters-1] != " "
-			):
-				emit_signal('letter_written')
-		else:
-			$WritingTimer.stop()
+	if _finished == false:
+		text_label.visible_characters += 1
+		if(commands.size()>0 && commands[0][0] <= text_label.visible_characters):
+			handle_command(commands.pop_front()) #handles the command, and removes it from the queue
+		if text_label.visible_characters > text_label.get_total_character_count():
+			_handle_text_completed()
+		elif (
+			text_label.visible_characters > 0 and 
+			#text_label.text.length() > text_label.visible_characters-1 and 
+			text_label.text[text_label.visible_characters-1] != " "
+		):
+			emit_signal('letter_written')
+	else:
+		$WritingTimer.stop()
 
 
 func start_text_timer():
@@ -315,7 +323,5 @@ func _ready():
 	reset()
 	$WritingTimer.connect("timeout", self, "_on_writing_timer_timeout")
 	text_label.meta_underlined = false
-	regex.compile("\\[(nw|(nw|speed|signal|play|pause)=(.+?))\\](.*?)")
+	regex.compile("\\[\\s*(nw|(nw|speed|signal|play|pause)\\s*=\\s*(.+?)\\s*)\\](.*?)")
 	
-	bbcoderemoverregex.compile("\\[\\/*(b|i|u|s|code|center|right|fill|indent|url|img|font|color|table|cell|wave|tornado|shake|fade|rainbow)[^]]*\\]")
-

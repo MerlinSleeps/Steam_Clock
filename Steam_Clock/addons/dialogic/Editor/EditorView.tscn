@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://addons/dialogic/Editor/EditorView.gd" type="Script" id=1]
 [ext_resource path="res://addons/dialogic/Editor/TimelineEditor/TimelineEditor.tscn" type="PackedScene" id=2]
@@ -15,7 +15,7 @@
 [ext_resource path="res://addons/dialogic/Images/Toolbar/add-theme.svg" type="Texture" id=13]
 [ext_resource path="res://addons/dialogic/Editor/MasterTree/MasterTree.tscn" type="PackedScene" id=35]
 
-[sub_resource type="Image" id=6]
+[sub_resource type="Image" id=9]
 data = {
 "data": PoolByteArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ),
 "format": "LumAlpha8",
@@ -27,10 +27,16 @@ data = {
 [sub_resource type="ImageTexture" id=2]
 flags = 4
 flags = 4
-image = SubResource( 6 )
+image = SubResource( 9 )
 size = Vector2( 16, 16 )
 
-[sub_resource type="Image" id=7]
+[sub_resource type="InputEventKey" id=7]
+scancode = 16777252
+
+[sub_resource type="ShortCut" id=8]
+shortcut = SubResource( 7 )
+
+[sub_resource type="Image" id=10]
 data = {
 "data": PoolByteArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ),
 "format": "LumAlpha8",
@@ -42,7 +48,7 @@ data = {
 [sub_resource type="ImageTexture" id=4]
 flags = 4
 flags = 4
-image = SubResource( 7 )
+image = SubResource( 10 )
 size = Vector2( 16, 16 )
 
 [sub_resource type="StyleBoxTexture" id=5]
@@ -75,7 +81,7 @@ __meta__ = {
 modulate = Color( 0, 0, 0, 1 )
 margin_right = 28.0
 margin_bottom = 24.0
-hint_tooltip = "New Timeline"
+hint_tooltip = "Add Timeline"
 icon = ExtResource( 4 )
 flat = true
 
@@ -85,7 +91,7 @@ self_modulate = Color( 0.870588, 0.870588, 0.870588, 1 )
 margin_left = 32.0
 margin_right = 60.0
 margin_bottom = 24.0
-hint_tooltip = "New Character"
+hint_tooltip = "Add Character"
 icon = ExtResource( 3 )
 
 [node name="NewValueButton" type="Button" parent="ToolBar"]
@@ -93,7 +99,7 @@ modulate = Color( 0, 0, 0, 1 )
 margin_left = 64.0
 margin_right = 92.0
 margin_bottom = 24.0
-hint_tooltip = "New Value"
+hint_tooltip = "Add Value"
 icon = ExtResource( 5 )
 flat = true
 
@@ -102,7 +108,7 @@ modulate = Color( 0, 0, 0, 1 )
 margin_left = 96.0
 margin_right = 124.0
 margin_bottom = 24.0
-hint_tooltip = "New Definition"
+hint_tooltip = "Add Glossary Entry"
 icon = ExtResource( 10 )
 flat = true
 __meta__ = {
@@ -114,35 +120,46 @@ modulate = Color( 0, 0, 0, 1 )
 margin_left = 128.0
 margin_right = 156.0
 margin_bottom = 24.0
-hint_tooltip = "New Theme"
+hint_tooltip = "Add Theme"
 icon = ExtResource( 13 )
 flat = true
 
 [node name="FoldTools" type="HBoxContainer" parent="ToolBar"]
 visible = false
-margin_left = 112.0
-margin_right = 203.0
-margin_bottom = 32.0
+margin_left = 160.0
+margin_right = 348.0
+margin_bottom = 24.0
 
 [node name="Label" type="Label" parent="ToolBar/FoldTools"]
-margin_top = 9.0
+visible = false
+margin_top = 5.0
 margin_right = 59.0
-margin_bottom = 23.0
+margin_bottom = 19.0
 text = "      Fold  "
 
 [node name="ButtonFold" type="ToolButton" parent="ToolBar/FoldTools"]
 margin_left = 63.0
-margin_right = 75.0
-margin_bottom = 32.0
+margin_right = 91.0
+margin_bottom = 24.0
 icon = SubResource( 2 )
 align = 0
 
 [node name="ButtonUnfold" type="ToolButton" parent="ToolBar/FoldTools"]
-margin_left = 79.0
-margin_right = 91.0
-margin_bottom = 32.0
+margin_left = 95.0
+margin_right = 123.0
+margin_bottom = 24.0
 icon = SubResource( 2 )
 align = 0
+
+[node name="PlayTimeline" type="ToolButton" parent="ToolBar/FoldTools"]
+self_modulate = Color( 0.870588, 0.870588, 0.870588, 1 )
+margin_left = 127.0
+margin_right = 188.0
+margin_bottom = 24.0
+mouse_default_cursor_shape = 2
+shortcut = SubResource( 8 )
+text = "Play Timeline"
+icon = SubResource( 2 )
 
 [node name="Spacer" type="Control" parent="ToolBar"]
 margin_left = 160.0
@@ -294,7 +311,7 @@ text = "Select or create an element to start working"
 margin_right = 325.0
 margin_bottom = 88.0
 rect_min_size = Vector2( 250, 87.5 )
-window_title = "Por favor, Confirma..."
+window_title = "Be sure you want to delete!"
 dialog_text = "Are you sure you want to remove this [resource]?
 (Can't be restored)"
 __meta__ = {
@@ -305,8 +322,8 @@ __meta__ = {
 margin_right = 325.0
 margin_bottom = 88.0
 rect_min_size = Vector2( 250, 87.5 )
-window_title = "Por favor, Confirma..."
-dialog_text = "Are you sure you want to remove this folder and all the items contained in it?
+window_title = "Be sure you want to delete this folder!"
+dialog_text = "Are you sure you want to remove this folder and all the items contained in it? 
 (Can't be restored)"
 __meta__ = {
 "_edit_use_anchors_": false
