@@ -11,6 +11,10 @@
 			"text": "WUMMMMSSSSS!!!!!"
 		},
 		{
+			"event_id": "dialogic_023",
+			"wait_seconds": 0.5
+		},
+		{
 			"action": "join",
 			"character": "character-1638131868.json",
 			"event_id": "dialogic_002",
@@ -51,6 +55,13 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Mich hätte es ja mehr interessiert was passiert, wenn das Teil einmal nicht in die Luft fliegt. Ich bin es allmählich leid ständig die halbe Werkstatt aufzuräumen.\nBist du dir denn wirklich sicher, dass es lohnt so viel Mühe hierfür aufzuwenden?\nImmerhin müssen wir uns noch um die Handschuhe für die Dysnomia kümmern."
+		},
+		{
+			"event_id": "dialogic_025",
+			"extra": "",
+			"glossary_id": "",
+			"text": "",
+			"title": ""
 		},
 		{
 			"choice": "Überraschend",
@@ -105,14 +116,31 @@
 			"text": "Hey, aber wie wärs mit Memory vorher?"
 		},
 		{
-			"call_node": {
-				"arguments": [
-					"res://Scenes/MemoryGame.tscn"
-				],
-				"method_name": "load_scene",
-				"target_node_path": "Global"
-			},
-			"event_id": "dialogic_042"
+			"condition": ">",
+			"definition": "1648561636-366",
+			"event_id": "dialogic_012",
+			"value": "6"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "War ich da nicht schon [LoopCounter] mal?"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"definition": "1648561636-366",
+			"event_id": "dialogic_014",
+			"operation": "+",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"change_scene": "res://Scenes/Minigames/MemoryGame.tscn",
+			"event_id": "dialogic_041"
 		}
 	],
 	"metadata": {

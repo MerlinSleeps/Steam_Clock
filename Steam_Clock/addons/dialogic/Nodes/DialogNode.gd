@@ -127,9 +127,8 @@ func _ready():
 		# setup hovering mode
 		hovering_action_mode = settings.get_value('input', 'enable_hovering_mode')
 		hovering_action_time = settings.get_value('input', 'delay_after_hovering', 2.0)
-		print(settings.get_value('input', 'delay_after_hovering', 2.0))
-		$TextBubble/NextIndicatorContainer/NextIndicator.set_hovering_mode(hovering_action_mode)
-		$TextBubble/NextIndicatorContainer/NextIndicator.set_hovering_time(hovering_action_time)
+		#$TextBubble/NextIndicatorContainer/NextIndicator.set_hovering_mode(hovering_action_mode)
+		#$TextBubble/NextIndicatorContainer/NextIndicator.set_hovering_time(hovering_action_time)
 		_init_dialog()
 
 

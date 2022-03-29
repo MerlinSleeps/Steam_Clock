@@ -17,12 +17,12 @@ func set_hovering_time(time) -> void:
 	focus_time = time
 
 func _on_NextIndicator_mouse_entered():
-	if hovering_mode:
+	if Global.hover_mode:
 		success = true
 		next_timer.start(focus_time)
 
 func _on_NextIndicator_mouse_exited():
-	if hovering_mode:
+	if Global.hover_mode:
 		success = false
 		next_timer.stop()
 

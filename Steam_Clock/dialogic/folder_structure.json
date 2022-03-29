@@ -18,10 +18,33 @@
 		},
 		"Definitions": {
 			"files": [
-
+				"1648561636-366"
 			],
 			"folders": {
+				"Mansion": {
+					"files": [
 
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": false
+					}
+				},
+				"Workshop": {
+					"files": [
+
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": false
+					}
+				}
 			},
 			"metadata": {
 				"color": null,
