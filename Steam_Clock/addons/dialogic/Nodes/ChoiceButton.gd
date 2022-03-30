@@ -5,10 +5,17 @@ extends Button
 ## Simulate input after some focus time
 
 onready var next_timer = $Timer
+onready var slider = $SliderButton
 
 var hovering_mode = false
 var focus_time = 2 ## default time before input gets sent
 var success = false ## checks for focus
+
+func _ready():
+	if Global.hover_mode:
+		mouse_filter = MOUSE_FILTER_IGNORE
+	else:
+		slider.hide()
 
 func set_hovering_mode(mode: bool) -> void:
 	hovering_mode = mode
@@ -46,3 +53,7 @@ func _process(delta):
 		if has_focus():
 			emit_signal("button_up")
 			emit_signal("pressed")
+
+
+func _on_Control_bar_filled():
+	simulate_input()
