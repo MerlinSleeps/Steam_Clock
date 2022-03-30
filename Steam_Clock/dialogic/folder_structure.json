@@ -67,8 +67,7 @@
 			"files": [
 				"timeline-1638391517.json",
 				"timeline-1646867926.json",
-				"timeline-1646906688.json",
-				"timeline-1648632304.json"
+				"timeline-1646906688.json"
 			],
 			"folders": {
 				"Workshop": {
@@ -80,7 +79,7 @@
 					},
 					"metadata": {
 						"color": null,
-						"folded": true
+						"folded": false
 					}
 				}
 			},

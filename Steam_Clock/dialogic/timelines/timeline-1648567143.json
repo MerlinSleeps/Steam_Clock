@@ -8,17 +8,210 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Kkkkrrzzzkkssshhhhhh!!"
+			"text": "Wumms!!!!"
 		},
 		{
-			"call_node": {
-				"arguments": [
-
-				],
-				"method_name": "",
-				"target_node_path": "Camera2D"
+			"animation": "1-fade_in.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
 			},
-			"event_id": "dialogic_042"
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "(Don't change)",
+			"text": "WOW! Das war bisher die lauteste Explosion!"
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1638132302.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1638132302.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "*Seufz*\nIch weiß nicht was mir gerade mehr Sorgen bereiten sollte,, das taube Gefühl auf meiner linken, die Schmerzen auf meiner rechten Seite oder du...\nIch habe dir schon tausend mal gesagt, du sollst nicht einfach etwas am Kern verändern, ohne es vorher mit mir abzusprechen!\nDas ist schon das fünfte mal, dass du uns in die Luft gejagt hast..."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Naja siehs mal so immerhin ist diesmal nichts kaputt gegangen. \nAuserdem....\nSchau nur der Kern läuft noch! Das muss einfach ein gutes Zeichen sein.\nUnd ganz nebenbei vier..."
+		},
+		{
+			"character": "character-1638132302.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Vier was??"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ich habe uns vier mal in die Luft gejagt, das andere Mal lag an dir und deiner komischen Cupcake-Maschine.\nWoher soll ich den Wissen, dass das Teil Feuer fängt, wenn man anstatt Zuckerguss Honig reinfüllt?"
+		},
+		{
+			"character": "character-1638132302.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Honig?! IN CUPCAKES??!\nJeder weiß Cupcakes sind eine cremige, mit Zückerguss umhüllte Wunderbarkeit! Honig, ich bitte dich...\n\n\nAber du hast recht diesmal scheint der Kern weiterzuarbeiten, und dass obwohl er so viel Energie abgegeben hat.\nMerkwürdig. Also sag schon, was genau hast du hier wieder angestellt?\nUnd bitte sag mir nicht du hast schon wieder, einfach die Zahnräder so umgestellt dass sie farblich zueinander passen."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ehrlich gesagt bin ich mir nicht sicher.\nIch muss wohl doch etwas an den Schädel bekommen haben."
+		},
+		{
+			"character": "character-1638132302.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Na super...\nEs hilft halt alles nichts. Bestandsaufnahme.\nAlso wir haben eine 3 Zentner schwere, nicht funktionierende Zeitmaschine.\nKeine weiteren Ersatzteile.\nVorräte für etwa zwei Tage.\nKein Geld und nur noch 4 Cupcakes."
+		},
+		{
+			"character": "character-1638132302.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Korrekt?"
+		},
+		{
+			"choice": "Nunja...",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Vier Cupcakes..."
+		},
+		{
+			"character": "character-1638132302.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": " *Stares intensly*"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Audio/Effects/karate-chop-6357.mp3",
+			"volume": 2
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 0.5
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "",
+			"volume": 0
+		},
+		{
+			"character": "character-1638132302.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Vier Cupcakes!"
+		},
+		{
+			"choice": "Korrekt!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1638132302.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Es hilft wohl nichts. Schau doch mal beim alten Mon vorbei.\nDer hat doch nen Narren an dir gefressen, seitdem du seinen Gehstock motorisiert hast."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Naja eigentlich habe ich nur ein paar alte Muttern dran geschraubt.\nAber klar. Kann ich machen"
+		},
+		{
+			"character": "character-1638132302.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Vielleicht fällt dir ja auf den Weg wieder ein was du hier angestellt hast.\nAber zuerst hilfst du mir erstmal diesen Saustall...."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Bis später!"
+		},
+		{
+			"animation": "back_out_left.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "*Seufz* Ich brauch was süßes."
 		}
 	],
 	"metadata": {
