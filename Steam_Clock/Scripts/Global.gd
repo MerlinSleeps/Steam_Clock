@@ -1,7 +1,7 @@
 extends Node
 
 var hover_mode = false
-var focus_time = 2.0
+var focus_time = 1
 
 var current_timeline: String
 

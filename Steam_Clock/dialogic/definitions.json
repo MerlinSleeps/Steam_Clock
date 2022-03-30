@@ -3,6 +3,11 @@
 
 	],
 	"variables": [
-
+		{
+			"id": "1648564343-648",
+			"name": "LoopCounter",
+			"type": 0,
+			"value": "0"
+		}
 	]
 }

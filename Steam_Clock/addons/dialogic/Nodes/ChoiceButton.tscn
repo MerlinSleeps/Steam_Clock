@@ -7,6 +7,9 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Testing button "
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="mouse_entered" from="." to="." method="_on_ChoiceButton_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_ChoiceButton_mouse_exited"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

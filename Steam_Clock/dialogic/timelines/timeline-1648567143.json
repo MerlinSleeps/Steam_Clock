@@ -1,0 +1,29 @@
+{
+	"events": [
+		{
+			"background": "res://Art/backgrounds/werkstatt bg.jpg",
+			"event_id": "dialogic_021"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Kkkkrrzzzkkssshhhhhh!!"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "",
+				"target_node_path": "Camera2D"
+			},
+			"event_id": "dialogic_042"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.1",
+		"file": "timeline-1648567143.json",
+		"name": "Workshop 1"
+	}
+}

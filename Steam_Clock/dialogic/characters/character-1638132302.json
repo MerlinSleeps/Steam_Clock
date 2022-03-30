@@ -16,5 +16,6 @@
 			"path": "res://portraits/IMG_7950.png"
 		}
 	],
-	"scale": 15
+	"scale": 15,
+	"theme": ""
 }
