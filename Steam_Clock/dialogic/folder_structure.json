@@ -67,9 +67,22 @@
 			"files": [
 				"timeline-1638391517.json",
 				"timeline-1646867926.json",
-				"timeline-1646906688.json"
+				"timeline-1646906688.json",
+				"timeline-1648715105.json"
 			],
 			"folders": {
+				"Mansion": {
+					"files": [
+						"timeline-1648719289.json"
+					],
+					"folders": {
+
+					},
+					"metadata": {
+						"color": null,
+						"folded": false
+					}
+				},
 				"Workshop": {
 					"files": [
 						"timeline-1648567143.json"

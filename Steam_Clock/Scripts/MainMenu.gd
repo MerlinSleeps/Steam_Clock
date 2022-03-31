@@ -8,7 +8,7 @@ func _ready():
 	$MainMenu/StartButton.grab_focus()
 
 func _on_StartButton_pressed():
-	Global.load_scene(["res://Scenes/CurrenTimelineLoader.tscn"])
+	Global.load_scene(["res://Scenes/TimelineManager.tscn"])
 
 func _on_Options_pressed():
 	Global.load_scene(["res://Scenes/OptionsMenu.tscn"])
