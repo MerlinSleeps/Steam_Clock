@@ -15,7 +15,7 @@
 		{
 			"event_id": "dialogic_023",
 			"hide_dialogbox": true,
-			"wait_seconds": 3
+			"wait_seconds": 3.5
 		},
 		{
 			"audio": "play",
@@ -223,10 +223,29 @@
 			"z_index": 0
 		},
 		{
-			"character": "character-1638131868.json",
+			"character": "character-1638132302.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "*Seufz* Ich brauch was süßes."
+		},
+		{
+			"background": "",
+			"event_id": "dialogic_021"
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 1
+		},
+		{
+			"call_node": {
+				"arguments": [
+					"\"/Mansion/Mansion 1\""
+				],
+				"method_name": "change_timeline",
+				"target_node_path": "TimelineManager"
+			},
+			"event_id": "dialogic_042"
 		}
 	],
 	"metadata": {
