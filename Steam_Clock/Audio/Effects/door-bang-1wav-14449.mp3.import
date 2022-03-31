@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/door-bang-1wav-14449.mp3-17611450e1785d3fef0f60fbf8d71ed3.mp3str"
+
+[deps]
+
+source_file="res://Audio/Effects/door-bang-1wav-14449.mp3"
+dest_files=[ "res://.import/door-bang-1wav-14449.mp3-17611450e1785d3fef0f60fbf8d71ed3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

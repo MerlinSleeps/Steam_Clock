@@ -1,0 +1,21 @@
+{
+	"color": "#ff23f926",
+	"description": "\"ich hasse mein Leben\"",
+	"display_name": "Will",
+	"display_name_bool": false,
+	"id": "character-1648722526.json",
+	"mirror_portraits": false,
+	"name": "Willson",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": ""
+		}
+	],
+	"scale": 100,
+	"theme": ""
+}
