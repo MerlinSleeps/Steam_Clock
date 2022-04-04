@@ -28,6 +28,7 @@ custom_constants/hseparation = 10
 columns = 5
 
 [node name="Fuse" parent="GridContainer" instance=ExtResource( 1 )]
+isBase = true
 
 [node name="Fuse2" parent="GridContainer" instance=ExtResource( 1 )]
 margin_left = 130.0
