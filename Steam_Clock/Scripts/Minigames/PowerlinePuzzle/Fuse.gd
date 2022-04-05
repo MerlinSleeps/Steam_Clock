@@ -25,6 +25,7 @@ func _ready():
 	if isConsumer:
 		powered = false
 		rotatable = false
+	init_hover_mode()
 
 func rotate(value : bool):
 	var rad = 90
@@ -58,28 +59,20 @@ func _on_Node_pressed():
 ##		Generalized Hover features	##
 ######################################
 
-onready var timer = $Timer
+var slider
 
-var success: bool
-
-func _on_Node_mouse_entered():
+func init_hover_mode():
 	if Global.hover_mode:
-		success = true
-		grab_focus()
-		timer.start(Global.focus_time)
-
-func _on_Node_mouse_exited():
-	if Global.hover_mode:
-		success = false
-		release_focus()
-		timer.stop()
-
-func _on_Timer_timeout():
-		if success:
-			success = false
-			simulate_input()
-
+		slider = load(Global.sliderScene).instance()
+		add_child(slider)
+		slider.adjust_size(rect_size)
+		slider.connect("bar_filled", self, "_on_SliderButton_bar_filled")
+		
+func _on_SliderButton_bar_filled():
+	simulate_input()
+	
 func simulate_input():
+	slider.reset_progress()
 	select()
 
 func select():

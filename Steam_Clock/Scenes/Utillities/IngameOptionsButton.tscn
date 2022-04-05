@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scripts/Utillities/IngameOptionsButton.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/Utillities/HoverButton.gd" type="Script" id=3]
 
 [node name="IngameOptionsButton" type="Control"]
 rect_min_size = Vector2( 100, 80 )
@@ -12,6 +13,7 @@ margin_right = 12.0
 margin_bottom = 20.0
 rect_min_size = Vector2( 100, 80 )
 text = "Optionen"
+script = ExtResource( 3 )
 
 [node name="Popup" type="Popup" parent="."]
 margin_left = -80.0

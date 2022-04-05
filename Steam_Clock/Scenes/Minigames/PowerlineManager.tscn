@@ -1,7 +1,237 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://Scripts/Minigames/PowerlinePuzzle/PowerlineManager.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Minigames/Fuse.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Art/Animation/FuseAnimation/StraightFuse/FuseAnimation_3.png" type="Texture" id=3]
+[ext_resource path="res://Art/Animation/FuseAnimation/StraightFuse/FuseAnimation_5.png" type="Texture" id=4]
+[ext_resource path="res://Art/Animation/FuseAnimation/StraightFuse/FuseAnimation_2.png" type="Texture" id=5]
+[ext_resource path="res://Art/Animation/FuseAnimation/StraightFuse/FuseAnimation_4.png" type="Texture" id=6]
+[ext_resource path="res://Art/Animation/FuseAnimation/StraightFuse/FuseAnimation_1.png" type="Texture" id=7]
+
+[sub_resource type="AnimatedTexture" id=1]
+resource_local_to_scene = true
+flags = 4
+frames = 5
+pause = true
+frame_0/texture = ExtResource( 7 )
+frame_1/texture = ExtResource( 5 )
+frame_1/delay_sec = 0.0
+frame_2/texture = ExtResource( 3 )
+frame_2/delay_sec = 0.0
+frame_3/texture = ExtResource( 6 )
+frame_3/delay_sec = 0.0
+frame_4/texture = ExtResource( 4 )
+frame_4/delay_sec = 0.0
+
+[sub_resource type="AnimatedTexture" id=2]
+resource_local_to_scene = true
+flags = 4
+frames = 5
+pause = true
+frame_0/texture = ExtResource( 7 )
+frame_1/texture = ExtResource( 5 )
+frame_1/delay_sec = 0.0
+frame_2/texture = ExtResource( 3 )
+frame_2/delay_sec = 0.0
+frame_3/texture = ExtResource( 6 )
+frame_3/delay_sec = 0.0
+frame_4/texture = ExtResource( 4 )
+frame_4/delay_sec = 0.0
+
+[sub_resource type="AnimatedTexture" id=3]
+resource_local_to_scene = true
+flags = 4
+frames = 5
+pause = true
+frame_0/texture = ExtResource( 7 )
+frame_1/texture = ExtResource( 5 )
+frame_1/delay_sec = 0.0
+frame_2/texture = ExtResource( 3 )
+frame_2/delay_sec = 0.0
+frame_3/texture = ExtResource( 6 )
+frame_3/delay_sec = 0.0
+frame_4/texture = ExtResource( 4 )
+frame_4/delay_sec = 0.0
+
+[sub_resource type="AnimatedTexture" id=4]
+resource_local_to_scene = true
+flags = 4
+frames = 5
+pause = true
+frame_0/texture = ExtResource( 7 )
+frame_1/texture = ExtResource( 5 )
+frame_1/delay_sec = 0.0
+frame_2/texture = ExtResource( 3 )
+frame_2/delay_sec = 0.0
+frame_3/texture = ExtResource( 6 )
+frame_3/delay_sec = 0.0
+frame_4/texture = ExtResource( 4 )
+frame_4/delay_sec = 0.0
+
+[sub_resource type="AnimatedTexture" id=5]
+resource_local_to_scene = true
+flags = 4
+frames = 5
+pause = true
+frame_0/texture = ExtResource( 7 )
+frame_1/texture = ExtResource( 5 )
+frame_1/delay_sec = 0.0
+frame_2/texture = ExtResource( 3 )
+frame_2/delay_sec = 0.0
+frame_3/texture = ExtResource( 6 )
+frame_3/delay_sec = 0.0
+frame_4/texture = ExtResource( 4 )
+frame_4/delay_sec = 0.0
+
+[sub_resource type="AnimatedTexture" id=6]
+resource_local_to_scene = true
+flags = 4
+frames = 5
+pause = true
+frame_0/texture = ExtResource( 7 )
+frame_1/texture = ExtResource( 5 )
+frame_1/delay_sec = 0.0
+frame_2/texture = ExtResource( 3 )
+frame_2/delay_sec = 0.0
+frame_3/texture = ExtResource( 6 )
+frame_3/delay_sec = 0.0
+frame_4/texture = ExtResource( 4 )
+frame_4/delay_sec = 0.0
+
+[sub_resource type="AnimatedTexture" id=7]
+resource_local_to_scene = true
+flags = 4
+frames = 5
+pause = true
+frame_0/texture = ExtResource( 7 )
+frame_1/texture = ExtResource( 5 )
+frame_1/delay_sec = 0.0
+frame_2/texture = ExtResource( 3 )
+frame_2/delay_sec = 0.0
+frame_3/texture = ExtResource( 6 )
+frame_3/delay_sec = 0.0
+frame_4/texture = ExtResource( 4 )
+frame_4/delay_sec = 0.0
+
+[sub_resource type="AnimatedTexture" id=8]
+resource_local_to_scene = true
+flags = 4
+frames = 5
+pause = true
+frame_0/texture = ExtResource( 7 )
+frame_1/texture = ExtResource( 5 )
+frame_1/delay_sec = 0.0
+frame_2/texture = ExtResource( 3 )
+frame_2/delay_sec = 0.0
+frame_3/texture = ExtResource( 6 )
+frame_3/delay_sec = 0.0
+frame_4/texture = ExtResource( 4 )
+frame_4/delay_sec = 0.0
+
+[sub_resource type="AnimatedTexture" id=9]
+resource_local_to_scene = true
+flags = 4
+frames = 5
+pause = true
+frame_0/texture = ExtResource( 7 )
+frame_1/texture = ExtResource( 5 )
+frame_1/delay_sec = 0.0
+frame_2/texture = ExtResource( 3 )
+frame_2/delay_sec = 0.0
+frame_3/texture = ExtResource( 6 )
+frame_3/delay_sec = 0.0
+frame_4/texture = ExtResource( 4 )
+frame_4/delay_sec = 0.0
+
+[sub_resource type="AnimatedTexture" id=10]
+resource_local_to_scene = true
+flags = 4
+frames = 5
+pause = true
+frame_0/texture = ExtResource( 7 )
+frame_1/texture = ExtResource( 5 )
+frame_1/delay_sec = 0.0
+frame_2/texture = ExtResource( 3 )
+frame_2/delay_sec = 0.0
+frame_3/texture = ExtResource( 6 )
+frame_3/delay_sec = 0.0
+frame_4/texture = ExtResource( 4 )
+frame_4/delay_sec = 0.0
+
+[sub_resource type="AnimatedTexture" id=11]
+resource_local_to_scene = true
+flags = 4
+frames = 5
+pause = true
+frame_0/texture = ExtResource( 7 )
+frame_1/texture = ExtResource( 5 )
+frame_1/delay_sec = 0.0
+frame_2/texture = ExtResource( 3 )
+frame_2/delay_sec = 0.0
+frame_3/texture = ExtResource( 6 )
+frame_3/delay_sec = 0.0
+frame_4/texture = ExtResource( 4 )
+frame_4/delay_sec = 0.0
+
+[sub_resource type="AnimatedTexture" id=12]
+resource_local_to_scene = true
+flags = 4
+frames = 5
+pause = true
+frame_0/texture = ExtResource( 7 )
+frame_1/texture = ExtResource( 5 )
+frame_1/delay_sec = 0.0
+frame_2/texture = ExtResource( 3 )
+frame_2/delay_sec = 0.0
+frame_3/texture = ExtResource( 6 )
+frame_3/delay_sec = 0.0
+frame_4/texture = ExtResource( 4 )
+frame_4/delay_sec = 0.0
+
+[sub_resource type="AnimatedTexture" id=13]
+resource_local_to_scene = true
+flags = 4
+frames = 5
+pause = true
+frame_0/texture = ExtResource( 7 )
+frame_1/texture = ExtResource( 5 )
+frame_1/delay_sec = 0.0
+frame_2/texture = ExtResource( 3 )
+frame_2/delay_sec = 0.0
+frame_3/texture = ExtResource( 6 )
+frame_3/delay_sec = 0.0
+frame_4/texture = ExtResource( 4 )
+frame_4/delay_sec = 0.0
+
+[sub_resource type="AnimatedTexture" id=14]
+resource_local_to_scene = true
+flags = 4
+frames = 5
+pause = true
+frame_0/texture = ExtResource( 7 )
+frame_1/texture = ExtResource( 5 )
+frame_1/delay_sec = 0.0
+frame_2/texture = ExtResource( 3 )
+frame_2/delay_sec = 0.0
+frame_3/texture = ExtResource( 6 )
+frame_3/delay_sec = 0.0
+frame_4/texture = ExtResource( 4 )
+frame_4/delay_sec = 0.0
+
+[sub_resource type="AnimatedTexture" id=15]
+resource_local_to_scene = true
+flags = 4
+frames = 5
+pause = true
+frame_0/texture = ExtResource( 7 )
+frame_1/texture = ExtResource( 5 )
+frame_1/delay_sec = 0.0
+frame_2/texture = ExtResource( 3 )
+frame_2/delay_sec = 0.0
+frame_3/texture = ExtResource( 6 )
+frame_3/delay_sec = 0.0
+frame_4/texture = ExtResource( 4 )
+frame_4/delay_sec = 0.0
 
 [node name="PowerlineManager" type="Control"]
 anchor_left = 0.5
@@ -28,77 +258,92 @@ custom_constants/hseparation = 10
 columns = 5
 
 [node name="Fuse" parent="GridContainer" instance=ExtResource( 2 )]
+texture = SubResource( 1 )
 isSupply = true
 
 [node name="Fuse2" parent="GridContainer" instance=ExtResource( 2 )]
 margin_left = 130.0
 margin_right = 250.0
+texture = SubResource( 2 )
 
 [node name="Fuse3" parent="GridContainer" instance=ExtResource( 2 )]
 margin_left = 260.0
 margin_right = 380.0
+texture = SubResource( 3 )
 
 [node name="Fuse4" parent="GridContainer" instance=ExtResource( 2 )]
 margin_left = 390.0
 margin_right = 510.0
+texture = SubResource( 4 )
 
 [node name="Fuse5" parent="GridContainer" instance=ExtResource( 2 )]
 margin_left = 520.0
 margin_right = 640.0
+texture = SubResource( 5 )
 
 [node name="Fuse6" parent="GridContainer" instance=ExtResource( 2 )]
 margin_top = 130.0
 margin_bottom = 250.0
+texture = SubResource( 6 )
 
 [node name="Fuse7" parent="GridContainer" instance=ExtResource( 2 )]
 margin_left = 130.0
 margin_top = 130.0
 margin_right = 250.0
 margin_bottom = 250.0
+texture = SubResource( 7 )
 
 [node name="Fuse8" parent="GridContainer" instance=ExtResource( 2 )]
 margin_left = 260.0
 margin_top = 130.0
 margin_right = 380.0
 margin_bottom = 250.0
+texture = SubResource( 8 )
 
 [node name="Fuse9" parent="GridContainer" instance=ExtResource( 2 )]
 margin_left = 390.0
 margin_top = 130.0
 margin_right = 510.0
 margin_bottom = 250.0
+texture = SubResource( 9 )
 
 [node name="Fuse10" parent="GridContainer" instance=ExtResource( 2 )]
 margin_left = 520.0
 margin_top = 130.0
 margin_right = 640.0
 margin_bottom = 250.0
+texture = SubResource( 10 )
 
 [node name="Fuse11" parent="GridContainer" instance=ExtResource( 2 )]
 margin_top = 260.0
 margin_bottom = 380.0
+texture = SubResource( 11 )
 
 [node name="Fuse12" parent="GridContainer" instance=ExtResource( 2 )]
 margin_left = 130.0
 margin_top = 260.0
 margin_right = 250.0
 margin_bottom = 380.0
+texture = SubResource( 12 )
 
 [node name="Fuse13" parent="GridContainer" instance=ExtResource( 2 )]
 margin_left = 260.0
 margin_top = 260.0
 margin_right = 380.0
 margin_bottom = 380.0
+texture = SubResource( 13 )
 
 [node name="Fuse14" parent="GridContainer" instance=ExtResource( 2 )]
 margin_left = 390.0
 margin_top = 260.0
 margin_right = 510.0
 margin_bottom = 380.0
+texture = SubResource( 14 )
 
 [node name="Fuse15" parent="GridContainer" instance=ExtResource( 2 )]
 margin_left = 520.0
 margin_top = 260.0
 margin_right = 640.0
 margin_bottom = 380.0
+texture = SubResource( 15 )
 isConsumer = true

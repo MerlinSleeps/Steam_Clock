@@ -1,4 +1,5 @@
 extends Control
+class_name SliderButton
 
 onready var progressBar : TextureProgress = $TextureProgress
 
@@ -16,9 +17,14 @@ func _process(delta):
 	if !mouseInside:
 		progressBar.value -= delta * declineFactor
 	if progressBar.value == progressBar.max_value:
-		declineFactor = 0
-		yield(get_tree().create_timer(0.5), "timeout")
 		emit_signal("bar_filled")
+
+func reset_progress():
+	progressBar.value = 0
+
+func adjust_size(parentSize: Vector2):
+	rect_size = parentSize
+	progressBar.rect_size = parentSize
 
 func _on_TextureProgress_mouse_entered():
 	mouseInside = true

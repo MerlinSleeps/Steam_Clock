@@ -1,28 +1,20 @@
 extends Button
 
-var timer : Timer
-var success: bool
+var slider: SliderButton
 
 func _ready():
+	init_hover_mode()
+	
+func init_hover_mode():
 	if Global.hover_mode:
-		pass
-
-func _on_Node_mouse_entered():
-	if Global.hover_mode:
-		success = true
-		grab_focus()
-		timer.start(Global.focus_time)
-
-func _on_Node_mouse_exited():
-	if Global.hover_mode:
-		success = false
-		release_focus()
-		timer.stop()
-
-func _on_Timer_timeout():
-		if success:
-			success = false
-			simulate_input()
-
+		slider = load(Global.sliderScene).instance()
+		add_child(slider)
+		slider.adjust_size(rect_size)
+		slider.connect("bar_filled", self, "_on_SliderButton_bar_filled")
+		
+func _on_SliderButton_bar_filled():
+	simulate_input()
+	
 func simulate_input():
-	pass
+	slider.reset_progress()
+	emit_signal("pressed")
