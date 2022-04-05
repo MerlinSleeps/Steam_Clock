@@ -7,4 +7,5 @@ var current_timeline: String
 
 func load_scene(value):
 	print(value[0])
-	get_tree().change_scene(value[0])
+	var x = get_tree().change_scene(value[0])
+	print(x)
