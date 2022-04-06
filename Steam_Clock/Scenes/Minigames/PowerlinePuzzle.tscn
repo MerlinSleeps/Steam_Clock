@@ -69,5 +69,3 @@ margin_bottom = 40.0
 [connection signal="pressed" from="HBoxContainer/AlendraButton" to="." method="_on_AlendraButton_pressed"]
 [connection signal="pressed" from="HBoxContainer/WilsonButton" to="." method="_on_WillsonButton_pressed"]
 [connection signal="win_conidition_fullfilled" from="PowerlineManager" to="." method="_on_PowerlineManager_win_conidition_fullfilled"]
-
-[editable path="PowerlineManager"]

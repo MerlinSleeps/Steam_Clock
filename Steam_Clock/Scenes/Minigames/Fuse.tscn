@@ -3,10 +3,11 @@
 [ext_resource path="res://Scripts/Minigames/PowerlinePuzzle/Fuse.gd" type="Script" id=1]
 [ext_resource path="res://Art/Animation/FuseAnimation/StraightFuse/straight_fuse_animation.tres" type="Texture" id=2]
 
-[node name="Fuse" type="TextureRect" groups=["Fuse"]]
+[node name="Fuse" type="TextureButton" groups=["Fuse"]]
 margin_right = 120.0
 margin_bottom = 120.0
 rect_min_size = Vector2( 120, 120 )
-texture = ExtResource( 2 )
+rect_pivot_offset = Vector2( 60, 60 )
+texture_normal = ExtResource( 2 )
 expand = true
 script = ExtResource( 1 )
