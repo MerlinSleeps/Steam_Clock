@@ -17,7 +17,6 @@ export(bool) var powered = false
 var rotatable = true
 var neighbours = {}
 
-signal is_powered(value)
 signal selected(fuse)
 signal rotated()
 
@@ -34,24 +33,28 @@ func rotate(value : bool):
 	var rad = 90
 	if !value:
 		rad *= -1
-	aniSprite.rotate(rad)
+	aniSprite.rotate(deg2rad(rad))
 	for con in connections:
-		con = con.rotated(deg2rad(rad))
+		var index = connections.find(con)
+		var rotated: Vector2 = con.rotated(deg2rad(rad))
+		connections[index] = rotated.round()
 	emit_signal("rotated")
 
 func got_power():
-	emit_signal("is_powered", self)
+	powered = true
 	for neighbour in neighbours.keys():
 		if check_connection_to(neighbour):
 			if !neighbour.powered:
 				neighbour.powered = true
 				neighbour.got_power()
 
-func check_connection_to(neighbour):
+func check_connection_to(neighbour : Fuse):
 	var my_connection = neighbours[neighbour]
-	var neighbour_connection = neighbour.neighbours[self]
+	var neighbour_connection: Vector2 = neighbour.neighbours[self]
+	var my_open = connections.has(my_connection)
+	var neighbour_open = neighbour.connections.has(neighbour_connection)
 	
-	if connections.has(my_connection) and neighbour.connections.has(neighbour_connection):
+	if my_open and neighbour_open:
 		return true
 	
 	######################
@@ -64,7 +67,7 @@ func check_connection_to(neighbour):
 func _on_Node_pressed():
 	select()
 
-func _process(delta):
+func _process(_delta):
 	if powered:
 		$AnimatedSprite.playing = true
 	else:

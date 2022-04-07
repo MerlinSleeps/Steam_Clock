@@ -6,8 +6,6 @@ var fuses = []
 var suppliers = []
 var consumers = []
 
-var powered_fuses = []
-
 signal win_conidition_fullfilled()
 
 func _ready():
@@ -18,7 +16,6 @@ func _ready():
 func get_fuses():
 	for fuse in get_tree().get_nodes_in_group("Fuse"):
 		fuses.append(fuse)
-		fuse.connect("is_powered", self, "_on_Fuse_is_powered")
 		fuse.connect("rotated", self, "update_powerflow")
 		if fuse.isSupply:
 			suppliers.append(fuse)
@@ -26,9 +23,11 @@ func get_fuses():
 			consumers.append(fuse)
 
 func set_neighbours():
-	for x in range(grid.columns - 1):
-		fuses[x].neighbours[fuses[x+1]] = Vector2.RIGHT
-		fuses[x+1].neighbours[fuses[x]] = Vector2.LEFT
+	for y in range(ceil(fuses.size()/grid.columns)):
+		var firstInRow = y * grid.columns
+		for x in range(0+firstInRow, firstInRow + grid.columns - 1):
+			fuses[x].neighbours[fuses[x+1]] = Vector2.RIGHT
+			fuses[x+1].neighbours[fuses[x]] = Vector2.LEFT
 		
 	for x in range(fuses.size() - (fuses.size() % grid.columns)):
 		var y = x + grid.columns
@@ -37,13 +36,10 @@ func set_neighbours():
 			fuses[y].neighbours[fuses[x]] = Vector2.UP
 
 func update_powerflow():
-	powered_fuses.clear()
-	for supplier in suppliers:
-		supplier.got_power()
 	for fuse in fuses:
 		fuse.powered = false
-		if powered_fuses.has(fuse):
-			fuse.powered = true
+	for supplier in suppliers:
+		supplier.got_power()
 	check_wincondition()
 
 func check_wincondition():
@@ -54,6 +50,3 @@ func check_wincondition():
 			
 	if flag:
 		emit_signal("win_conidition_fullfilled")
-
-func _on_Fuse_is_powered(value):
-	powered_fuses.append(value)
