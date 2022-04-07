@@ -128,7 +128,7 @@
 			"character": "character-1648720722.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Ach Wilson sie, sie Witzbold! Immer zu scherzen aufgelebt.\nAber nun gut, wollen wir die Dame nicht weiter warten lassen. Jetzt komm doch endlich herein und setz dich."
+			"text": "Ohoho Wilson, sie Witzbold! Immer zu scherzen aufgelebt.\nAber nun gut, wollen wir die Dame nicht weiter warten lassen. Jetzt komm doch endlich herein und setz dich."
 		},
 		{
 			"character": "character-1638131868.json",
@@ -296,6 +296,10 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Ich denke ich helfe Wilson, dabei die Leitung zu reparieren"
+		},
+		{
+			"change_scene": "res://Scenes/Minigames/PowerlinePuzzle/PowerlinePuzzle.tscn",
+			"event_id": "dialogic_041"
 		},
 		{
 			"choice": "Sitzen bleiben",

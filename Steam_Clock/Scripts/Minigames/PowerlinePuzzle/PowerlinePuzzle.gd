@@ -10,8 +10,9 @@ func _on_Fuse_selected(fuse: Fuse):
 	currentFuse = fuse
 
 func _on_PowerlineManager_win_conidition_fullfilled():
-	print("Congratulations. You won!")
-
+	yield(get_tree().create_timer(0.5), "timeout")
+	var dialogic = Dialogic.start("/Mansion/Minigames/Powerline - You won")
+	add_child(dialogic)
 
 func _on_AlendraButton_pressed():
 	if currentFuse != null:

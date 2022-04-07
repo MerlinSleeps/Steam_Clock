@@ -95,7 +95,10 @@ powered = true
 [node name="Fuse - Straight" parent="PowerlineManager/GridContainer" instance=ExtResource( 10 )]
 margin_left = 120.0
 margin_right = 240.0
-connections = [ Vector2( -1, 0 ), Vector2( 1, 0 ) ]
+connections = [ Vector2( 0, 1 ), Vector2( 0, -1 ) ]
+
+[node name="AnimatedSprite" parent="PowerlineManager/GridContainer/Fuse - Straight" index="0"]
+rotation = 1.5708
 
 [node name="Fuse - Straight2" parent="PowerlineManager/GridContainer" instance=ExtResource( 10 )]
 margin_left = 240.0
@@ -128,7 +131,10 @@ margin_left = 240.0
 margin_top = 120.0
 margin_right = 360.0
 margin_bottom = 240.0
-connections = [ Vector2( -1, 0 ), Vector2( 1, 0 ) ]
+connections = [ Vector2( 0, 1 ), Vector2( 0, -1 ) ]
+
+[node name="AnimatedSprite" parent="PowerlineManager/GridContainer/Fuse - Straight3" index="0"]
+rotation = 1.5708
 
 [node name="Fuse - 3 Piece2" parent="PowerlineManager/GridContainer" instance=ExtResource( 9 )]
 margin_left = 360.0
@@ -181,3 +187,6 @@ isConsumer = true
 [connection signal="pressed" from="HBoxContainer/AlendraButton" to="." method="_on_AlendraButton_pressed"]
 [connection signal="pressed" from="HBoxContainer/WilsonButton" to="." method="_on_WillsonButton_pressed"]
 [connection signal="win_conidition_fullfilled" from="PowerlineManager" to="." method="_on_PowerlineManager_win_conidition_fullfilled"]
+
+[editable path="PowerlineManager/GridContainer/Fuse - Straight"]
+[editable path="PowerlineManager/GridContainer/Fuse - Straight3"]
