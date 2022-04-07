@@ -19,6 +19,7 @@ func get_fuses():
 	for fuse in get_tree().get_nodes_in_group("Fuse"):
 		fuses.append(fuse)
 		fuse.connect("is_powered", self, "_on_Fuse_is_powered")
+		fuse.connect("rotated", self, "update_powerflow")
 		if fuse.isSupply:
 			suppliers.append(fuse)
 		if fuse.isConsumer:

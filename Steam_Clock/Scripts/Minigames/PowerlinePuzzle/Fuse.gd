@@ -1,6 +1,8 @@
 extends TextureButton
 class_name Fuse
 
+onready var aniSprite = $AnimatedSprite
+
 export(Array, Vector2) var connections = [
 	Vector2.UP,
 	Vector2.DOWN,
@@ -17,6 +19,7 @@ var neighbours = {}
 
 signal is_powered(value)
 signal selected(fuse)
+signal rotated()
 
 func _ready():
 	if isSupply:
@@ -31,9 +34,10 @@ func rotate(value : bool):
 	var rad = 90
 	if !value:
 		rad *= -1
-	rect_rotation = (int(rect_rotation) + rad) % 360
+	aniSprite.rotate(rad)
 	for con in connections:
-		con.rotated(deg2rad(rad))
+		con = con.rotated(deg2rad(rad))
+	emit_signal("rotated")
 
 func got_power():
 	emit_signal("is_powered", self)
@@ -44,16 +48,28 @@ func got_power():
 				neighbour.got_power()
 
 func check_connection_to(neighbour):
-	var start_connection = neighbours[neighbour]
-	var end_connection = neighbour.neighbours[self]
-	if start_connection != null and end_connection != null:
-		var connection_state = start_connection + end_connection
-		if connection_state == Vector2.ZERO:
-			return true
-	return false
+	var my_connection = neighbours[neighbour]
+	var neighbour_connection = neighbour.neighbours[self]
+	
+	if connections.has(my_connection) and neighbour.connections.has(neighbour_connection):
+		return true
+	
+	######################
+	#if start_connection != null and end_connection != null:
+	#	var connection_state = start_connection + end_connection
+	#	if connection_state == Vector2.ZERO:
+	#		return true
+	#return false
 
 func _on_Node_pressed():
 	select()
+
+func _process(delta):
+	if powered:
+		$AnimatedSprite.playing = true
+	else:
+		$AnimatedSprite.playing = false
+		$AnimatedSprite.frame = 0
 
 ######################################
 ##		Generalized Hover features	##

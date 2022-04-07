@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/Minigames/PowerlinePuzzle/Fuse/Fuse.tscn" type="PackedScene" id=1]
+
+[node name="Fuse End" instance=ExtResource( 1 )]
+connections = [ Vector2( 1, 0 ) ]

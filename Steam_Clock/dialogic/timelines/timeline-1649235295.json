@@ -1,0 +1,322 @@
+{
+	"events": [
+		{
+			"background": "res://Art/backgrounds/master's room.jpg",
+			"event_id": "dialogic_021"
+		},
+		{
+			"animation": "back_in_left.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Verzeihen sie, Graf Mon, aber sie haben...."
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Da sind sie ja endlich Wilson!"
+		},
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ich bitte um Vergebung, aber haben sie nach mir gerufen?"
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Gedacht habe ich an sie! Mindestens 3 mal habe ich mir vorgestellt wie ich sie rufe!\nMuss ich den jetzt schon tatsächlich meine Stimme erheben, damit sie herkommen?"
+		},
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ich bitte erneut, um Verzeihung mein Lord. Ich verspreche ich werde versuchen, besser auf ihre Gedanken zu hören...\nWie kann ich denn, der Lordschaft, dienen?"
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Schon besser! [pause=1] Nun denn, kommen sie her und zünden sie meine Pfeife an."
+		},
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Jawohl mein Herr."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ähm Verzeihung, Lord Mon?"
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Potz Blitz, Alendra! Das ist  ja mal eine Überraschung. Wie hast du dich den hier herein geschliechen?\nWilson, sie Vollidiot, haben sie schon wieder nicht aufgepasst? Furchtbar das Streich ich ihnen vom Lohn!\nWie viel zahle ich ihnen eigentlich?"
+		},
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nicht genug als das ich mir selbst Abends in die Augen schauen könnte..."
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ach Wilson sie, sie Witzbold! Immer zu scherzen aufgelebt.\nAber nun gut, wollen wir die Dame nicht weiter warten lassen. Jetzt komm doch endlich herein und setz dich."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sehr gerne, Lord Mon. Dürfte ich fragen, wie es ihnen mit ihrem \"Spezial-Gehstock\" geht? "
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ach ja der MONtorisierte Gehstock. Ein fantastisches Werk der Ingenieurskunst! Noch nie war ich so schnell unterwegs. Noch nie habe ich so kraftvoll die Armen aus meinen Weg gestoßen.\nFür wahr, ein herrliches Gerät. Leider befürchte ich, dass die alte Pumpe, da nicht auf Dauer mithält. Wenn du verstehst was ich meine, hahaha!"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Es freut mich sehr zu hören, dass ich ihnen eine Freude bereiten konnte. Vielleicht könnten sie mir ja ebenfalls eine kleine Frede bereiten?"
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sag kein weiteres Wort, meine Teuerste. Du und deine werte Partnerin brauchen mal wieder eine kleine Geldspritze, vom Herrn Graf versteht sich. Das erkenn ich doch sofort."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ja... das trifft es sehr genau. Ich weiß sie haben uns bereits häufiger Geld zukommen lassen. Aber diesmal bin ich mir sicher, dass wir kurz vor einem Erfolg stehen!\nErst heute morgen ist unsere Maschine viel kontrollierter explodiert als sonst, und es ist auch kaum was kaputt gegangen. Außer Cassidys zentrale Nervensystem, vielleicht....\nUnd sie müssen verstehen, dass es sich hierbei um eine WIRKLICH GROßE Sache handelt, wir wären auch bereit ihr Siegel auf die Maschine zu pressen und...."
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Aber, aber meine liebe... Ich bin mir sicher du könntest mir stundenlang davon erzählen, wie ihr die Welt revolutionieren werdet und all solch Unfug.\nUnd dennoch sehe dieses gewisse etwas in deinen Augen, Dieser Funke der auch in mir brennt. Ein Drang sich die Welt untertan zu machen! Das Bedürfnis ein Imperium auf zu erschaffen, welches getragen wird von unterbezahlten Kinderarbeitern!"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nunja... Eigentlich wollen wir fürs erste einfach nur unseren Prototypen fertig bauen. Imperien zu errichten war bisher nicht unser Ziel."
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ach, das kommt noch! Glaub mir, dass hab ich schon sieben mal durch. Mittlerweile ist das Jauchzen meiner Arbeiter, melodischer als jedes Musikstück."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Alsooooo.... geben sie uns die Mittel?"
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Aber selbstverständlich doch. Aber nur unter einer Bedingung. Ich möchte mir demnächst mit meinen eigenen Augen anschauen, was ihr verrückten Jungspunde so anstellt.\nWird mal wieder Zeit, dass ich wieder etwas den Puls der Zeit spühre. Ohh... [pause=1] Ich glaubs ja nicht, da spüre ich ja sogar direkt meinen eigenen Puls mal wieder!\nWinston tragen machen sie direkt ein Kreuz im Kalender!"
+		},
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sehr wohl! Soll ich ihnen auch gleich ein Beruhigungsmittel bringen?"
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Machen sie daraus eine doppelte Dose."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Das ist ja fantastisch! Ich kann es kaum erwarten Cass davon zu erzählen! Vielleicht vergibt sie mir dafür auch, dass ich ihren Cupcake gegessen habe!"
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Da gibt es jedoch nur ein kleines Problemchen. Ein kleines Hindernis bevor ich überhaupt, irgendwem irgendwas geben kann, was in meinem Safe ist..."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Was könnte das für ein Problem sein? "
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nunja, es ist dir sicher schon aufgefallen, aber mein Anwesen ist zurzeit etwas durcheinander und so hat es Wilson der Trottel doch tatsächlich geschafft meinen Safeschlüssel zu verlieren."
+		},
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Wie ich ihnen wiederholt versucht habe zu erläutern, ist eben dieser Schlüssel zu keinem Moment in meinem Händen gewesen.\nDesweiteren möchte ich anmerken, dass ich mir äußerste Mühe gebe das Haus in einem angemessen Zustand zu halten."
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Du siehst meine Liebe, der gute Wilson, hat komplett die Kontrolle über das Haus und sein Leben verloren.\nZudem hat er seit neustem mit einer immensen Opiumsucht zu kämpfen und es sieht nicht gut aus."
+		},
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "IHRE Opiumsucht, mein Herr. Ich kämpfe mit IHRER Opiumsucht."
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "EXAKT! [pause=1] Und sie scheitern kläglich."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nun... kann ich vielleicht helfen? Vielleicht wäre es ja möglich, dass ich zusammen mit Wilson nach dem Schlüssel suche?"
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Iwo mein Gute. Dies ist doch keine Aufgabe für jemanden mit deinem Verstand. Außerdem ist Wilson ohnehin gerade beschäftigt. \nSeit heute morgen, ist im ganzen Haus der Strom ausgefallen. Glaubst du's denn? Jetzt lebe ich hier ganz ohne Energie, als wäre ich einer dieser Armen. Ach diese Erniedrigung...\nNein, nein. Du bist mein Gast und den Teufel werde ich tun. Dir zu erlauben einen Finger krum zu machen, wenn Wilson doch noch fast zwei gesunde Hände hat."
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Da du ohnehin hier bist, wie wäre es wenn wir, zwei überraus herrausragende, Verstände uns unterhalten."
+		},
+		{
+			"choice": "Schlüssel suchen",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Kommt später"
+		},
+		{
+			"choice": "Wilson helfen",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ich denke ich helfe Wilson, dabei die Leitung zu reparieren"
+		},
+		{
+			"choice": "Sitzen bleiben",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Kommt später"
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.1",
+		"file": "timeline-1649235295.json",
+		"name": "Master's room - 1"
+	}
+}

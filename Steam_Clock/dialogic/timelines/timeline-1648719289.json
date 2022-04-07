@@ -215,13 +215,13 @@
 			"text": "Wenn sie mir nun folgen möchten. Ich geleite sie zum Herrn Grafen."
 		},
 		{
-			"event_id": "dialogic_022",
-			"transition_duration": 1
+			"change_timeline": "timeline-1649235295.json",
+			"event_id": "dialogic_020"
 		}
 	],
 	"metadata": {
 		"dialogic-version": "1.4.1",
 		"file": "timeline-1648719289.json",
-		"name": "Mansion 1"
+		"name": "Entrancehall"
 	}
 }
