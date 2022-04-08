@@ -54,7 +54,13 @@
 			"character": "character-1638131868.json",
 			"event_id": "dialogic_001",
 			"portrait": "(Don't change)",
-			"text": "WOW! Das war bisher die lauteste Explosion!"
+			"text": "WOW! Das war bisher die [lauteste, größte, gewaltigste] Explosion!"
+		},
+		{
+			"character": "character-1638132302.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "*Seufz*\nIch weiß nicht was mir gerade mehr Sorgen bereiten sollte,, das taube Gefühl auf meiner linken, die Schmerzen auf meiner rechten Seite oder du...\nIch habe dir schon tausend mal gesagt, du sollst nicht einfach etwas am Kern verändern, ohne es vorher mit mir abzusprechen!\nDas ist schon das fünfte mal, dass du uns in die Luft gejagt hast..."
 		},
 		{
 			"animation": "1-fade_in.gd",
@@ -75,12 +81,6 @@
 			},
 			"type": 0,
 			"z_index": 0
-		},
-		{
-			"character": "character-1638132302.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "*Seufz*\nIch weiß nicht was mir gerade mehr Sorgen bereiten sollte,, das taube Gefühl auf meiner linken, die Schmerzen auf meiner rechten Seite oder du...\nIch habe dir schon tausend mal gesagt, du sollst nicht einfach etwas am Kern verändern, ohne es vorher mit mir abzusprechen!\nDas ist schon das fünfte mal, dass du uns in die Luft gejagt hast..."
 		},
 		{
 			"character": "character-1638131868.json",
@@ -243,14 +243,8 @@
 			"wait_seconds": 1
 		},
 		{
-			"call_node": {
-				"arguments": [
-					"\"/Mansion/Mansion 1\""
-				],
-				"method_name": "change_timeline",
-				"target_node_path": "TimelineManager"
-			},
-			"event_id": "dialogic_042"
+			"change_timeline": "timeline-1648719289.json",
+			"event_id": "dialogic_020"
 		}
 	],
 	"metadata": {

@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Art/backgrounds/BasementWall.jpg" type="Texture" id=1]
 [ext_resource path="res://Scenes/Utillities/IngameOptionsButton.tscn" type="PackedScene" id=2]
@@ -10,6 +10,81 @@
 [ext_resource path="res://Scenes/Minigames/PowerlinePuzzle/Fuse/Fuse - 4 Piece.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Scenes/Minigames/PowerlinePuzzle/Fuse/Fuse - 3 Piece.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Scenes/Minigames/PowerlinePuzzle/Fuse/Fuse - Straight.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scripts/Minigames/PowerlinePuzzle/Fuse.gd" type="Script" id=11]
+[ext_resource path="res://Art/Animation/FuseAnimation/Fuse Puzzle/Fuse.tres" type="SpriteFrames" id=12]
+[ext_resource path="res://Art/Shader/Fuse_Outline.tres" type="Material" id=13]
+
+[sub_resource type="Shader" id=1]
+code = "shader_type canvas_item;
+
+uniform vec4 color : hint_color = vec4(0.06, 0.6, 0.8, 0.9);
+uniform float width : hint_range(0, 10) = 5.0;
+uniform int pattern : hint_range(0, 2) = 0; // diamond, circle, square
+uniform bool inside = false;
+uniform bool add_margins = true; // only useful when inside is false
+
+void vertex() {
+	if (add_margins) {
+		VERTEX += (UV * 2.0 - 1.0) * width;
+	}
+}
+
+bool hasContraryNeighbour(vec2 uv, vec2 texture_pixel_size, sampler2D texture) {
+	for (float i = -ceil(width); i <= ceil(width); i++) {
+		float x = abs(i) > width ? width * sign(i) : i;
+		float offset;
+		
+		if (pattern == 0) {
+			offset = width - abs(x);
+		} else if (pattern == 1) {
+			offset = floor(sqrt(pow(width + 0.5, 2) - x * x));
+		} else if (pattern == 2) {
+			offset = width;
+		}
+		
+		for (float j = -ceil(offset); j <= ceil(offset); j++) {
+			float y = abs(j) > offset ? offset * sign(j) : j;
+			vec2 xy = uv + texture_pixel_size * vec2(x, y);
+			
+			if ((xy != clamp(xy, vec2(0.0), vec2(1.0)) || texture(texture, xy).a == 0.0) == inside) {
+				return true;
+			}
+		}
+	}
+	
+	return false;
+}
+
+void fragment() {
+	vec2 uv = UV;
+	
+	if (add_margins) {
+		vec2 texture_pixel_size = vec2(1.0) / (vec2(1.0) / TEXTURE_PIXEL_SIZE + vec2(width * 2.0));
+		
+		uv = (uv - texture_pixel_size * width) * TEXTURE_PIXEL_SIZE / texture_pixel_size;
+		
+		if (uv != clamp(uv, vec2(0.0), vec2(1.0))) {
+			COLOR.a = 0.0;
+		} else {
+			COLOR = texture(TEXTURE, uv);
+		}
+	} else {
+		COLOR = texture(TEXTURE, uv);
+	}
+	
+	if ((COLOR.a > 0.0) == inside && hasContraryNeighbour(uv, TEXTURE_PIXEL_SIZE, TEXTURE)) {
+		COLOR.rgb = inside ? mix(COLOR.rgb, color.rgb, color.a) : color.rgb;
+		COLOR.a += (1.0 - COLOR.a) * color.a;
+	}
+}"
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = SubResource( 1 )
+shader_param/color = Color( 0.06, 0.6, 0.8, 0.9 )
+shader_param/width = 0.0
+shader_param/pattern = 0
+shader_param/inside = false
+shader_param/add_margins = true
 
 [node name="PowerlinePuzzle" type="Control"]
 anchor_right = 1.0
@@ -87,10 +162,23 @@ custom_constants/vseparation = 0
 custom_constants/hseparation = 0
 columns = 5
 
-[node name="Fuse End" parent="PowerlineManager/GridContainer" instance=ExtResource( 7 )]
+[node name="Fuse End" type="TextureButton" parent="PowerlineManager/GridContainer" groups=["Fuse"]]
+margin_right = 120.0
+margin_bottom = 120.0
+rect_min_size = Vector2( 120, 120 )
+rect_pivot_offset = Vector2( 60, 60 )
+expand = true
+script = ExtResource( 11 )
 connections = [ Vector2( 1, 0 ) ]
 isSupply = true
 powered = true
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="PowerlineManager/GridContainer/Fuse End"]
+material = ExtResource( 13 )
+position = Vector2( 60, 59.5 )
+scale = Vector2( 0.3, 0.3 )
+frames = ExtResource( 12 )
+animation = "End"
 
 [node name="Fuse - Straight" parent="PowerlineManager/GridContainer" instance=ExtResource( 10 )]
 margin_left = 120.0
@@ -134,6 +222,7 @@ margin_bottom = 240.0
 connections = [ Vector2( 0, 1 ), Vector2( 0, -1 ) ]
 
 [node name="AnimatedSprite" parent="PowerlineManager/GridContainer/Fuse - Straight3" index="0"]
+material = SubResource( 2 )
 rotation = 1.5708
 
 [node name="Fuse - 3 Piece2" parent="PowerlineManager/GridContainer" instance=ExtResource( 9 )]
@@ -187,6 +276,19 @@ isConsumer = true
 [connection signal="pressed" from="HBoxContainer/AlendraButton" to="." method="_on_AlendraButton_pressed"]
 [connection signal="pressed" from="HBoxContainer/WilsonButton" to="." method="_on_WillsonButton_pressed"]
 [connection signal="win_conidition_fullfilled" from="PowerlineManager" to="." method="_on_PowerlineManager_win_conidition_fullfilled"]
+[connection signal="pressed" from="PowerlineManager/GridContainer/Fuse End" to="PowerlineManager/GridContainer/Fuse End" method="_on_Node_pressed"]
 
 [editable path="PowerlineManager/GridContainer/Fuse - Straight"]
+[editable path="PowerlineManager/GridContainer/Fuse - Straight2"]
+[editable path="PowerlineManager/GridContainer/Fuse - Curve"]
+[editable path="PowerlineManager/GridContainer/Fuse - 4 Piece"]
+[editable path="PowerlineManager/GridContainer/Fuse - 3 Piece"]
+[editable path="PowerlineManager/GridContainer/Fuse - Curve2"]
 [editable path="PowerlineManager/GridContainer/Fuse - Straight3"]
+[editable path="PowerlineManager/GridContainer/Fuse - 3 Piece2"]
+[editable path="PowerlineManager/GridContainer/Fuse - Curve3"]
+[editable path="PowerlineManager/GridContainer/Fuse - Straight4"]
+[editable path="PowerlineManager/GridContainer/Fuse - Curve4"]
+[editable path="PowerlineManager/GridContainer/Fuse - Straight5"]
+[editable path="PowerlineManager/GridContainer/Fuse - Curve5"]
+[editable path="PowerlineManager/GridContainer/Fuse End2"]

@@ -1,6 +1,12 @@
 {
 	"events": [
 		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sieht irgendwie trostloser aus als sonst...\nOb wohl jemand da ist?"
+		},
+		{
 			"background": "res://Art/backgrounds/Mansion_Placeholder.png",
 			"event_id": "dialogic_021"
 		},
@@ -8,12 +14,6 @@
 			"event_id": "dialogic_023",
 			"hide_dialogbox": true,
 			"wait_seconds": 1
-		},
-		{
-			"character": "character-1638131868.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Sieht irgendwie trostloser aus als sonst...\nOb wohl jemand da ist?"
 		},
 		{
 			"audio": "play",
@@ -63,7 +63,7 @@
 			"change_z_index": false,
 			"character": "character-1638131868.json",
 			"event_id": "dialogic_002",
-			"mirror_portrait": false,
+			"mirror_portrait": true,
 			"portrait": "Default",
 			"portrait_definition": "",
 			"position": {
@@ -77,6 +77,38 @@
 			"z_index": 0
 		},
 		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "*Was soll Alendra sagen\t"
+		},
+		{
+			"choice": "Wie gehts dem Lord?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Gut, aber jetzt kannst du mich nichts anderes mehr fragen"
+		},
+		{
+			"choice": "Wie gehts dir?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
 			"character": "character-1648722526.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -86,7 +118,7 @@
 			"character": "character-1638131868.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Verzeihung Willson! Lass mich schnell nochmal klingeln"
+			"text": "Verzeihung Willson! Lass mich schnell nochmal klingeln."
 		},
 		{
 			"character": "character-1648722526.json",
@@ -148,7 +180,7 @@
 		},
 		{
 			"animation": "back_in_left.gd",
-			"animation_length": 0,
+			"animation_length": 1,
 			"change_mirror_portrait": false,
 			"change_z_index": false,
 			"character": "character-1638131868.json",
@@ -188,13 +220,13 @@
 			"character": "character-1648722526.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Der werte Herr Lord, war der Ansicht, dass es im zu unsicher sei die Panther weiter unten zu halten.\nEr meinte: \"Diese Dinger können Bäume hochklettern! Ich werde garantiert nicht zu lassen, dass in meine Gemächer hochklettern!\""
+			"text": "Der werte Herr Lord, war der Ansicht, dass es im zu unsicher sei die Panther weiter unten zu halten.\nEr meinte: \"Diese Dinger können Bäume hochklettern! Ich werde garantiert nicht zu lassen, dass die in meine Gemächer hochklettern!\""
 		},
 		{
 			"character": "character-1638131868.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Ah verstehe. Er schläft also im zweiten Geschoss.\nAber meintest du nicht beim letzten Mal, dass die Bedientesten auf dem Dachboden wohnen?"
+			"text": "Ah verstehe. Deshalb sind seine Gemächer also im zweiten Stockwerk.\nAber meintest du nicht beim letzten Mal, dass die Bedientesten im vierten Stockwerk wohnen?"
 		},
 		{
 			"character": "character-1648722526.json",

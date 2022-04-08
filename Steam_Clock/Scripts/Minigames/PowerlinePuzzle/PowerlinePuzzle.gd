@@ -7,6 +7,14 @@ func _ready():
 		fuse.connect("selected", self, "_on_Fuse_selected")
 
 func _on_Fuse_selected(fuse: Fuse):
+	if currentFuse == fuse:
+		return
+	elif currentFuse == null:
+		fuse.aniSprite.material.set_shader_param("width", 5)
+		currentFuse = fuse
+		return
+	currentFuse.aniSprite.material.set_shader_param("width", 0)
+	fuse.aniSprite.material.set_shader_param("width", 5)
 	currentFuse = fuse
 
 func _on_PowerlineManager_win_conidition_fullfilled():
