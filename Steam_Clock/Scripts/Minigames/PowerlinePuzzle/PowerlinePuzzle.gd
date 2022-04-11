@@ -26,7 +26,6 @@ func _on_AlendraButton_pressed():
 	if currentFuse != null:
 		currentFuse.rotate(true)
 
-
 func _on_WillsonButton_pressed():
 	if currentFuse != null:
 		currentFuse.rotate(false)

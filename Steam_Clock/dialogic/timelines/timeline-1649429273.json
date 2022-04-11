@@ -1,0 +1,67 @@
+{
+	"events": [
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ach herrjemine! Was ist den hier passiert, dass stimmt ja vorne und hinten nicht. Kein Wunder, dass ihr kein Strom habt."
+		},
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "In der Tat. Als der werte Herr, dieses Anwesen errichten lies, hatte er viele Ideen und wollte alle umgesetzt haben.\nDaher musste die Baufirma mit drei verschiedenen Bauplänen arbeiten. Das Ergebniss dieser Planung sehen sie nun hier vor sich. Ein wirres Durcheinander. Ein Ebenbild des Grafens."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Verstehe. Aber naja, es gibt keine Schaltung die ich nicht wieder zum laufen bringen kann. Wir sollten nur aufpassen, dass wir möglichst wenig hier anfassen, dass sieht mir alles sehr instabil aus."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.1",
+		"file": "timeline-1649429273.json",
+		"name": "Powerline - Beginning"
+	}
+}

@@ -77,38 +77,6 @@
 			"z_index": 0
 		},
 		{
-			"character": "",
-			"event_id": "dialogic_010",
-			"options": [
-
-			],
-			"portrait": "",
-			"question": "*Was soll Alendra sagen\t"
-		},
-		{
-			"choice": "Wie gehts dem Lord?",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
-		},
-		{
-			"character": "character-1648722526.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Gut, aber jetzt kannst du mich nichts anderes mehr fragen"
-		},
-		{
-			"choice": "Wie gehts dir?",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
-		},
-		{
-			"event_id": "dialogic_013"
-		},
-		{
 			"character": "character-1648722526.json",
 			"event_id": "dialogic_001",
 			"portrait": "",

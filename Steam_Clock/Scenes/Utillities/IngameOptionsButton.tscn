@@ -55,6 +55,7 @@ margin_right = 120.0
 margin_bottom = 280.0
 rect_min_size = Vector2( 120, 80 )
 text = "Spiel schliesen"
+script = ExtResource( 3 )
 
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Popup/TextureRect/VBoxContainer/ReturnButton" to="." method="_on_ReturnButton_pressed"]

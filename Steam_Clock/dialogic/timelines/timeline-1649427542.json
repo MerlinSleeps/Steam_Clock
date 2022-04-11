@@ -1,0 +1,35 @@
+{
+	"events": [
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nein, nein, nein. So passt das aber nicht meine Gute.\nAber mach dir nichts draus. Dein Genie scheint sich wohl nur auf Irdische Bezüge zu begrenzen."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.1",
+		"file": "timeline-1649427542.json",
+		"name": "Memory - Fail"
+	}
+}

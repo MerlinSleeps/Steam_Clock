@@ -8,6 +8,24 @@
 			"name": "LoopCounter",
 			"type": 0,
 			"value": "0"
+		},
+		{
+			"id": "1649498292-366",
+			"name": "Talk to Lord Mon",
+			"type": 0,
+			"value": "false"
+		},
+		{
+			"id": "1649497702-648",
+			"name": "Helping Wilson",
+			"type": 0,
+			"value": "false"
+		},
+		{
+			"id": "1649498308-146",
+			"name": "Search the Bedroom",
+			"type": 0,
+			"value": ""
 		}
 	]
 }

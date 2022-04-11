@@ -27,7 +27,11 @@ func adjust_size(parentSize: Vector2):
 	progressBar.rect_size = parentSize
 
 func _on_TextureProgress_mouse_entered():
+	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	$TextureProgress/TextureRect.show()
 	mouseInside = true
 
 func _on_TextureProgress_mouse_exited():
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	$TextureProgress/TextureRect.hide()
 	mouseInside = false

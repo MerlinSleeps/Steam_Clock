@@ -1,10 +1,11 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://addons/dialogic/Example Assets/Fonts/DefaultFont.tres" type="DynamicFont" id=1]
 [ext_resource path="res://addons/dialogic/Example Assets/backgrounds/background-2.png" type="Texture" id=2]
 [ext_resource path="res://addons/dialogic/Example Assets/next-indicator/next-indicator.png" type="Texture" id=3]
 [ext_resource path="res://addons/dialogic/Nodes/TextBubble.gd" type="Script" id=4]
 [ext_resource path="res://addons/dialogic/Nodes/NextIndicator.gd" type="Script" id=5]
+[ext_resource path="res://Art/UI/cursor-svg-windows-10-hand-cursor-1207401.png" type="Texture" id=6]
 
 [sub_resource type="StyleBoxEmpty" id=1]
 
@@ -139,6 +140,19 @@ margin_bottom = 41.0
 texture = ExtResource( 3 )
 stretch_mode = 4
 script = ExtResource( 5 )
+
+[node name="Cursor" type="TextureRect" parent="NextIndicatorContainer/NextIndicator"]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -10.0
+margin_top = -10.0
+margin_right = 10.0
+margin_bottom = 10.0
+texture = ExtResource( 6 )
+expand = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="NextIndicatorContainer/NextIndicator"]
 autoplay = "Up and down"

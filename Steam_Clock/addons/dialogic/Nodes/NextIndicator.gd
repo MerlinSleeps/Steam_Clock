@@ -20,11 +20,15 @@ func set_hovering_time(time) -> void:
 	focus_time = time
 
 func _on_NextIndicator_mouse_entered():
+	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	$Cursor.show()
 	if Global.hover_mode:
 		success = true
 		next_timer.start(focus_time)
 
 func _on_NextIndicator_mouse_exited():
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	$Cursor.hide()
 	if Global.hover_mode:
 		success = false
 		next_timer.stop()
@@ -35,6 +39,8 @@ func _on_Timer_timeout():
 		simulate_input()
 
 func simulate_input():
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	$Cursor.hide()
 	var ev = InputEventAction.new()
 	ev.action = Dialogic.get_action_button()
 	ev.pressed = true

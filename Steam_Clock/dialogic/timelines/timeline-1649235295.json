@@ -285,6 +285,30 @@
 			"text": "Kommt später"
 		},
 		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ich schätze zwar, das Angebot, aber es sieht aktuell etwas eng aus bei uns. Wenn sie mir sagen wo sie zuletzt den Schlüssel gesehen haben, könnte ich dort nach ihm suchen."
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Dir ist bewusst, dass es sich nicht ziehmt, die Einladung eines Grafens abzulehnen? Jedoch könnte ich den Schlüssel natürlich selbst gebrauchen.\nZudem sehe ich diesen Funken in deinen Augen und diesen Funken möchte ich natürlich möglichst schnell befeuern.\nNun denn, tue was du nicht lassen kannst. Tue was Wilson nicht konnte. Tue worauf ich keine Lust habe."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Vielen Dank! Also wo haben sie ihn den zuletzt gesehen?"
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ich meine ihn zuletzt an meinem Leib baumeln zu"
+		},
+		{
 			"choice": "Wilson helfen",
 			"condition": "",
 			"definition": "",
@@ -295,7 +319,31 @@
 			"character": "character-1638131868.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Ich denke ich helfe Wilson, dabei die Leitung zu reparieren"
+			"text": "Ihr Strom ist ausgefallen? Das klingt doch wie gemacht für mich! Ich bestehe quasi aus Elektrizität.\nAußerdem könnte ich mich so für das Geld revanchieren!"
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Für wahr. Das klingt wie eine gute Idee. Wilson würde es wahrscheinlich ohnehin nur schlimmer machen."
+		},
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[speed=5]....."
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nun denn! Abgemacht. Solltest du es schaffen mein Anwesen aufs neue erstrahlen zu lassen, sehe ich uns beide als quitt an.\nAlso ab ans Werk! Wilson führ Alendra doch runter zum Sicherungskasten."
+		},
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sehr wohl. Wenn sie mir folgen mögen. Der Sicherungkasten befindet sich im Keller."
 		},
 		{
 			"change_scene": "res://Scenes/Minigames/PowerlinePuzzle/PowerlinePuzzle.tscn",
