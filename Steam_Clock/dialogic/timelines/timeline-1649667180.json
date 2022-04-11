@@ -1,0 +1,21 @@
+{
+	"events": [
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hmm... Verzeihung ich war mir sicher dies würde helfen."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ach, keine Sorge. Ich bin mir ziemlich sicher wir haben es gleich."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.1",
+		"file": "timeline-1649667180.json",
+		"name": "Powerline - Wilson - First Turn"
+	}
+}

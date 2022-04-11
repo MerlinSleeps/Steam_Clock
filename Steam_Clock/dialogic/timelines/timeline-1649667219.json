@@ -1,0 +1,21 @@
+{
+	"events": [
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Erneut, Fehlschlag.... [pause=2] Ich würde vorschlagen sie fahren lieber ohne mich fort. Wie der Graf schon meinte, ich bin für solcherlei Tätigkeiten nicht zugebrauchen."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[speed=1]Wilson [speed=20] ..."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.1",
+		"file": "timeline-1649667219.json",
+		"name": "Powerline - Wilson - Last Turn"
+	}
+}

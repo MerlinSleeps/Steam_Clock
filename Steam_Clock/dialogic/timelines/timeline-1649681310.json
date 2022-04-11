@@ -1,0 +1,91 @@
+{
+	"events": [
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hervorragend Wilson! Das wars das Haus sollte wieder Strom haben. Ohne dich hätte ich es nicht geschafft."
+		},
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ich möchte nur eines klarstellen. Es ist mir durchaus klar, dass sie durchaus im Stande sind solche Tätigkeiten im Alleingang zu bewältigen."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nunja, ich wollte nur..."
+		},
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Es ist okay, Alendra. Ich danke dir."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Wilson? Hast du mich gerade gedutzt? "
+		},
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ist dem so? Sie müssen sich wohl verhört haben. Nun denn wollen wir uns zurück zum Grafen gehen?"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sehr gern doch."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.1",
+		"file": "timeline-1649681310.json",
+		"name": "Powerline - Wilson won"
+	}
+}
