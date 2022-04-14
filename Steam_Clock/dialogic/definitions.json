@@ -10,14 +10,14 @@
 			"value": "0"
 		},
 		{
-			"id": "1649498292-366",
-			"name": "Talk to Lord Mon",
+			"id": "1649497702-648",
+			"name": "Helping Wilson - Won",
 			"type": 0,
 			"value": "false"
 		},
 		{
-			"id": "1649497702-648",
-			"name": "Helping Wilson",
+			"id": "1649498292-366",
+			"name": "Talk to Lord Mon - Won",
 			"type": 0,
 			"value": "false"
 		},
@@ -25,7 +25,37 @@
 			"id": "1649498308-146",
 			"name": "Search the Bedroom",
 			"type": 0,
-			"value": ""
+			"value": "false"
+		},
+		{
+			"id": "1649940881-266",
+			"name": "Helping Wilson - Wilson Won",
+			"type": 0,
+			"value": "false"
+		},
+		{
+			"id": "1649933100-274",
+			"name": "Talk to Lord Mon - CurrentRun",
+			"type": 0,
+			"value": "false"
+		},
+		{
+			"id": "1649933122-216",
+			"name": "Helping Wilson - CurrentRun",
+			"type": 0,
+			"value": "true"
+		},
+		{
+			"id": "1649948961-185",
+			"name": "Nightstand",
+			"type": 0,
+			"value": "false"
+		},
+		{
+			"id": "1649949002-575",
+			"name": "Fireplace",
+			"type": 0,
+			"value": "false"
 		}
 	]
 }

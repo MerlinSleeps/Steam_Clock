@@ -58,12 +58,12 @@
 		},
 		{
 			"animation": "back_in_left.gd",
-			"animation_length": 1,
+			"animation_length": 2,
 			"change_mirror_portrait": false,
 			"change_z_index": false,
 			"character": "character-1638131868.json",
 			"event_id": "dialogic_002",
-			"mirror_portrait": true,
+			"mirror_portrait": false,
 			"portrait": "Default",
 			"portrait_definition": "",
 			"position": {
@@ -176,7 +176,7 @@
 			"character": "character-1648722526.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "....................  [pause=1]  Ausgezeichnet meine Dame.\nIch gehe davon aus, sie haben ein Anliegen mit dem Herrn des Hauses?"
+			"text": "[speed=20]....................  [speed=1] Ausgezeichnet meine Dame.\nIch gehe davon aus, sie haben ein Anliegen mit dem Herrn des Hauses?"
 		},
 		{
 			"character": "character-1638131868.json",
@@ -222,6 +222,6 @@
 	"metadata": {
 		"dialogic-version": "1.4.1",
 		"file": "timeline-1648719289.json",
-		"name": "Entrancehall"
+		"name": "Entrancehall - 1"
 	}
 }

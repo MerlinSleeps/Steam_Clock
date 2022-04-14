@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/IMG_7950.png-d1220ac41a5d37d8aea943d84ec3e73e.stex"
+path="res://.import/DialogueChoiceBoxSelectedFull.png-344af36f9182b3627a01a8ffd26ae9c6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/portraits/IMG_7950.png"
-dest_files=[ "res://.import/IMG_7950.png-d1220ac41a5d37d8aea943d84ec3e73e.stex" ]
+source_file="res://Art/UI/DialogBox/DialogueChoiceBoxSelectedFull.png"
+dest_files=[ "res://.import/DialogueChoiceBoxSelectedFull.png-344af36f9182b3627a01a8ffd26ae9c6.stex" ]
 
 [params]
 

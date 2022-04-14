@@ -1,0 +1,339 @@
+{
+	"events": [
+		{
+			"background": "res://Art/backgrounds/master's room.jpg",
+			"event_id": "dialogic_021"
+		},
+		{
+			"animation": "back_in_left.gd",
+			"animation_length": 2,
+			"animation_wait": false,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"animation": "back_in_left.gd",
+			"animation_length": 2,
+			"animation_wait": false,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"condition": "",
+			"definition": "1649933122-216",
+			"event_id": "dialogic_012",
+			"value": "true"
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ah da seid ihr ja wieder ihr jungen Hüpfer! Und sprecht! Kann ich endlich wieder meine Kronleuchter anschalten?"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sehen sie selbst."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Audio/Effects/switch-5.wav",
+			"volume": 0
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 0.5
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "",
+			"volume": 0
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Da brat mir doch jemand nen Storch. [pause=1] Möglichst gut durch mit Kartoffeln und Worcestersauce."
+		},
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sehr wohl, mein Lord."
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Hervorragend. Und ich sehe das Licht funktioniert wieder. Das habe ich doch sicher dir zu verdanken, meine werte Alendra?"
+		},
+		{
+			"choice": "Bescheiden",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ach das ist doch nicht der Rede wert. Sie haben uns schon deutlich mehr geholfen mit ihren Spenden, außerdem kann ich sie ja hier nicht im dunklen lassen."
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Du bist wirklich ein bemerkenswertes Individiun.  Nur wünschte ich hätte den Schlüssel für diesen vermaledeiten Safe."
+		},
+		{
+			"choice": "Wilson loben",
+			"condition": "",
+			"definition": "1649940881-266",
+			"event_id": "dialogic_011",
+			"value": "true"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "sss"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ähm... Verzeihen sie, aber da scheint etwas vom Kronleuchter aus einen Schatten auf ihre Gla.... auf ihr Haupt zu werfen."
+		},
+		{
+			"animation": "back_out_down.gd",
+			"animation_length": 2,
+			"animation_repeat": 1,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_position": false,
+			"change_z_index": false,
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "(Don't change)",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": false,
+			"wait_seconds": 1
+		},
+		{
+			"animation": "back_in_down.gd",
+			"animation_length": 2,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ist das ihr Schlüssel? "
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Potzblitz! Wie ist der den da oben gelandet?! Da muss ich wohl mal wieder zu lang an der alten Opium Pumpe gehangen haben. Hahaha...[pause=1][speed=20] mmh.....\nNun den diesen Umschlag hast du dir nun wirklich verdient."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "**Insert rewarding sound and item image**"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ich danke ihnen vielmals! Mit diesem Geld kann ich genug Materialien kaufen, um die Maschine fertig zu stellen! Und ich hab sogar genug, um für Süßkram für Cas."
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Es freut mich sehr das ich dir helfen konnte. Zudem strahlt dank dir mein Anwesen wieder! Schau nur die Beleuchtung blendet bereits die Menschen auf den Straßen. Ausgezeichnet."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Und dir danke ich natürlich auch, Wilson, für die Hilfe beim reparieren der Sicherungen."
+		},
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ich bitte sie, das war allein ihr Verdienst, meine werte Dame,"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nun den, jetzt muss ich mich aber losmachen. Je später ich beim Markt, desto teurer werden die Preise für jedes Ersatzteil.\nDennoch vielen Dank und besuchen sie uns beide gerne mal in der Werkstatt!"
+		},
+		{
+			"animation": "back_out_left.gd",
+			"animation_length": 3,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"animation": "4-fade_out.gd",
+			"animation_length": 2,
+			"animation_wait": false,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"animation": "4-fade_out.gd",
+			"animation_length": 2,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.1",
+		"file": "timeline-1649939743.json",
+		"name": "Master's room - 2"
+	}
+}

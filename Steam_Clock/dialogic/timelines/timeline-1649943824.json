@@ -1,0 +1,51 @@
+{
+	"events": [
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "So jetzt noch zum Markt und dann schnell zurück zu Cas. Ich wüsste nur gern was ich an der Maschine verändert habe.... Huh? Meine Handgelenk..?!"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "expand_light",
+				"target_node_path": "TimelineManager"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "*Man sieht die Uhr am Handgelenk von Alendra. Sie dreht sich gegen den Uhrzeigersinn bis plötzlich ein blaues Licht von der Uhr ausgeht und Alendra einhüllt."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.1",
+		"file": "timeline-1649943824.json",
+		"name": "Alendra leaves"
+	}
+}

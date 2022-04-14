@@ -8,14 +8,14 @@
 	"name": "Cassidy",
 	"nickname": "Cass",
 	"nickname_bool": true,
-	"offset_x": -100,
-	"offset_y": 200,
+	"offset_x": -20,
+	"offset_y": 462,
 	"portraits": [
 		{
 			"name": "Default",
-			"path": "res://portraits/IMG_7950.png"
+			"path": "res://Art/portraits/cassidy.png"
 		}
 	],
-	"scale": 15,
+	"scale": 100,
 	"theme": ""
 }
