@@ -1,0 +1,181 @@
+{
+	"events": [
+		{
+			"animation": "instant_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"animation": "instant_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"condition": "",
+			"definition": "1649498292-366",
+			"event_id": "dialogic_012",
+			"value": "false"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "So nun, erzählen sie schon. Wenn sie lieber Wilson losschicken, als mich um ihre Technik zu fixen, dann muss doch was dahinter stecken."
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hahaha. Bin ich den wirklich schon so durschaubar für dich geworden? Aber in der Tat hätte ich da was womit du mir helfen könntest.\nVielleicht ist es dir ja schon aufgefallen, aber ich nicht mehr Jüngste, soll heißen ich habe schon einiges erlebt. Stetig auf der Suche nach dem nähsten Wunder in dieser Welt.\nWas wäre ich den für einer abzutreten, ohne alles mitzunehmen was dieses Leben zu bieten hat und noch mehr! Und jetzt sitz ich hier, reicher als jeder vor mir. \nGekauft habe ich die Welt. Bezwungen habe ich jedes Tier und jede Pflanze. Bestiegen wurde jeder Berg und ich sah herab auf die Welt vom höchsten Punkt dieser Welt. \nUnd du kannst mir glauben es war kein leichtes Wilson die ganze Zeit befehle zu erteilen, während er mich auf seinem Rücken trug.\nDoch nach all diesen irdischen Erfolgen bin ich nun bereit für das überirdische. Exakt, überirdisch! Ebendrum habe ich es mir zum Ziel gesetzt Leute mit gewissen Begabungen zu finden!"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Überirdisch? Begabung? Ich bin mir nicht sicher, ob ich da gerade folgen kann."
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Es ist ihm Grunde ganz einfach. Ich halte schon nach einiger Zeit Ausschau nach Leuten, die etwas Besonderes an sich haben.\nSei es Intelligenz, körperliches Geschick oder die Fähigkeit Leute auf eine ganz eigene Weise zu beeinflussen, zu besitzen.\nFür eben solche Leute habe ich eigenens einen kleinen Test entwickelt, um ihre Begabung zu prüfen? Sag doch meine Liebe, hast bereits von der Prozedur des Kartenlegens gehört?"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Jaaaaaaa.... ich muss aber gestehen, dass ich mir immer noch nicht sicher bin, wodrauf sie hinaus wollen. Ehrlich gesagt, klingt das ganze selbst für ihre Verhältnisse etwas wirr."
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ach Papalapapp. Es ist ganz einfach, Ich lege für dich einfach ein paar Karten, meiner selbst erstellten Karten aus. Jeweils zwei Karten repräsentieren ein Paar.\nSolltest du es schaffen, ohne einmal falsch zu liegen alle Paare korrekt aufzudecken. Wäre dies der Beweis, das du etwas Besonderes bist!"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ah jaaa..... Ihnen ist schon bewusst, dass Tarrotkarten so nicht funktionieren? Und warum sind es, denn Parre?"
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Na ganz einfach. Ich habe einfach alle Bilder die ich gemalt habe in der Mitte zerschniten und Tada! Schon hatte ich aus einer Karte zwei gemacht.\nDie Idee kamm mir als ich Essens Spenden verteilt habe, nach dem Mineneinsturz. Einfach eine Ratio pro zwei Arbeiter. Einer meiner kleveren Momente."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": ""
+		},
+		{
+			"choice": "Legen wir los",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hervorragend!"
+		},
+		{
+			"choice": "Was gibts für mich?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Meine uneingeschränkte Dankbarkeit und was du sonst so willst. Solltest du mal eine Niere brauchen, Wilson hat noch fast zwei übrig."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ach ist schon in Ordnung freut mich, dass ich ihnen helfen kann."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1649498292-366",
+			"event_id": "dialogic_012",
+			"value": "true"
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nun da wir hier zu zweit sitzen, meine Werteste, hätte ich dir einen Vorschlag zu unterbreiten. Weißt du..."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh ja, ich weiß! Also wie wärs wenn sie die Karten direkt auf den Tisch legen, damit wir loslegen können?"
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Na Donnerweter, aber auch! Ich wusste doch ich habe dieses Funken in deinen Augen gesehen. Na dann wollen wir mal!"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"background": "",
+			"event_id": "dialogic_021"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.1",
+		"file": "timeline-1650356348.json",
+		"name": "Beginning"
+	}
+}

@@ -1,0 +1,45 @@
+{
+	"events": [
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[speed=1]Einen Moment. [pause=1.5] [speed=8]Es tut mir leid, diese Karte sollte da nicht liegen."
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "hide_henry",
+				"target_node_path": "MemoryGame"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Alles in Ordnung bei ihnen? Sie wirken auf einmal ganz anders."
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[speed=8]Alles gut. Ich weiß nur nicht mehr, was es mit dieser Karte auf sich hat. Ich habe die andere Hälfte verloren und leider auch meine Erinnerung an ihre Bedeutung...\n[speed=3]Nun denn. Fahr doch bitte fort."
+		},
+		{
+			"definition": "1650374371-918",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "true"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.1",
+		"file": "timeline-1650376374.json",
+		"name": "Henry"
+	}
+}

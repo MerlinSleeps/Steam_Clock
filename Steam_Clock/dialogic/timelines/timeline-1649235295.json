@@ -22,7 +22,7 @@
 				"4": false
 			},
 			"type": 0,
-			"z_index": 0
+			"z_index": 1
 		},
 		{
 			"animation": "[Default]",
@@ -42,7 +42,7 @@
 				"4": false
 			},
 			"type": 0,
-			"z_index": 0
+			"z_index": 2
 		},
 		{
 			"animation": "[Default]",
@@ -282,12 +282,6 @@
 			"character": "character-1638131868.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Kommt später"
-		},
-		{
-			"character": "character-1638131868.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
 			"text": "Ich schätze zwar, das Angebot, aber es sieht aktuell etwas eng aus bei uns. Wenn sie mir sagen wo sie zuletzt den Schlüssel gesehen haben, könnte ich dort nach ihm suchen."
 		},
 		{
@@ -306,7 +300,82 @@
 			"character": "character-1648720722.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Ich meine ihn zuletzt an meinem Leib baumeln zu"
+			"text": "Ich meine ihn zuletzt an meinem Leib baumeln gesehen zu haben. Als Wilson mich in meinem Schlafzimmer anzog.\nDa es sich hierbei immerhin um den Zugang zu meinem Vermögen handelt, gebe ich dir auch die volle Erlaubnis mein Zimmer zu durchsuchen."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Vielen Dank auch. Ich mach mich direkt auf die Suche!"
+		},
+		{
+			"animation": "back_out_left.gd",
+			"animation_length": 2,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 1
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"change_timeline": "timeline-1649947796.json",
+			"event_id": "dialogic_020"
 		},
 		{
 			"choice": "Wilson helfen",
@@ -357,10 +426,8 @@
 			"value": ""
 		},
 		{
-			"character": "character-1638131868.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Kommt später"
+			"change_timeline": "timeline-1650356348.json",
+			"event_id": "dialogic_020"
 		},
 		{
 			"event_id": "dialogic_013"

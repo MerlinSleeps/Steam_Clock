@@ -56,6 +56,36 @@
 			"name": "Fireplace",
 			"type": 0,
 			"value": "false"
+		},
+		{
+			"id": "1649949147-995",
+			"name": "Closet",
+			"type": 0,
+			"value": "false"
+		},
+		{
+			"id": "1650374286-787",
+			"name": "Weird",
+			"type": 0,
+			"value": "false"
+		},
+		{
+			"id": "1650374259-648",
+			"name": "Rich",
+			"type": 0,
+			"value": "false"
+		},
+		{
+			"id": "1650374305-366",
+			"name": "Sexual",
+			"type": 0,
+			"value": "false"
+		},
+		{
+			"id": "1650374371-918",
+			"name": "Henry",
+			"type": 0,
+			"value": "false"
 		}
 	]
 }

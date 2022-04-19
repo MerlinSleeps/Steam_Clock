@@ -28,7 +28,50 @@
 			"character": "character-1638131868.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Mmhh. Das ist also das Schlafzimmer von Lord Mon. Sieht zumindest deutlich besser aus als bei uns in der Werkstatt. Ich sollte ihm mal drum bitten nicht so streng mit Wilson zu sein."
+			"text": "Mmhh. Das ist also das Schlafzimmer von Lord Mon. Sieht zumindest deutlich besser aus als bei uns in der Werkstatt. \nIch sollte ihm mal drum bitten nicht so streng mit Wilson zu sein. Doch jetzt sollte ich erstmal anfangen den Schlüssel zu suchen."
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1649951976",
+			"index": 0,
+			"name": "SearchOptions"
+		},
+		{
+			"condition": "",
+			"definition": "1649948961-185",
+			"event_id": "dialogic_012",
+			"value": "true"
+		},
+		{
+			"condition": "",
+			"definition": "1649949002-575",
+			"event_id": "dialogic_012",
+			"value": "true"
+		},
+		{
+			"condition": "",
+			"definition": "1649949147-995",
+			"event_id": "dialogic_012",
+			"value": "true"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Puh, das war wohl nichts. Es hilft wohl nichts, geh ich erstmal zurück ins Herrenzimmer."
+		},
+		{
+			"change_timeline": "timeline-1649939743.json",
+			"event_id": "dialogic_020"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
 		},
 		{
 			"character": "character-1638131868.json",
@@ -37,21 +80,94 @@
 
 			],
 			"portrait": "",
-			"question": "Wo könnte ich noch suchen?"
+			"question": ""
 		},
 		{
-			"choice": "",
+			"choice": "Schrank",
 			"condition": "",
-			"definition": "",
+			"definition": "1649949147-995",
 			"event_id": "dialogic_011",
-			"value": ""
+			"value": "false"
 		},
 		{
-			"choice": "",
+			"definition": "1649949147-995",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "true"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Der Kleiderschrank ist doch bestimmt mit Klamotten in deren Taschen alles mögliche vergessen worden ist. Schauen wir doch mal.\nMmmh genug Sakos um eine ganze Gala zu kleiden, ein paar Hose mit Löchern hinten, ein paar mit Löchern vorne. Ist diese Krawatte einfach nur ein dünner Goldbarren?\nUnd hier stehe ich mit einem meiner zwei Mäntel... *Seufz* Vielleicht bleibt ja später genug Geld übrig, dass ich mir neue Handschuhe kaufen kann.\nMhh was haben wir den hier? Der Mantel sieht aus als wäre er seit Jahren nicht getragen worden, aber da scheint was in der innen Tasche zu sein."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "**Insert casket Image**"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Eine alte Schatule. Sieht aus als hätte da jemand einen Namen oben eingraviert: \"Henry\".\nMuss wohl ein Freund des Grafens sein, aber warum hat er eine Schatulle mit seinem Namen und dazu noch eine verriegelte. Naja ich kann mir kaum vorstellen, dass da ein Schlüssel reinpasst. Lege ich sie erstmal zurück und schau mich weiter um."
+		},
+		{
+			"anchor_id": "anchor-1649951976",
+			"event_id": "dialogic_016"
+		},
+		{
+			"choice": "Kamin",
 			"condition": "",
-			"definition": "",
+			"definition": "1649949002-575",
 			"event_id": "dialogic_011",
-			"value": ""
+			"value": "false"
+		},
+		{
+			"definition": "1649949002-575",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "true"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Vielleicht lässt sich was auf dem Kaminzims finden. Immerhin würde er da so offensichtlich liegen, dass man in erstrecht nicht dort sucht. Wobei ich ja jetzt hier suche....\nSchade, hier ist nichts. Wäre ja auch zu schöm gewesen. Komisch da scheint was im Kamin zu liegen. Sieht aus wie Fotos, alte Fotos.\nLeider lässt sich nicht erkennen was drauf ist. Außer.... der Graf, aber jünger. Immernoch älter, als jede andere Person die ich je kennen gelernt habe, aber jünger.\nWarum sollte er alte Fotos von sich verbrennen? So langsam beschleicht mich das Gefühl. Ich finde hier alles nur keinen Schlüssel."
+		},
+		{
+			"anchor_id": "anchor-1649951976",
+			"event_id": "dialogic_016"
+		},
+		{
+			"choice": "Nachttisch",
+			"condition": "",
+			"definition": "1649948961-185",
+			"event_id": "dialogic_011",
+			"value": "false"
+		},
+		{
+			"definition": "1649948961-185",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "true"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Der Nachtstand vielleicht? Immerhin habe ich ja die Erlaubnis das Zimmer zu durchsuchen...\nSchau ich mal in der oberen Schublade rein, was da so[speed=40]... [speed=5] NEIN. Da ist er nicht drin und ich habe nichts gesehen."
+		},
+		{
+			"anchor_id": "anchor-1649951976",
+			"event_id": "dialogic_016"
 		},
 		{
 			"event_id": "dialogic_013"

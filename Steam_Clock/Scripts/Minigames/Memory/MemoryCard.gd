@@ -1,6 +1,7 @@
 extends ColorRect
+class_name MemoryCard
 
-export(String) var start_text = "Value"
+export(String) var pairTag = "Value"
 export(float) var focus_time = 2 ## default time before input gets sent
 
 onready var label = $Label
@@ -13,7 +14,7 @@ var selected = false
 signal card_selected(card)
 
 func _ready():
-	set_text(start_text)
+	set_text(pairTag)
 
 func set_text(newText):
 	label.text = newText
@@ -40,11 +41,11 @@ func _on_Timer_timeout():
 
 func _on_MemoryCard_card_selected(card):
 	selected = true
-	label.show()
+	label.self_modulate.a = 255
 
 func _on_MemoryGame_card_deselected():
 	selected = false
-	label.hide()
+	label.self_modulate.a = 0
 
 func simulate_input():
 	select()

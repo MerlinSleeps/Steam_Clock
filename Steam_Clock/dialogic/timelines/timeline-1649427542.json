@@ -24,12 +24,27 @@
 			"character": "character-1648720722.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Nein, nein, nein. So passt das aber nicht meine Gute.\nAber mach dir nichts draus. Dein Genie scheint sich wohl nur auf Irdische Bezüge zu begrenzen."
+			"text": "Nein, nein, nein. So passt das aber nicht meine Gute. Aber mach dir nichts draus. Dein Genie scheint sich wohl nur auf irdische Bezüge zu begrenzen.\nNaja, lassen wir es doch fürs erste sein und lass mich dir doch lieber davon erzählen wie ich einst[ einen Stier beide Hörner in die Nase rammte, die Weltmeisterschaft im Rückenschießen gewann, ich als erster Mensch die Schallmauer durchbrach und das nackt]. Es war damals..."
+		},
+		{
+			"background": "res://Art/backgrounds/BLACK.png",
+			"event_id": "dialogic_021",
+			"fade_duration": 3
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "END"
+		},
+		{
+			"change_timeline": "timeline-1649939743.json",
+			"event_id": "dialogic_020"
 		}
 	],
 	"metadata": {
 		"dialogic-version": "1.4.1",
 		"file": "timeline-1649427542.json",
-		"name": "Memory - Fail"
+		"name": "Fail"
 	}
 }

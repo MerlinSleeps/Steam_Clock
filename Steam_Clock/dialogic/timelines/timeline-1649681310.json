@@ -97,11 +97,15 @@
 			"random_upper_limit": 100,
 			"set_random": false,
 			"set_value": "true"
+		},
+		{
+			"change_timeline": "timeline-1649939743.json",
+			"event_id": "dialogic_020"
 		}
 	],
 	"metadata": {
 		"dialogic-version": "1.4.1",
 		"file": "timeline-1649681310.json",
-		"name": "Powerline - Wilson won"
+		"name": "Wilson won"
 	}
 }

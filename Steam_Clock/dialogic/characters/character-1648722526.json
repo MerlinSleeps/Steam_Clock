@@ -8,12 +8,12 @@
 	"name": "Wilson",
 	"nickname": "",
 	"nickname_bool": false,
-	"offset_x": 0,
-	"offset_y": 0,
+	"offset_x": -40,
+	"offset_y": 350,
 	"portraits": [
 		{
 			"name": "Default",
-			"path": ""
+			"path": "res://Art/portraits/wilson.png"
 		}
 	],
 	"scale": 100,

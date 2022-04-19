@@ -41,6 +41,12 @@
 			"z_index": 0
 		},
 		{
+			"condition": "",
+			"definition": "1649497702-648",
+			"event_id": "dialogic_012",
+			"value": "false"
+		},
+		{
 			"character": "character-1638131868.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -56,7 +62,7 @@
 			"character": "character-1638131868.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Verstehe. Aber naja, es gibt keine Schaltung die ich nicht wieder zum laufen bringen kann. Wir sollten nur aufpassen, dass wir möglichst wenig hier anfassen, dass sieht mir alles sehr instabil aus.\n*Sieht nicht sonderlich schwer aus zu reparieren. Vielleicht schaffe ich es ja das Wilson einen kleinen Erfolg hat*\nPuhh... Die Sicherung scheinen wirklich stark zu klemmen, nach rechts geht aber nach links rührt sich kein Stück. Wilson probier du doch mal, die Sicherung zu stehen."
+			"text": "Verstehe. Aber naja, es gibt keine Schaltung die ich nicht wieder zum laufen bringen kann. Wir sollten nur aufpassen, dass wir möglichst wenig hier anfassen, dass sieht mir alles sehr instabil aus.\n(Sieht nicht sonderlich schwer aus zu reparieren. Vielleicht schaffe ich es ja das Wilson einen kleinen Erfolg hat)\nPuhh... Die Sicherung scheinen wirklich stark zu klemmen, nach rechts geht aber nach links rührt sich kein Stück. Wilson probier du doch mal, die Sicherung zu stehen."
 		},
 		{
 			"character": "character-1648720722.json",
@@ -130,11 +136,94 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Hervorragend! [pause=1] Dann drehe ich alle Sicherung rechts herum und du links. Damit würdest du mir einen großen Gefallen tun!"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1649497702-648",
+			"event_id": "dialogic_012",
+			"value": "true"
+		},
+		{
+			"condition": "==",
+			"definition": "1648564343-648",
+			"event_id": "dialogic_012",
+			"value": "2"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Da haben wirs ja. Kann ja nicht schwieriger sein als beim letzten Mal. Dann erledigen wir es mal schnell Wilson"
+		},
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sehr wohl. Doch wenn mir die Frage gestattet wäre, was meinen sie mit letztem Mal? Ich kann mich nicht daran erinnern, dass sie bereits hier unten gewesen sind."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "(Oh Mist. Nicht schon wieder...) Achso ja, ich meinte die andere Elektrische Leitung im Anwesen dieses anderen Grafen, Lord [speed=40]...[speed=3] Dennis!"
+		},
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Lord Dennis? Sie meinen den 135. Prinzen des Südwestlichen Dodogebirges? Mir war nicht bekannt, das sie so gut vernetzt sind."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ah du kennst mich. Immer auf der Jagd nach neuen Konktaten .... und Dodos."
+		},
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nun denn wollen wir uns nun an die Reperatur wagen?"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Aber natürlich. Du kannst mir bestimmt gut aushelfen. Schau mal hier, ...."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Also wollen wir direkt loslegen?"
+		},
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sehr gerne."
+		},
+		{
+			"event_id": "dialogic_013"
 		}
 	],
 	"metadata": {
 		"dialogic-version": "1.4.1",
 		"file": "timeline-1649429273.json",
-		"name": "Powerline - Beginning"
+		"name": "Beginning"
 	}
 }

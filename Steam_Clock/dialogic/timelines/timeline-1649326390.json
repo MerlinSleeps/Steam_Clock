@@ -44,18 +44,52 @@
 			"character": "character-1638131868.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Hervorragend! Jetzt sollte das Anwesen wieder so protzerisch wie eh und je"
+			"text": "Hervorragend! Jetzt sollte das Anwesen wieder so protzerisch wie eh und je. Vielen Dank für deine Hilfe, Wilson."
+		},
+		{
+			"condition": ">",
+			"definition": "1648564343-648",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"condition": "",
+			"definition": "1649497702-648",
+			"event_id": "dialogic_012",
+			"value": "true"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "(Diesmal ging es sogar noch schnell. Ich hoffe ich werde nicht geübt darin, die Leitungen hier zu reparieren)"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
 		},
 		{
 			"character": "character-1648722526.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Noice"
+			"text": "Kein Dank notwendig. Ich war letzlich nur anwesend, während sie es mit gekonnten Handgriffen geschafft haben."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Wie du meinst. Na denn, sollen wir zum Lord zurück?"
+		},
+		{
+			"change_timeline": "timeline-1649939743.json",
+			"event_id": "dialogic_020"
 		}
 	],
 	"metadata": {
 		"dialogic-version": "1.4.1",
 		"file": "timeline-1649326390.json",
-		"name": "Powerline - You won"
+		"name": "You won"
 	}
 }
