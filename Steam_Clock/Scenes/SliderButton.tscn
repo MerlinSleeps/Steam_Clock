@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Scripts/SliderButton.gd" type="Script" id=1]
 [ext_resource path="res://Art/UI/ProgressBar.png" type="Texture" id=2]
-[ext_resource path="res://Art/UI/cursor-svg-windows-10-hand-cursor-1207401.png" type="Texture" id=3]
+[ext_resource path="res://Art/UI/UI2/Cursor.png" type="Texture" id=3]
 
 [node name="SliderButton" type="Control"]
 anchor_right = 1.0

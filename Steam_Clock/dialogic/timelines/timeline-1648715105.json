@@ -1,13 +1,37 @@
 {
 	"events": [
 		{
-			"character": "",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Test"
+			"background": "res://Art/backgrounds/werkstatt bg.jpg",
+			"event_id": "dialogic_021"
 		},
 		{
-			"character": "",
+			"animation": "back_in_left.gd",
+			"animation_length": 2,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "This is preview text. You can use  [color=#A5EFAC]BBCode[/color] to style it. [wave amp=50 freq=2]You can even use effects![/wave] [br]Hey, i am Alendra!"
+		},
+		{
+			"character": "character-1638131868.json",
 			"event_id": "dialogic_010",
 			"options": [
 
@@ -23,32 +47,107 @@
 			"value": ""
 		},
 		{
-			"character": "",
+			"animation": "headshake.gd",
+			"animation_length": 2,
+			"animation_repeat": 2,
+			"change_mirror_portrait": false,
+			"change_position": false,
+			"change_z_index": false,
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "(Don't change)",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 2,
+			"z_index": 0
+		},
+		{
+			"character": "character-1638131868.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Test"
 		},
 		{
-			"choice": "Answer",
+			"choice": "Better Answer",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
 		},
 		{
-			"character": "",
+			"animation": "tada.gd",
+			"animation_length": 2,
+			"animation_repeat": 2,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_position": false,
+			"change_z_index": false,
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "(Don't change)",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 2,
+			"z_index": 0
+		},
+		{
+			"character": "character-1638131868.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Test"
+			"text": "Test. That was akward..."
 		},
 		{
 			"event_id": "dialogic_013"
 		},
 		{
-			"character": "",
+			"character": "character-1638131868.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Test End"
+			"text": "Test End. Start Puzzle"
+		},
+		{
+			"background": "res://Art/backgrounds/BLACK.png",
+			"event_id": "dialogic_021",
+			"fade_duration": 2
+		},
+		{
+			"animation": "4-fade_out.gd",
+			"animation_length": 2,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"change_scene": "res://Scenes/Minigames/PowerlinePuzzle/PowerlinePuzzle.tscn",
+			"event_id": "dialogic_041"
 		}
 	],
 	"metadata": {

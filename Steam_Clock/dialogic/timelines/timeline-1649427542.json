@@ -32,12 +32,6 @@
 			"fade_duration": 3
 		},
 		{
-			"character": "",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "END"
-		},
-		{
 			"change_timeline": "timeline-1649939743.json",
 			"event_id": "dialogic_020"
 		}

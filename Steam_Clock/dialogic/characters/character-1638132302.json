@@ -8,8 +8,8 @@
 	"name": "Cassidy",
 	"nickname": "Cass",
 	"nickname_bool": true,
-	"offset_x": -20,
-	"offset_y": 462,
+	"offset_x": 0,
+	"offset_y": 362,
 	"portraits": [
 		{
 			"name": "Default",

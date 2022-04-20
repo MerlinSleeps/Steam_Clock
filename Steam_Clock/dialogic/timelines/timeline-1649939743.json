@@ -67,16 +67,10 @@
 			"z_index": 0
 		},
 		{
-			"condition": "",
-			"definition": "1649933122-216",
-			"event_id": "dialogic_012",
-			"value": "true"
-		},
-		{
 			"character": "character-1648720722.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Ah da seid ihr ja wieder ihr jungen Hüpfer! Und sprecht! Kann ich endlich wieder meine Kronleuchter anschalten?"
+			"text": "Ah da seid ihr ja wieder ihr jungen Hüpfer! Und sprecht! Kann ich endlich wieder meinen Kronleuchter anschalten?"
 		},
 		{
 			"character": "character-1638131868.json",
@@ -156,7 +150,31 @@
 			"character": "character-1638131868.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "sss"
+			"text": "Das ist nicht ganz richtig. Den entscheidenen Handgriff hat tatsächlich doch Wilson gemacht. Ohne ihn würden sie heute Abend im dunklen sitzen."
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Entspricht dies denn der Wahrheit, Wilson? Haben ich ihnen das Wiederaufleuchten meines Anwesens zu verdanken?"
+		},
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nunja, mein Lord, ich komme nicht drum herum zu gestehen, dass der Großteil der Arbeit von Miss Alendra..."
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ach genug jetzt! Nur weil sie ein Lappen sind müssen sie sich nicht immer wie einer Verhalten. Sie stellen ihr Licht schon zu lange unter den Scheffel. Wenn habe ich es denn zu verdanken, dass dieser Kronleuchter dort überhaupt hängt??"
+		},
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Dies ist wohl das mit weitem Abstand das Netteste was sie mir je gesagt haben, mein Herr."
 		},
 		{
 			"event_id": "dialogic_013"
@@ -247,6 +265,12 @@
 			"text": "Es freut mich sehr das ich dir helfen konnte. Zudem strahlt dank dir mein Anwesen wieder! Schau nur die Beleuchtung blendet bereits die Menschen auf den Straßen. Ausgezeichnet."
 		},
 		{
+			"condition": "",
+			"definition": "1649940881-266",
+			"event_id": "dialogic_012",
+			"value": "false"
+		},
+		{
 			"character": "character-1638131868.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -266,6 +290,21 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Nun den, jetzt muss ich mich aber losmachen. Je später ich beim Markt, desto teurer werden die Preise für jedes Ersatzteil.\nDennoch vielen Dank und besuchen sie uns beide gerne mal in der Werkstatt!"
+		},
+		{
+			"condition": ">",
+			"definition": "1648564343-648",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "(Moment. Irgendwas stimmt hier nicht. Es kommt mir irgendwie alles so bekannt vor...)"
+		},
+		{
+			"event_id": "dialogic_013"
 		},
 		{
 			"animation": "back_out_left.gd",
@@ -329,6 +368,10 @@
 			},
 			"type": 1,
 			"z_index": 0
+		},
+		{
+			"change_timeline": "timeline-1649943824.json",
+			"event_id": "dialogic_020"
 		}
 	],
 	"metadata": {

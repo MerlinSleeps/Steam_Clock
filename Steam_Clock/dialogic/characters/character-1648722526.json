@@ -8,8 +8,8 @@
 	"name": "Wilson",
 	"nickname": "",
 	"nickname_bool": false,
-	"offset_x": -40,
-	"offset_y": 350,
+	"offset_x": 0,
+	"offset_y": 250,
 	"portraits": [
 		{
 			"name": "Default",

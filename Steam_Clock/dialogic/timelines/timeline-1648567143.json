@@ -57,6 +57,10 @@
 			"text": "WOW! Das war bisher die [lauteste, größte, gewaltigste] Explosion!"
 		},
 		{
+			"change_timeline": "timeline-1649943824.json",
+			"event_id": "dialogic_020"
+		},
+		{
 			"animation": "1-fade_in.gd",
 			"animation_length": 1,
 			"change_mirror_portrait": false,
@@ -98,13 +102,13 @@
 			"character": "character-1638131868.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Ich habe uns vier mal in die Luft gejagt, das andere Mal lag an dir und deiner komischen Cupcake-Maschine.\nWoher soll ich den Wissen, dass das Teil Feuer fängt, wenn man anstatt Zuckerguss Honig reinfüllt?"
+			"text": "Ich habe uns vier mal in die Luft gejagt, das andere Mal lag an dir und deiner komischen Cupcake-Maschine.\nWoher soll ich den Wissen, dass das Teil Feuer fängt, wenn man anstatt Frischkäse Schafskäse reinfüllt?"
 		},
 		{
 			"character": "character-1638132302.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Honig?! IN CUPCAKES??!\nJeder weiß Cupcakes sind eine cremige, mit Zückerguss umhüllte Wunderbarkeit! Honig, ich bitte dich...\n\n\nAber du hast recht diesmal scheint der Kern weiterzuarbeiten, und dass obwohl er so viel Energie abgegeben hat.\nMerkwürdig. Also sag schon, was genau hast du hier wieder angestellt?\nUnd bitte sag mir nicht du hast schon wieder, einfach die Zahnräder so umgestellt dass sie farblich zueinander passen."
+			"text": "Schafskäse? CUPCAKES??!\nJeder weiß Cupcakes sind eine cremige, mit Frischkäse zubereitete Köstlichkeit.! Schafskäse, ich bitte dich...\n\n\nAber du hast recht diesmal scheint der Kern weiterzuarbeiten, und dass obwohl er so viel Energie abgegeben hat.\nMerkwürdig. Also sag schon, was genau hast du hier wieder angestellt?\nUnd bitte sag mir nicht du hast schon wieder, einfach die Zahnräder so umgestellt dass sie farblich zueinander passen."
 		},
 		{
 			"character": "character-1638131868.json",
@@ -116,7 +120,7 @@
 			"character": "character-1638132302.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Na super...\nEs hilft halt alles nichts. Bestandsaufnahme.\nAlso wir haben eine 3 Zentner schwere, nicht funktionierende Zeitmaschine.\nKeine weiteren Ersatzteile.\nVorräte für etwa zwei Tage.\nKein Geld und nur noch 4 Cupcakes."
+			"text": "Na super... [br]Es hilft halt alles nichts. Bestandsaufnahme.\nAlso wir haben eine 3 Zentner schwere, nicht funktionierende Zeitmaschine. Keine weiteren Ersatzteile. Vorräte für etwa zwei Tage. Kein Geld und nur noch 4 Cupcakes."
 		},
 		{
 			"character": "character-1638132302.json",

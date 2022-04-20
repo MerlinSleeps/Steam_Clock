@@ -16,7 +16,7 @@ func _ready():
 	
 	turnsLeft = maxTurns + 1
 	wilsonTurnsLeft = maxWilsonTurns + 1
-	dialogic = Dialogic.start("/Mansion/Minigames/Powerline - Beginning")
+	dialogic = Dialogic.start("/Mansion/Minigames/Powerline/Beginning")
 	add_child(dialogic)
 
 func _process(delta):
@@ -34,7 +34,7 @@ func game_lost():
 		for fuse in fuses:
 			fuse.powered = false
 		yield(get_tree().create_timer(0.5), "timeout")
-	dialogic = Dialogic.start("/Mansion/Minigames/Powerline - Lose")
+	dialogic = Dialogic.start("/Mansion/Minigames/Powerline/Lose")
 	add_child(dialogic)
 
 func _on_Fuse_selected(fuse: Fuse):
@@ -59,15 +59,15 @@ func _on_WillsonButton_pressed():
 		wilsonTurnsLeft -= 1
 		currentFuse.rotate(false)
 		if wilsonTurnsLeft == maxWilsonTurns-1:
-			dialogic = Dialogic.start("/Mansion/Minigames/Powerline - Wilson - First Turn")
+			dialogic = Dialogic.start("/Mansion/Minigames/Powerline/First Turn")
 			add_child(dialogic)
 		elif wilsonTurnsLeft == 0 && !won:
-			dialogic = Dialogic.start("/Mansion/Minigames/Powerline - Wilson - Last Turn")
+			dialogic = Dialogic.start("/Mansion/Minigames/Powerline/Last Turn")
 			add_child(dialogic)
 
 
 func _on_PowerlineManager_win_conidition_fullfilled():
 	won = true
 	yield(get_tree().create_timer(0.5), "timeout")
-	var dialogic = Dialogic.start("/Mansion/Minigames/Powerline - You won")
+	var dialogic = Dialogic.start("/Mansion/Minigames/Powerline/You won")
 	add_child(dialogic)

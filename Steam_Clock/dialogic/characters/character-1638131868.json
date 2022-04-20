@@ -8,8 +8,8 @@
 	"name": "Alendra",
 	"nickname": "",
 	"nickname_bool": false,
-	"offset_x": 60,
-	"offset_y": 462,
+	"offset_x": 0,
+	"offset_y": 362,
 	"portraits": [
 		{
 			"name": "Default",

@@ -11,7 +11,7 @@ var focus_time = 2 ## default time before input gets sent
 var success = false ## checks for focus
 
 func _ready():
-	focus_time = Global.focus_time
+	focus_time = Global.focus_time * 0.5
 
 func set_hovering_mode(mode: bool) -> void:
 	hovering_mode = mode

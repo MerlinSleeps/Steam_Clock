@@ -1,10 +1,396 @@
 {
 	"events": [
 		{
+			"background": "res://Art/backgrounds/master's room.jpg",
+			"event_id": "dialogic_021"
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ja da hol mich der Teufel... entweder hast du mehr Glück als ich Geld oder du hast wirklich eine Begabung!"
+		},
+		{
+			"anchor_id": "anchor-1634488067",
+			"event_id": "dialogic_016"
+		},
+		{
+			"condition": "",
+			"definition": "1649498292-366",
+			"event_id": "dialogic_012",
+			"value": "true"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "(Oder einfach nur ein hervorragendes Gedächtnis und mehr Zeit als sie sich vorstellen können)"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Alle Karten in einen Rutsch. Hervorragend! Da kommen direkt wieder alte Erinnerungen hoch von den guten alten Zeiten. Als ich stark war wie Löwe und flink wie ein Otter!\nDoch diese Karte hier[speed=10]... irgendwas ist da ..."
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Henry[speed=10]....."
+		},
+		{
+			"choice": "Henry?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sagten sie Henry? Wer ist Henry?"
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": ".... ich bin mir nicht sicher.\nDa kann man wohl nichts machen! Das Alter kriegt uns halt alle! Aber noch steh ich hier und zu stehen werde ich erst aufhören, wenn die Posaunen erklingen, Hahaha!\nNun sage mir meine liebe habe ich dir je erzählt, wie ich damals Gold gewonnen habe, bei der mexikanischen Kokosnuss Weitreten?"
+		},
+		{
+			"choice": "Henry!",
+			"condition": "",
+			"definition": "1649498308-146",
+			"event_id": "dialogic_011",
+			"value": "true"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1634488067",
+			"index": 0,
+			"name": "Henry!"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sagten sie Henry?!"
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "... hab ich das?\nAch ich plapper doch schon nur wieder vor mich her. Lass mich dir lieber von damals erzählen, als ich..."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Verzeihung, mir ist gerade was eingefallen! Warten sie kurz hier auf mich!!"
+		},
+		{
+			"animation": "back_out_left.gd",
+			"animation_length": 2,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_position": false,
+			"change_z_index": false,
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "(Don't change)",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 2
+		},
+		{
+			"animation": "back_in_left.gd",
+			"animation_length": 2,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ich hab sie gefunden! Schauen sie sich das mal an. Auf dieser Schatulle ist der Name Henry eingraviert."
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Alendra! Wo hast du diese Schatulle denn gefunden??"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sie war in eurem Kleiderschrank... es ist kompliziert. Aber vielleicht ist da etwas drin was ihnen hilft sich zu erinnern. Leider ist sie verschlossen."
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[speed=4]Das ist kein Problem, dass ist eine meiner Trickschatullen. Wenn ich mich nicht irre reicht ein kleiner Klick hier und..."
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 2
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Audio/Effects/switch-5.wav",
+			"volume": 0
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Win"
+			"text": "*Klick*"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "",
+			"volume": 0
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sie ist tatsächlich aufgegangen. Was ist denn drin?"
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Henry. Es ist Henry."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "*Die andere Hälfte der Karte*"
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "*Schluchz* Ich hab dich vermisst mein alter Freund."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Also erinnern sie sich wieder? Wer ist Henry?"
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Er war es mit dem ich die Welt bereiste, mit dem ich das Unbekannte erforschte, mit dem ich einen fantastischen Kuchen gegessen habe damals in Paris."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Und wo ist er nun?"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "*Eine Träne quillt unter dem Monokel des Grafens hervor*"
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Das Alter. Kann man nichts machen.\nMir war ja bewusst, dass ich etwas vergesslich werde, aber ... Da rennt Gevater wohl schneller, als mein Gehstock mich trägt."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Wenn ihn Henry soviel bedeutet hat, wieso gibt es dann keine Protraits von ihm im gesamten Anwesen?"
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Etwa zehn Jahre ist es nun her. Die verdrängt Wut. Niemand konnte helfen. Die Enttäuschung. Wie konntest du mich allein lassen?\nIch entließ alle. Lieber schmeiß ich sie alle raus, die Butler, die Köche, auch die Hofclowns. Diesmal entscheide ich, wer geht!\nWenn ich allein sein muss, will ich es bestimmen können. Zumindest das konnte ich kontrollieren.\nNur der Botenjunge kam noch und versendete meine Post und brachte Einkäufe. Doch ich bin alt, allein das reicht nicht.\nIch hatte keine Wahl, also schrieb ich eine Ausschreibung für einen Butler. Nur einen. Mehr wollte ich, brauchte ich nicht. So traff ich auf Wilson, diesen Tunichtgut.\nIn der Nacht bevor er hier Anfing, fasste ich den Entschluss die Vergangenheit nicht nur zu vergessen, sondern zu verbrennen. Alles bis auf dieses Stück. Ich wollte nicht das mich irgendjemand jemals wieder drauf anspricht\n...[br][pause=1]...[br][pause=1]Alendra..."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ja, ich bin noch hier,"
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Danke. [pause=3] [br]\nDanke."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Gern gesche... [br] Wollten sie mir nicht, noch eine Geschichte aus ihrer Vergangenheit erzählen?"
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh, wollte ich dass...? Tut mir leid mir fällt leider gerade keine Geschichte ein."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Verstehe. Ich denke ich schau mal nach Wilson nicht, dass der gerade wieder was kaputt macht, oder?"
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ich bin mir sicher der schafft das schon. Er ist ein fähiger Mann, ich weiß noch damals als der Kronleuchter in der Eingangshalle runterfiel und zerbrach.\nSiebe Tage und Nächte dauerte es, doch am Ende hatte er es geschafft jedes Teil, jede Scherbe wieder zusammen zu kleben. Und soll ich dir was verraten. Der Kronleuchter strahlte nie heller. Der beste Butler den ich je hatte."
+		},
+		{
+			"animation": "4-fade_out.gd",
+			"animation_length": 5,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"animation": "4-fade_out.gd",
+			"animation_length": 5,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"background": "res://Art/backgrounds/BLACK.png",
+			"event_id": "dialogic_021",
+			"fade_duration": 5
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 5
+		},
+		{
+			"change_timeline": "timeline-1649939743.json",
+			"event_id": "dialogic_020"
+		},
+		{
+			"event_id": "dialogic_013"
 		}
 	],
 	"metadata": {

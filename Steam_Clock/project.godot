@@ -108,10 +108,11 @@ Global="*res://Scripts/Global.gd"
 
 [display]
 
-window/size/width=1600
-window/size/height=900
+window/size/width=1280
+window/size/height=720
 window/size/borderless=true
 window/size/fullscreen=true
+mouse_cursor/custom_image="res://Art/UI/Cursor2.png"
 window/stretch/mode="2d"
 window/stretch/aspect="keep"
 
