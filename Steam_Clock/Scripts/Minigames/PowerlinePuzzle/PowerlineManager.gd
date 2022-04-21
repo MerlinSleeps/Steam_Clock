@@ -47,6 +47,8 @@ func check_wincondition():
 	for consumer in consumers:
 		if !consumer.powered:
 			flag = false
-			
+
 	if flag:
+		for fuse in get_tree().get_nodes_in_group("Fuse"):
+			fuse.rotatable = false
 		emit_signal("win_conidition_fullfilled")

@@ -11,6 +11,22 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": ""
+		},
+		{
+			"choice": "Klopfen",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
 			"event_id": "dialogic_023",
 			"hide_dialogbox": true,
 			"wait_seconds": 1
@@ -176,7 +192,118 @@
 			"character": "character-1648722526.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[speed=20]....................  [speed=1] Ausgezeichnet meine Dame.\nIch gehe davon aus, sie haben ein Anliegen mit dem Herrn des Hauses?"
+			"text": "[speed=20]....................  [speed=1]Ausgezeichnet meine Dame."
+		},
+		{
+			"choice": "Klingeln",
+			"condition": ">",
+			"definition": "1648564343-648",
+			"event_id": "dialogic_011",
+			"value": "0"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "(Hmm. Da war doch was. Willson meinte doch ich sollte doch die Klingel benutzen. Aber wann hat er mir das gesagt?) "
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://Audio/Effects/doorbell.mp3",
+			"volume": 0
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 3
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "",
+			"volume": 0
+		},
+		{
+			"animation": "back_in_left.gd",
+			"animation_length": 2,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ah einen guten Tag, Miss Alendra."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Schön dich mal wieder in alter Frische zu sehen, Wilson."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ich gehe davon aus, sie haben ein Anliegen mit dem Herrn des Hauses?"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": ""
+		},
+		{
+			"choice": "Plaudern",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
 		},
 		{
 			"character": "character-1638131868.json",
@@ -207,6 +334,59 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Ohhh... "
+		},
+		{
+			"choice": "Nachfragen",
+			"condition": ">",
+			"definition": "1648564343-648",
+			"event_id": "dialogic_011",
+			"value": "0"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ja durchaus. Aber vorher würde ich dich gerne was fragen. Es klingt vielleicht merkwürdig, aber war ich heute schonmal hier?"
+		},
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Dessen wäre ich mir nicht bewusst. Verzeihen sie diese Bemerkung, aber sie wirken etwas verwirrt. Dürft ich ihnen vielleicht einen Tee anbieten, damit sie sich entspannen können?"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Wie immer zuvorkommend, mein Lieber. Aber ich denke ein Tee wird nicht notwendig sein. ich werde nicht lange da sein.\nAlso du meintest der Graf ist im Herrenzimmer?"
+		},
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nunja, mir ist zwar nicht bewusst woher sie diese Kenntnis haben. Jedoch ist diese Annahme durchaus korrekt."
+		},
+		{
+			"choice": "Hektisch",
+			"condition": ">",
+			"definition": "1648564343-648",
+			"event_id": "dialogic_011",
+			"value": "1"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ah einen guten Tag dir auch, Wilson. Würdest du mich bitte ins Herrenzimmer führen ich hältte da was mit dem Grafen zu besprechen."
+		},
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ähm wie meinen?  Aber natürlich doch... *Räusper*"
+		},
+		{
+			"event_id": "dialogic_013"
 		},
 		{
 			"character": "character-1648722526.json",
@@ -242,6 +422,7 @@
 		{
 			"animation": "4-fade_out.gd",
 			"animation_length": 2,
+			"animation_wait": true,
 			"change_mirror_portrait": false,
 			"change_z_index": false,
 			"character": "character-1648722526.json",
@@ -262,7 +443,7 @@
 		{
 			"event_id": "dialogic_023",
 			"hide_dialogbox": true,
-			"wait_seconds": 2
+			"wait_seconds": 1
 		},
 		{
 			"change_timeline": "timeline-1649235295.json",

@@ -2,7 +2,7 @@ extends Node
 
 var sliderScene : String = "res://Scenes/SliderButton.tscn"
 
-var hover_mode = true
+var hover_mode = false
 var focus_time = 1
 
 var current_timeline: String

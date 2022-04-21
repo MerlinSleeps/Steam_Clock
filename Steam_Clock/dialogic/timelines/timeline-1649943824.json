@@ -5,6 +5,16 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"custom_slot": "",
+			"event_id": "dialogic_026",
+			"use_default_slot": true
+		},
+		{
+			"custom_slot": "",
+			"event_id": "dialogic_026",
+			"use_default_slot": true
+		},
+		{
 			"animation": "[Default]",
 			"animation_length": 0,
 			"change_mirror_portrait": false,
@@ -99,6 +109,29 @@
 			"name": "Loop - Reset"
 		},
 		{
+			"definition": "1648564343-648",
+			"event_id": "dialogic_014",
+			"operation": "+",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "shrink_light",
+				"target_node_path": "TimelineManager"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": false,
+			"wait_seconds": 1
+		},
+		{
 			"change_timeline": "timeline-1648719289.json",
 			"event_id": "dialogic_020"
 		},
@@ -113,7 +146,7 @@
 				"arguments": [
 
 				],
-				"method_name": "expand_light",
+				"method_name": "shrink_light",
 				"target_node_path": "TimelineManager"
 			},
 			"event_id": "dialogic_042"
@@ -128,7 +161,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "To be continued..."
+			"text": "Chapter one finished[br]To be continued..."
 		}
 	],
 	"metadata": {

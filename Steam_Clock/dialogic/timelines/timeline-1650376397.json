@@ -5,6 +5,14 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"definition": "1649498292-366",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "true"
+		},
+		{
 			"animation": "[Default]",
 			"animation_length": 0,
 			"change_mirror_portrait": false,
@@ -51,10 +59,6 @@
 			"text": "Ja da hol mich der Teufel... entweder hast du mehr Glück als ich Geld oder du hast wirklich eine Begabung!"
 		},
 		{
-			"anchor_id": "anchor-1634488067",
-			"event_id": "dialogic_016"
-		},
-		{
 			"condition": "",
 			"definition": "1649498292-366",
 			"event_id": "dialogic_012",
@@ -64,7 +68,7 @@
 			"character": "character-1638131868.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "(Oder einfach nur ein hervorragendes Gedächtnis und mehr Zeit als sie sich vorstellen können)"
+			"text": "(Oder einfach nur eine hervorragende Intuition oder was auch immer das hier ist)"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -391,6 +395,51 @@
 		},
 		{
 			"event_id": "dialogic_013"
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": false,
+			"wait_seconds": 1
 		}
 	],
 	"metadata": {

@@ -8,6 +8,7 @@ var wilsonTurnsLeft
 var currentFuse: Fuse
 var dialogic
 var won
+var lastMove := "Alendra"
 
 func _ready():
 	for fuse in get_tree().get_nodes_in_group("Fuse"):
@@ -50,11 +51,13 @@ func _on_Fuse_selected(fuse: Fuse):
 
 func _on_AlendraButton_pressed():
 	if currentFuse != null:
+		lastMove = "Alendra"
 		turnsLeft -= 1
 		currentFuse.rotate(true)
 
 func _on_WillsonButton_pressed():
 	if currentFuse != null and wilsonTurnsLeft > 0:
+		lastMove = "Wilson"
 		turnsLeft -= 1
 		wilsonTurnsLeft -= 1
 		currentFuse.rotate(false)
@@ -69,5 +72,8 @@ func _on_WillsonButton_pressed():
 func _on_PowerlineManager_win_conidition_fullfilled():
 	won = true
 	yield(get_tree().create_timer(0.5), "timeout")
-	var dialogic = Dialogic.start("/Mansion/Minigames/Powerline/You won")
+	if lastMove.match("Alendra"):
+		dialogic = Dialogic.start("/Mansion/Minigames/Powerline/You won")
+	elif lastMove.match("Wilson"):
+		dialogic = Dialogic.start("/Mansion/Minigames/Powerline/Wilson won")
 	add_child(dialogic)

@@ -6,6 +6,7 @@ const fail := "Fail"
 const weird := "Weird"
 const rich := "Rich"
 const sexual := "Sexual"
+const start := "Start"
 
 export(int) var matches_need = 3
 export(String) var dialogueRoot
@@ -19,6 +20,7 @@ signal deselect_card()
 
 func _ready():
 	get_all_cards()
+	var dia = Dialogic.start(dialogueRoot + start)
 	
 func get_all_cards():
 	memoryCards = get_tree().get_nodes_in_group("MemoryCards")
@@ -27,7 +29,7 @@ func get_all_cards():
 		card.connect("card_selected", self, "_on_MemoryCard_card_selected")
 		var value = Dialogic.get_saved_state_general_key(card.get_path())
 		if value:
-			card.label.self_modulate.a = 60
+			card.label.self_modulate.a = 0.3
 
 		
 func _on_MemoryCard_card_selected(card: MemoryCard):

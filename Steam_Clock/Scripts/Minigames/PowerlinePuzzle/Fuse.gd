@@ -23,13 +23,13 @@ signal rotated()
 func _ready():
 	if isSupply:
 		powered = true
-		rotatable = false
 	if isConsumer:
 		powered = false
-		rotatable = false
 	init_hover_mode()
 
 func rotate(value : bool):
+	if !rotatable:
+		return
 	var rad = 90
 	if !value:
 		rad *= -1

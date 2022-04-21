@@ -66,6 +66,45 @@
 			"z_index": 0
 		},
 		{
+			"condition": ">",
+			"definition": "1648564343-648",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": ""
+		},
+		{
+			"choice": "Wilson vorlassen",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Vordrängeln",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"anchor_id": "anchor-1650468636",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
 			"character": "character-1648722526.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -76,10 +115,6 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Da sind sie ja endlich Wilson!"
-		},
-		{
-			"anchor_id": "anchor-1634488067",
-			"event_id": "dialogic_016"
 		},
 		{
 			"character": "character-1648722526.json",
@@ -110,6 +145,12 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Jawohl mein Herr."
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1650468636",
+			"index": 0,
+			"name": "Vordrängeln"
 		},
 		{
 			"animation": "[Default]",
@@ -158,6 +199,52 @@
 		},
 		{
 			"character": "character-1638131868.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": ""
+		},
+		{
+			"choice": "Gehstock",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"anchor_id": "anchor-1650552662",
+			"event_id": "dialogic_016"
+		},
+		{
+			"choice": "Geld",
+			"condition": ">",
+			"definition": "1648564343-648",
+			"event_id": "dialogic_011",
+			"value": "1"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "(Ich komme lieber direkt zum Punkt)"
+		},
+		{
+			"anchor_id": "anchor-1650469419",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1650552662",
+			"index": 0,
+			"name": "Gehstock"
+		},
+		{
+			"character": "character-1638131868.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Sehr gerne, Lord Mon. Dürfte ich fragen, wie es ihnen mit ihrem \"Spezial-Gehstock\" geht? "
@@ -173,6 +260,27 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Es freut mich sehr zu hören, dass ich ihnen eine Freude bereiten konnte. Vielleicht könnten sie mir ja ebenfalls eine kleine Frede bereiten?"
+		},
+		{
+			"condition": "",
+			"definition": "1648564343-648",
+			"event_id": "dialogic_012",
+			"value": "-1"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1650469419",
+			"index": 0,
+			"name": "Geld"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ich hoffe ich falle jetzt nicht direkt mit der Tür ins Haus. Doch ich hätte eine Bitte an sie und mir ist bewusst, dass ich hier schon ein halbes dutzend mal stand, aber..."
+		},
+		{
+			"event_id": "dialogic_013"
 		},
 		{
 			"character": "character-1648720722.json",
@@ -191,6 +299,46 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Aber, aber meine liebe... Ich bin mir sicher du könntest mir stundenlang davon erzählen, wie ihr die Welt revolutionieren werdet und all solch Unfug.\nUnd dennoch sehe dieses gewisse etwas in deinen Augen, Dieser Funke der auch in mir brennt. Ein Drang sich die Welt untertan zu machen! Das Bedürfnis ein Imperium auf zu erschaffen, welches getragen wird von unterbezahlten Kinderarbeitern!"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": ""
+		},
+		{
+			"choice": "Imperium?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"anchor_id": "anchor-1650469332",
+			"event_id": "dialogic_016"
+		},
+		{
+			"choice": "Kommentar ignorieren",
+			"condition": ">",
+			"definition": "1648564343-648",
+			"event_id": "dialogic_011",
+			"value": "0"
+		},
+		{
+			"anchor_id": "anchor-1650553981",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1650469332",
+			"index": 0,
+			"name": "Imperium?"
 		},
 		{
 			"character": "character-1638131868.json",
@@ -214,7 +362,7 @@
 			"character": "character-1648720722.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Aber selbstverständlich doch. Aber nur unter einer Bedingung. Ich möchte mir demnächst mit meinen eigenen Augen anschauen, was ihr verrückten Jungspunde so anstellt.\nWird mal wieder Zeit, dass ich wieder etwas den Puls der Zeit spühre. Ohh... [pause=1] Ich glaubs ja nicht, da spüre ich ja sogar direkt meinen eigenen Puls mal wieder!\nWinston tragen machen sie direkt ein Kreuz im Kalender!"
+			"text": "Aber selbstverständlich doch. Aber nur unter einer Bedingung. Ich möchte mir demnächst mit meinen eigenen Augen anschauen, was ihr verrückten Jungspunde so anstellt.\nWird mal wieder Zeit, dass ich wieder etwas den Puls der Zeit spühre. Ohh... [pause=1] Ich glaubs ja nicht, da spüre ich ja sogar direkt meinen eigenen Puls mal wieder!\nWilson tragen machen sie direkt ein Kreuz im Kalender!"
 		},
 		{
 			"character": "character-1648722526.json",
@@ -233,6 +381,33 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Das ist ja fantastisch! Ich kann es kaum erwarten Cass davon zu erzählen! Vielleicht vergibt sie mir dafür auch, dass ich ihren Cupcake gegessen habe!"
+		},
+		{
+			"condition": "",
+			"definition": "1648564343-648",
+			"event_id": "dialogic_012",
+			"value": "-1"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1650553981",
+			"index": 0,
+			"name": "Kommentar"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Genau das ist unser Ziel! Die Welt verändern. Eine Fußabdruck zu hinterlassen auf der Erde, wie einst der Erfinder der einglässigen Brille!"
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Einglässige Brille? Ach du musst wohl mich und mein größten Genie Streich meinen. Das Monokular oder wie der Pöbel es nennt Monokel. Achja, wo andere eine kaputte Brille sahen, sah ich die Möglichkeit aus Müll Geld zu machen.\nKaum zu glauben wie arm ich damals war, ich konnte mir kaum eine zweite Sommerresidenz leisten. Nun denn, deine Schmeicheleien sollen sich nun auch lohnen."
+		},
+		{
+			"event_id": "dialogic_013"
 		},
 		{
 			"character": "character-1648720722.json",
@@ -309,6 +484,25 @@
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
+		},
+		{
+			"condition": "",
+			"definition": "1649498308-146",
+			"event_id": "dialogic_012",
+			"value": "true"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "(Mhh irgendwas sagt mir, das würde sich nicht lohnen)"
+		},
+		{
+			"anchor_id": "anchor-1634488067",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
 		},
 		{
 			"character": "character-1638131868.json",
@@ -410,11 +604,86 @@
 			"event_id": "dialogic_020"
 		},
 		{
+			"choice": "Wilson Motivieren",
+			"condition": "",
+			"definition": "1649940881-266",
+			"event_id": "dialogic_011",
+			"value": "true"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1650543560",
+			"index": 0,
+			"name": "Wilson Motivieren"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ich würde dir ja meine Hilfe anbieten, aber ich habe es irgendwie im Gefühl, dass du es nicht brauche wirst. Denk immer nur drann konzentriert zu bleiben."
+		},
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ich bin offen gesagt nicht sicher was sie meinen, meine Dame, ich könnte ihre Hilfe durchaus gebrauch..."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ach das schaffst du schon!"
+		},
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Wie sie meinen. Ich werde mich dann nun zum Sicherungskasten begeben."
+		},
+		{
+			"definition": "1649933122-216",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "true"
+		},
+		{
+			"animation": "back_out_left.gd",
+			"animation_length": 2,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Und schon ist er weg. Einen fleißigen Arbeiter haben sie da. [br]Dann sind es wohl nur noch wir zwei."
+		},
+		{
+			"anchor_id": "anchor-1650543039",
+			"event_id": "dialogic_016"
+		},
+		{
 			"choice": "Wilson helfen",
 			"condition": "",
-			"definition": "",
+			"definition": "1649940881-266",
 			"event_id": "dialogic_011",
-			"value": ""
+			"value": "false"
 		},
 		{
 			"character": "character-1638131868.json",
@@ -458,8 +727,27 @@
 			"value": ""
 		},
 		{
+			"condition": "",
+			"definition": "1649940881-266",
+			"event_id": "dialogic_012",
+			"value": "true"
+		},
+		{
+			"anchor_id": "anchor-1650543560",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1650543039",
+			"index": 0,
+			"name": "Sitzen bleiben"
+		},
+		{
 			"animation": "back_out_left.gd",
-			"animation_length": 0,
+			"animation_length": 2,
 			"change_mirror_portrait": false,
 			"change_z_index": false,
 			"character": "character-1648722526.json",

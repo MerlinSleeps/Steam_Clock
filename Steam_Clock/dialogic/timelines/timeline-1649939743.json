@@ -5,46 +5,9 @@
 			"event_id": "dialogic_021"
 		},
 		{
-			"animation": "back_in_left.gd",
-			"animation_length": 2,
-			"animation_wait": false,
-			"change_mirror_portrait": false,
-			"change_z_index": false,
-			"character": "character-1638131868.json",
-			"event_id": "dialogic_002",
-			"mirror_portrait": false,
-			"portrait": "Default",
-			"portrait_definition": "",
-			"position": {
-				"0": true,
-				"1": false,
-				"2": false,
-				"3": false,
-				"4": false
-			},
-			"type": 0,
-			"z_index": 0
-		},
-		{
-			"animation": "back_in_left.gd",
-			"animation_length": 2,
-			"animation_wait": false,
-			"change_mirror_portrait": false,
-			"change_z_index": false,
-			"character": "character-1648722526.json",
-			"event_id": "dialogic_002",
-			"mirror_portrait": false,
-			"portrait": "Default",
-			"portrait_definition": "",
-			"position": {
-				"0": false,
-				"1": true,
-				"2": false,
-				"3": false,
-				"4": false
-			},
-			"type": 0,
-			"z_index": 0
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 0.5
 		},
 		{
 			"animation": "[Default]",
@@ -65,6 +28,55 @@
 			},
 			"type": 0,
 			"z_index": 0
+		},
+		{
+			"condition": "",
+			"definition": "1649933122-216",
+			"event_id": "dialogic_012",
+			"value": "true"
+		},
+		{
+			"animation": "back_in_left.gd",
+			"animation_length": 2,
+			"animation_wait": false,
+			"change_mirror_portrait": false,
+			"change_position": true,
+			"change_z_index": false,
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"animation": "back_in_left.gd",
+			"animation_length": 2,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 1
 		},
 		{
 			"character": "character-1648720722.json",
@@ -98,6 +110,140 @@
 			"event_name": "AudioEvent",
 			"file": "",
 			"volume": 0
+		},
+		{
+			"condition": "",
+			"definition": "1649497702-648",
+			"event_id": "dialogic_012",
+			"value": "false"
+		},
+		{
+			"anchor_id": "anchor-1650545754",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"anchor_id": "anchor-1650545730",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1650545656-787",
+			"event_id": "dialogic_012",
+			"value": "true"
+		},
+		{
+			"animation": "back_in_left.gd",
+			"animation_length": 2,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 1
+		},
+		{
+			"animation": "back_in_left.gd",
+			"animation_length": 2,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"anchor_id": "anchor-1650545790",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1649933100-274",
+			"event_id": "dialogic_012",
+			"value": "true"
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"animation": "back_in_left.gd",
+			"animation_length": 2,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"anchor_id": "anchor-1650545805",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1650545730",
+			"index": 0,
+			"name": "Helping Wilson - Won"
 		},
 		{
 			"character": "character-1648720722.json",
@@ -178,6 +324,12 @@
 		},
 		{
 			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1650550605",
+			"index": 0,
+			"name": "Finding Key"
 		},
 		{
 			"character": "character-1638131868.json",
@@ -266,6 +418,19 @@
 		},
 		{
 			"condition": "",
+			"definition": "1650545656-787",
+			"event_id": "dialogic_012",
+			"value": "true"
+		},
+		{
+			"anchor_id": "anchor-1650549548",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
 			"definition": "1649940881-266",
 			"event_id": "dialogic_012",
 			"value": "false"
@@ -280,16 +445,242 @@
 			"character": "character-1648722526.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Ich bitte sie, das war allein ihr Verdienst, meine werte Dame,"
+			"text": "Ich bitte sie, das war allein ihr Verdienst, meine werte Dame."
 		},
 		{
 			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1650549548",
+			"index": 0,
+			"name": "Goodbye - Win"
 		},
 		{
 			"character": "character-1638131868.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Nun den, jetzt muss ich mich aber losmachen. Je später ich beim Markt, desto teurer werden die Preise für jedes Ersatzteil.\nDennoch vielen Dank und besuchen sie uns beide gerne mal in der Werkstatt!"
+		},
+		{
+			"anchor_id": "anchor-1650549534",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1650545754",
+			"index": 0,
+			"name": "Helping Wilson - Fail"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Das ist irgendwie schade. Wir haben zwar den Rest des Sicherungskasten komplett ruiniert, aber ich habe trotzdem gehofft, dass das Licht wieder geht."
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ah mein Beste, nimm es dir nicht so zu herzen. Ich bin mir sicher das es Wilson schuld war. Genau wie letzen Monat als ich Madam Pompadur zum Tee eingeladen hatte und er es doch tatsächlich geschafft hat den Tisch anstatt mit karmesinroten Servierten, mit scharlachroten Servierten zu decken.\nIch muss dir wohl nicht sagen, welch ein Fauxpas dies war. Die Madam erhob sogar eine Augenbraue!"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ich vergewissere ihnen, dass die Schuld allein bei mir liegt.[br]"
+		},
+		{
+			"anchor_id": "anchor-1650547697",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1650545790",
+			"index": 0,
+			"name": "Search the Bedroom"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1634488067",
+			"index": 0,
+			"name": "Wilson alone"
+		},
+		{
+			"condition": "",
+			"definition": "1649940881-266",
+			"event_id": "dialogic_012",
+			"value": "false"
+		},
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ich fürchte ich muss ihnen berichten, dass ich den Sicherungskasten irreparabel beschädigt habe. Ich werde den Auftrag für eine general Reperatur noch heute aufgeben. Ich entschuldige mich vielmals für die Unanehmlichkeiten."
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ach, Kopf hoch, mein Bester! Ich hatte ohnehin nie was besseres von ihnen erwartet. Sie sind nun einmal ein Lappen. Also vergessen sie es einfach und konzentrieren sie sich lieber auf die nächste Katastrophe die sie anrichten werden."
+		},
+		{
+			"anchor_id": "anchor-1650547697",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1649940881-266",
+			"event_id": "dialogic_012",
+			"value": "true"
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Beim Allmächtigen Leitzins! Ich würde es nicht glauben, wenn ich es nicht selber sehen würde. Wilson sie haben etwas geschafft. Wohl möglich das erste Mal in ihrem Leben?\nIch wusste es doch immer. Auch sie können etwas! Nun da wir wissen, dass sie etwas gut können müssen wir ihr Talent trainieren. Ich werde selber von nun an dafür Sorgen, dass unsere Leitungen mindestens einmal in der Woche Feuerfangen!"
+		},
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Dies mag durchaus die größte Freundlichkeit, ihrer seits, sein, die ich je erlebt habe,"
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ich wusste doch du hast es in dir![br] Leider kann ich nicht mit Wilsons Erfolg mithalten. Es tut mir sehr leid, doch ich konnte ihren Schlüssel leider nirgens auffinden."
+		},
+		{
+			"anchor_id": "anchor-1650549548",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1649933100-274",
+			"event_id": "dialogic_012",
+			"value": "true"
+		},
+		{
+			"anchor_id": "anchor-1650550144",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1650547697",
+			"index": 0,
+			"name": "Goodbye - Fail"
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sei es nun wie es ist. Ich danke dir natürlich für deine Mühe und was die Zuschüsse angeht, kann ich dir fürs erste nur einen kleinen Teil überreichen.\nWas natürlich eine hervorragende Gelegenheit ist, dich direkt nocheinmal bei mir einzuladen und dann setzen wir zwei hübschen Mal zusammen. Ich hab da immer noch was mit dir und deinem genialen Verstand zu besprechen."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Vielen Dank! Es reicht zwar nicht ganz für die alle notwendigen Ersatzteile, aber zumindest kann ich für Cass, was zu essen kaufen. Man könnte also sagen, dass sie wirklich mein Lebensretter sind.\nJetzt muss ich aber wirklich los, wenn ich mich nicht beeile sind auf dem Markt all die guten Stände schon leer gekauft. Auf Wiedersehen!"
+		},
+		{
+			"anchor_id": "anchor-1650549534",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1650545805",
+			"index": 0,
+			"name": "Talk to Lord Mon"
+		},
+		{
+			"anchor_id": "anchor-1634488067",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1650550144",
+			"index": 0,
+			"name": "XO"
+		},
+		{
+			"condition": "",
+			"definition": "1649498292-366",
+			"event_id": "dialogic_012",
+			"value": "true"
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ich kann mich nicht entsinnen, wann ich das letzte mal ... so fühlte. [br]Alendra, du hast mir mein Alter aufgezeigt und eine Erinnerung wiedererweckt, die in mir verdorrte."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nichts zu danken. Ich war wohl einfach im richtigen Moment da und hab mich an diese Schatulle erinnert."
+		},
+		{
+			"condition": "",
+			"definition": "1649940881-266",
+			"event_id": "dialogic_012",
+			"value": "true"
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Und Wilson... habe ich dir je gesagt, dass ich dir dankbar bin, dass du einem alten Narr stets zur Seite stehst?"
+		},
+		{
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Dies war nie nötig, mein Herr. Ich erledige nur meine Pflicht. Dennoch freue mich, jedoch diese Worte zu hören. Danke."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Es tut mir ja leid, wenn ich gerade einem Moment störe, aber...."
+		},
+		{
+			"anchor_id": "anchor-1650550605",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"anchor_id": "anchor-1650547697",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1649498292-366",
+			"event_id": "dialogic_012",
+			"value": "false"
+		},
+		{
+			"anchor_id": "anchor-1650547697",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
 		},
 		{
 			"condition": ">",
@@ -305,6 +696,12 @@
 		},
 		{
 			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1650549534",
+			"index": 0,
+			"name": "End"
 		},
 		{
 			"animation": "back_out_left.gd",

@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://Art/backgrounds/BasementWall.jpg" type="Texture" id=1]
 [ext_resource path="res://Scenes/Utillities/IngameOptionsButton.tscn" type="PackedScene" id=2]
@@ -13,6 +13,8 @@
 [ext_resource path="res://Scripts/Minigames/PowerlinePuzzle/Fuse.gd" type="Script" id=11]
 [ext_resource path="res://Art/Animation/FuseAnimation/Fuse Puzzle/Fuse.tres" type="SpriteFrames" id=12]
 [ext_resource path="res://Art/Shader/Fuse_Outline.tres" type="Material" id=13]
+[ext_resource path="res://Art/Font/DefaultFont.tres" type="DynamicFont" id=14]
+[ext_resource path="res://Art/UI/UI2/MenuTitleBox.png" type="Texture" id=15]
 
 [sub_resource type="Shader" id=1]
 code = "shader_type canvas_item;
@@ -229,11 +231,12 @@ margin_bottom = 80.0
 
 [node name="Buffer" type="Control" parent="HBoxContainer"]
 margin_left = 110.0
-margin_right = 475.0
+margin_right = 515.0
 margin_bottom = 80.0
-rect_min_size = Vector2( 365, 0 )
+rect_min_size = Vector2( 405, 0 )
 
 [node name="TurnLabel" type="Label" parent="HBoxContainer"]
+visible = false
 margin_left = 485.0
 margin_right = 595.0
 margin_bottom = 80.0
@@ -243,21 +246,51 @@ text = "Drehungen übrig:
 align = 1
 valign = 1
 
-[node name="AlendraButton" type="Button" parent="HBoxContainer"]
-margin_left = 605.0
-margin_right = 705.0
+[node name="AlendraButton" type="TextureButton" parent="HBoxContainer"]
+margin_left = 525.0
+margin_right = 625.0
 margin_bottom = 80.0
 rect_min_size = Vector2( 100, 0 )
-text = "Alendra"
+texture_normal = ExtResource( 15 )
+expand = true
 script = ExtResource( 5 )
 
-[node name="WilsonButton" type="Button" parent="HBoxContainer"]
-margin_left = 715.0
-margin_right = 815.0
+[node name="Label" type="Label" parent="HBoxContainer/AlendraButton"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -24.5
+margin_top = -7.0
+margin_right = 24.5
+margin_bottom = 7.0
+custom_fonts/font = ExtResource( 14 )
+text = "Alendra"
+align = 1
+valign = 1
+
+[node name="WilsonButton" type="TextureButton" parent="HBoxContainer"]
+margin_left = 635.0
+margin_right = 735.0
 margin_bottom = 80.0
 rect_min_size = Vector2( 100, 0 )
-text = "Wilson"
+texture_normal = ExtResource( 15 )
+expand = true
 script = ExtResource( 5 )
+
+[node name="Label" type="Label" parent="HBoxContainer/WilsonButton"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -22.5
+margin_top = -8.5
+margin_right = 22.5
+margin_bottom = 8.5
+custom_fonts/font = ExtResource( 14 )
+text = "Wilson"
+align = 1
+valign = 1
 
 [node name="PowerlineManager" type="Control" parent="."]
 anchor_left = 0.5

@@ -9,11 +9,11 @@
 	"nickname": "",
 	"nickname_bool": false,
 	"offset_x": 0,
-	"offset_y": 512,
+	"offset_y": 270,
 	"portraits": [
 		{
 			"name": "Default",
-			"path": ""
+			"path": "res://Art/portraits/GrafMon.png"
 		}
 	],
 	"scale": 100,

@@ -57,10 +57,6 @@
 			"text": "WOW! Das war bisher die [lauteste, größte, gewaltigste] Explosion!"
 		},
 		{
-			"change_timeline": "timeline-1649943824.json",
-			"event_id": "dialogic_020"
-		},
-		{
 			"animation": "1-fade_in.gd",
 			"animation_length": 1,
 			"change_mirror_portrait": false,

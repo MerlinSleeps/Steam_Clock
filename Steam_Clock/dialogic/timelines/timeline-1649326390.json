@@ -41,6 +41,14 @@
 			"z_index": 0
 		},
 		{
+			"definition": "1649497702-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "true"
+		},
+		{
 			"character": "character-1638131868.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -62,7 +70,7 @@
 			"character": "character-1638131868.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "(Diesmal ging es sogar noch schnell. Ich hoffe ich werde nicht geübt darin, die Leitungen hier zu reparieren)"
+			"text": "(Ich werde langsam echt gut darin. Fühlt sich fast so an als hätte ich das Ganze schon dutzende Male gemacht)"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -81,6 +89,52 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Wie du meinst. Na denn, sollen wir zum Lord zurück?"
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"animation_wait": false,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1648722526.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 1
 		},
 		{
 			"change_timeline": "timeline-1649939743.json",
