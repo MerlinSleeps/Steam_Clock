@@ -117,16 +117,6 @@
 			"set_value": "1"
 		},
 		{
-			"call_node": {
-				"arguments": [
-
-				],
-				"method_name": "shrink_light",
-				"target_node_path": "TimelineManager"
-			},
-			"event_id": "dialogic_042"
-		},
-		{
 			"event_id": "dialogic_023",
 			"hide_dialogbox": false,
 			"wait_seconds": 1
@@ -140,16 +130,6 @@
 			"id": "anchor-1650462843",
 			"index": 0,
 			"name": "Loop - End"
-		},
-		{
-			"call_node": {
-				"arguments": [
-
-				],
-				"method_name": "shrink_light",
-				"target_node_path": "TimelineManager"
-			},
-			"event_id": "dialogic_042"
 		},
 		{
 			"character": "character-1638131868.json",

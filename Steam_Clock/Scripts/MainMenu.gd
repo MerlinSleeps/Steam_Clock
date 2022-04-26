@@ -10,10 +10,6 @@ func _ready():
 func _on_StartButton_pressed():
 	Global.load_scene(["res://Scenes/TimelineManager.tscn"])
 
-func _on_Options_pressed():
-	Dialogic.reset_saves()
-	#Global.load_scene(["res://Scenes/OptionsMenu.tscn"])
-
 func _on_ExitButton_pressed():
 	get_tree().quit()
 
@@ -41,6 +37,10 @@ func _on_Button_mouse_exited():
 
 func _on_HandsFreeCheckBox_pressed():
 	Global.hover_mode = $HandsFreeCheckBox.pressed
+	if Global.hover_mode:
+		$HandsFreeCheckBox/TextureRect.show()
+	else:
+		$HandsFreeCheckBox/TextureRect.hide()
 
 func _on_Timer_timeout():
 	if success:
@@ -53,3 +53,8 @@ func simulate_input():
 	else:
 		get_focus_owner().pressed = true
 	get_focus_owner().emit_signal("pressed")
+
+
+func _on_OptionsButton_pressed():
+	Dialogic.reset_saves()
+	#Global.load_scene(["res://Scenes/OptionsMenu.tscn"])

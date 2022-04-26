@@ -201,6 +201,16 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"call_node": {
+				"arguments": [
+					""
+				],
+				"method_name": "set_timeline",
+				"target_node_path": "Global"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
 			"change_scene": "res://Scenes/Minigames/Memory/MemoryGame.tscn",
 			"event_id": "dialogic_041"
 		}

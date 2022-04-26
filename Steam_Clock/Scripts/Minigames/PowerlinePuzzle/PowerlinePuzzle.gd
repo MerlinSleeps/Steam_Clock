@@ -2,6 +2,7 @@ extends Control
 
 export(int) var maxTurns = 6
 export(int) var maxWilsonTurns = 2
+export(Texture) var backgroundBright
 
 var turnsLeft
 var wilsonTurnsLeft
@@ -71,7 +72,8 @@ func _on_WillsonButton_pressed():
 
 func _on_PowerlineManager_win_conidition_fullfilled():
 	won = true
-	yield(get_tree().create_timer(0.5), "timeout")
+	$Background.texture = backgroundBright
+	yield(get_tree().create_timer(1), "timeout")
 	if lastMove.match("Alendra"):
 		dialogic = Dialogic.start("/Mansion/Minigames/Powerline/You won")
 	elif lastMove.match("Wilson"):

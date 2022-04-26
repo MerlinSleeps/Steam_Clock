@@ -118,14 +118,14 @@
 			"value": "false"
 		},
 		{
-			"anchor_id": "anchor-1650545754",
+			"anchor_id": "anchor-1650549534",
 			"event_id": "dialogic_016"
 		},
 		{
 			"event_id": "dialogic_013"
 		},
 		{
-			"anchor_id": "anchor-1650545730",
+			"anchor_id": "anchor-1650641603",
 			"event_id": "dialogic_016"
 		},
 		{
@@ -241,7 +241,7 @@
 		},
 		{
 			"event_id": "dialogic_015",
-			"id": "anchor-1650545730",
+			"id": "anchor-1650641603",
 			"index": 0,
 			"name": "Helping Wilson - Won"
 		},
@@ -264,7 +264,7 @@
 
 			],
 			"portrait": "",
-			"question": "Hervorragend. Und ich sehe das Licht funktioniert wieder. Das habe ich doch sicher dir zu verdanken, meine werte Alendra?"
+			"question": "Hervorragend. Und ich sehe das Licht funktioniert wieder. Das habe ich doch sicher dir zu verdanken, meine werte Alendra?]"
 		},
 		{
 			"choice": "Bescheiden",
@@ -468,7 +468,7 @@
 		},
 		{
 			"event_id": "dialogic_015",
-			"id": "anchor-1650545754",
+			"id": "anchor-1650641641",
 			"index": 0,
 			"name": "Helping Wilson - Fail"
 		},
@@ -488,7 +488,7 @@
 			"character": "character-1638131868.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Ich vergewissere ihnen, dass die Schuld allein bei mir liegt.[br]"
+			"text": "Ich vergewissere ihnen, dass die Schuld allein bei mir liegt."
 		},
 		{
 			"anchor_id": "anchor-1650547697",
@@ -541,7 +541,7 @@
 			"character": "character-1648720722.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Beim Allmächtigen Leitzins! Ich würde es nicht glauben, wenn ich es nicht selber sehen würde. Wilson sie haben etwas geschafft. Wohl möglich das erste Mal in ihrem Leben?\nIch wusste es doch immer. Auch sie können etwas! Nun da wir wissen, dass sie etwas gut können müssen wir ihr Talent trainieren. Ich werde selber von nun an dafür Sorgen, dass unsere Leitungen mindestens einmal in der Woche Feuerfangen!"
+			"text": "Beim Allmächtigen Leitzins! Ich würde es nicht glauben, wenn ich es nicht selber sehen würde. Das Licht! Wilson sie haben etwas geschafft. Wohl möglich das erste Mal in ihrem Leben?\nIch wusste es doch immer. Auch sie können etwas! Nun da wir wissen, dass sie etwas gut können müssen wir ihr Talent trainieren. Ich werde selber von nun an dafür Sorgen, dass unsere Leitungen mindestens einmal in der Woche Feuerfangen!"
 		},
 		{
 			"character": "character-1648722526.json",
@@ -553,14 +553,7 @@
 			"character": "character-1638131868.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Ich wusste doch du hast es in dir![br] Leider kann ich nicht mit Wilsons Erfolg mithalten. Es tut mir sehr leid, doch ich konnte ihren Schlüssel leider nirgens auffinden."
-		},
-		{
-			"anchor_id": "anchor-1650549548",
-			"event_id": "dialogic_016"
-		},
-		{
-			"event_id": "dialogic_013"
+			"text": "Ich wusste doch du hast es in dir![br]Leider kann ich nicht mit Wilsons Erfolg mithalten. Es tut mir sehr leid, doch ich konnte ihren Schlüssel leider nirgens auffinden."
 		},
 		{
 			"condition": "",
@@ -570,6 +563,13 @@
 		},
 		{
 			"anchor_id": "anchor-1650550144",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"anchor_id": "anchor-1650549548",
 			"event_id": "dialogic_016"
 		},
 		{

@@ -11,7 +11,7 @@
 			"portrait": "Default",
 			"portrait_definition": "",
 			"position": {
-				"0": false,
+				"0": true,
 				"1": false,
 				"2": false,
 				"3": false,
@@ -35,7 +35,7 @@
 				"1": false,
 				"2": false,
 				"3": false,
-				"4": false
+				"4": true
 			},
 			"type": 0,
 			"z_index": 0
@@ -97,6 +97,20 @@
 			"random_upper_limit": 100,
 			"set_random": false,
 			"set_value": "false"
+		},
+		{
+			"call_node": {
+				"arguments": [
+					"/Mansion/Master's room - 2"
+				],
+				"method_name": "set_timeline",
+				"target_node_path": "Global"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"change_scene": "res://Scenes/TimelineManager.tscn",
+			"event_id": "dialogic_041"
 		}
 	],
 	"metadata": {

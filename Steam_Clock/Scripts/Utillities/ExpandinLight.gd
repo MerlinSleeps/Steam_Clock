@@ -7,6 +7,12 @@ func expand():
 			Vector2(0, 0), Vector2(1.5, 1.5), 2,
 			Tween.TRANS_QUART, Tween.EASE_IN)
 	$Tween.start()
+	yield($Tween, "tween_completed")
+	yield(get_tree().create_timer(0.5), "timeout")
+	$Tween.interpolate_property(self, "rect_scale",
+			rect_scale, Vector2.ZERO, 3,
+			Tween.TRANS_LINEAR, Tween.EASE_OUT)
+	$Tween.start()
 
 
 func _on_Tween_tween_completed(object, key):

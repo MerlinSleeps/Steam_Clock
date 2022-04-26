@@ -9,10 +9,10 @@
 			"set_value": "true"
 		},
 		{
-			"character": "",
+			"character": "character-1648720722.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Weird"
+			"text": "Jaja, ich mein Leben bestand nicht nur aus Erfolgen. Lass es dir von mir gesagt haben, vergiss niemals deine Fehler, andernfalls wirst du sie nur wiederholen.\nSieh mich nur an. Du kannst mir glauben nie wieder werde ich mich auf einen Straßenkampf mit einem Pfau einlassen. Naja vielleicht noch ein oder höchstens zwei mal."
 		}
 	],
 	"metadata": {

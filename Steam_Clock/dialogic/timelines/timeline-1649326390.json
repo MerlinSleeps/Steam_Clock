@@ -49,6 +49,11 @@
 			"set_value": "true"
 		},
 		{
+			"custom_slot": "",
+			"event_id": "dialogic_026",
+			"use_default_slot": true
+		},
+		{
 			"character": "character-1638131868.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -137,8 +142,18 @@
 			"wait_seconds": 1
 		},
 		{
-			"change_timeline": "timeline-1649939743.json",
-			"event_id": "dialogic_020"
+			"call_node": {
+				"arguments": [
+					"/Mansion/Master's room - 2"
+				],
+				"method_name": "set_timeline",
+				"target_node_path": "Global"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"change_scene": "res://Scenes/TimelineManager.tscn",
+			"event_id": "dialogic_041"
 		}
 	],
 	"metadata": {

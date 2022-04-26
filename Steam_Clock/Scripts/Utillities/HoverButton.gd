@@ -1,5 +1,7 @@
 extends TextureButton
 
+export(Texture) var progressTexture
+
 var slider: SliderButton
 
 func _ready():
@@ -11,6 +13,8 @@ func init_hover_mode():
 		add_child(slider)
 		slider.adjust_size(rect_size)
 		slider.connect("bar_filled", self, "_on_SliderButton_bar_filled")
+		if progressTexture != null:
+			slider.progressBar.texture_progress = progressTexture
 		
 func _on_SliderButton_bar_filled():
 	simulate_input()

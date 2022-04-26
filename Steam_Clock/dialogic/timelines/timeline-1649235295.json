@@ -5,6 +5,30 @@
 			"event_id": "dialogic_021"
 		},
 		{
+			"definition": "1649933100-274",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "false"
+		},
+		{
+			"definition": "1649933122-216",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "false"
+		},
+		{
+			"definition": "1650545656-787",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "false"
+		},
+		{
 			"animation": "back_in_left.gd",
 			"animation_length": 2,
 			"change_mirror_portrait": false,

@@ -17,6 +17,7 @@ func _process(delta):
 	if !mouseInside:
 		progressBar.value -= delta * declineFactor
 	if progressBar.value == progressBar.max_value:
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 		emit_signal("bar_filled")
 
 func reset_progress():

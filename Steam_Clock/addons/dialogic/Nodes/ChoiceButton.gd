@@ -7,6 +7,7 @@ func _ready():
 		slider.show()
 
 func simulate_input():
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	emit_signal("button_down")
 	emit_signal("button_up")
 	emit_signal("pressed")

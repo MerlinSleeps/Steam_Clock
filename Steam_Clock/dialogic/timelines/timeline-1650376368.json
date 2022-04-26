@@ -9,10 +9,22 @@
 			"set_value": "true"
 		},
 		{
-			"character": "",
+			"character": "character-1638131868.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Sexual"
+			"text": "Sollte ich fragen, was diese Karten für eine Erinnerung repräsentieren?"
+		},
+		{
+			"character": "character-1648720722.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Kein Grund schüchtern zu sein. Was glaubst du, denn wie es geschafft habe so alt zu werden? Ich sage es dir, Sex! Ich versichere egal wo, wie oder mit wie vielen, ein gutes Schäferstündchen belebt Geist und Seele."
+		},
+		{
+			"character": "character-1638131868.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "(Die Bilder in meinem Kopf....)"
 		}
 	],
 	"metadata": {

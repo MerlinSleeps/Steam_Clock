@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scripts/Utillities/IngameOptionsButton.gd" type="Script" id=1]
 [ext_resource path="res://Art/UI/UI2/PopUpBackground.png" type="Texture" id=2]
 [ext_resource path="res://Scripts/Utillities/HoverButton.gd" type="Script" id=3]
 [ext_resource path="res://Art/Font/DefaultFont.tres" type="DynamicFont" id=4]
 [ext_resource path="res://Art/UI/UI2/MenuTitleBox.png" type="Texture" id=5]
+[ext_resource path="res://Art/UI/UI2/BackButton.png" type="Texture" id=6]
 
 [node name="IngameOptionsButton" type="Control"]
 rect_min_size = Vector2( 100, 80 )
@@ -14,11 +15,12 @@ script = ExtResource( 1 )
 margin_right = 100.0
 margin_bottom = 80.0
 rect_min_size = Vector2( 100, 80 )
-texture_normal = ExtResource( 5 )
+texture_normal = ExtResource( 6 )
 expand = true
 script = ExtResource( 3 )
 
 [node name="Label" type="Label" parent="Button"]
+visible = false
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5

@@ -9,10 +9,10 @@
 			"set_value": "true"
 		},
 		{
-			"character": "",
+			"character": "character-1648720722.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Rich"
+			"text": "Ah ja der Hafen von Edinburugh. Wusstest du eigentlich, dass ich einen Hafen auf jedem Kontinent dieser Welt besitze? Das war 1847. Ich ganz allein, nur umgeben von der wilden See und 42 Angstellte, umsegelte die Welt. Jeden Hafen in den ich segelte, verleibte ich mir ein!"
 		}
 	],
 	"metadata": {

@@ -41,6 +41,27 @@
 			"z_index": 0
 		},
 		{
+			"definition": "1649497702-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "true"
+		},
+		{
+			"definition": "1649940881-266",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "true"
+		},
+		{
+			"custom_slot": "",
+			"event_id": "dialogic_026",
+			"use_default_slot": true
+		},
+		{
 			"character": "character-1638131868.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -83,22 +104,6 @@
 			"text": "Sehr gern doch."
 		},
 		{
-			"definition": "1649933122-216",
-			"event_id": "dialogic_014",
-			"operation": "=",
-			"random_upper_limit": 100,
-			"set_random": false,
-			"set_value": "true"
-		},
-		{
-			"definition": "1649940881-266",
-			"event_id": "dialogic_014",
-			"operation": "=",
-			"random_upper_limit": 100,
-			"set_random": false,
-			"set_value": "true"
-		},
-		{
 			"animation": "[Default]",
 			"animation_length": 0,
 			"change_mirror_portrait": false,
@@ -139,8 +144,18 @@
 			"z_index": 0
 		},
 		{
-			"change_timeline": "timeline-1649939743.json",
-			"event_id": "dialogic_020"
+			"call_node": {
+				"arguments": [
+					"/Mansion/Master's room - 2"
+				],
+				"method_name": "set_timeline",
+				"target_node_path": "Global"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"change_scene": "res://Scenes/TimelineManager.tscn",
+			"event_id": "dialogic_041"
 		}
 	],
 	"metadata": {

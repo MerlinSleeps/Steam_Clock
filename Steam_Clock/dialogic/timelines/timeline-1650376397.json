@@ -244,10 +244,26 @@
 			"text": "Sie ist tatsächlich aufgegangen. Was ist denn drin?"
 		},
 		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1650711482",
+			"index": 0,
+			"name": "xxx"
+		},
+		{
 			"character": "character-1648720722.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Henry. Es ist Henry."
+		},
+		{
+			"call_node": {
+				"arguments": [
+
+				],
+				"method_name": "start_ani",
+				"target_node_path": "TimelineManager"
+			},
+			"event_id": "dialogic_042"
 		},
 		{
 			"character": "",
@@ -301,13 +317,13 @@
 			"character": "character-1648720722.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Etwa zehn Jahre ist es nun her. Die verdrängt Wut. Niemand konnte helfen. Die Enttäuschung. Wie konntest du mich allein lassen?\nIch entließ alle. Lieber schmeiß ich sie alle raus, die Butler, die Köche, auch die Hofclowns. Diesmal entscheide ich, wer geht!\nWenn ich allein sein muss, will ich es bestimmen können. Zumindest das konnte ich kontrollieren.\nNur der Botenjunge kam noch und versendete meine Post und brachte Einkäufe. Doch ich bin alt, allein das reicht nicht.\nIch hatte keine Wahl, also schrieb ich eine Ausschreibung für einen Butler. Nur einen. Mehr wollte ich, brauchte ich nicht. So traff ich auf Wilson, diesen Tunichtgut.\nIn der Nacht bevor er hier Anfing, fasste ich den Entschluss die Vergangenheit nicht nur zu vergessen, sondern zu verbrennen. Alles bis auf dieses Stück. Ich wollte nicht das mich irgendjemand jemals wieder drauf anspricht\n...[br][pause=1]...[br][pause=1]Alendra..."
+			"text": "Etwa zehn Jahre ist es nun her. Die verdrängt Wut. Niemand konnte helfen. Die Enttäuschung. Wie konntest du mich allein lassen?\nIch entließ alle. Lieber schmeiß ich sie alle raus, die Butler, die Köche, auch die Hofclowns. Niemand der mich an ihn erinnern konnte. Nichts ist schlimmer als jeden Tag von allen Menschen, um dich herum an diese eine Sache erinnert zu werden.\nNur der Botenjunge kam noch und versendete meine Post und brachte Einkäufe. Doch ich bin alt, allein das reicht nicht aus.\nIch hatte keine Wahl, also schrieb ich eine Ausschreibung für einen Butler. Nur einen. Jemanden ohne Kontakte, einen Einsiedler. Ich konnte nicht riskieren, dass er von jemand anders von Henry erfährt. All meine Mühe dieses Kapitel hinter mir zu lassen wären umsonst gewesen.\nSo traff ich Wilson, ein guter Mann. Spricht nur wenn man ihn anspricht, nie von sich aus. Gedient hat er. Das erklärt wohl seine hohe Schmerztoleranz. Dank Gott, den leicht mache ich es ihm nicht immer.\nIn der Nacht bevor er hier anfing, schloss ich endgültig mit allem ab. Ich warf die letzten Reste meiner Vergangenheit ins Feuer, auf das die Welt vergessen sollte, was einst war. Die Erinnerungen, die Guten, wie die ... Restlichen, sie sollten nur mir gehören.\nWeißt du wann ein Mensch wirklich stirbt? Nicht wenn das Herz stoppt, und der Körper verwelkt. Ein Mensch stirbt, wenn jeder ihn vergisst und um ein Haar hätte ich Henry getötet.\n...[br][pause=1]...[br][pause=1] Alendra?"
 		},
 		{
 			"character": "character-1638131868.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Ja, ich bin noch hier,"
+			"text": "Ich bin noch da."
 		},
 		{
 			"character": "character-1648720722.json",
@@ -382,19 +398,25 @@
 		{
 			"background": "res://Art/backgrounds/BLACK.png",
 			"event_id": "dialogic_021",
-			"fade_duration": 5
+			"fade_duration": 3
 		},
 		{
 			"event_id": "dialogic_023",
 			"hide_dialogbox": true,
-			"wait_seconds": 5
+			"wait_seconds": 3
 		},
 		{
-			"change_timeline": "timeline-1649939743.json",
-			"event_id": "dialogic_020"
+			"anchor_id": "anchor-1650558342",
+			"event_id": "dialogic_016"
 		},
 		{
 			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1650558342",
+			"index": 0,
+			"name": "end"
 		},
 		{
 			"animation": "[Default]",
@@ -440,6 +462,20 @@
 			"event_id": "dialogic_023",
 			"hide_dialogbox": false,
 			"wait_seconds": 1
+		},
+		{
+			"call_node": {
+				"arguments": [
+					"/Mansion/Master's room - 2"
+				],
+				"method_name": "set_timeline",
+				"target_node_path": "Global"
+			},
+			"event_id": "dialogic_042"
+		},
+		{
+			"change_scene": "res://Scenes/TimelineManager.tscn",
+			"event_id": "dialogic_041"
 		}
 	],
 	"metadata": {

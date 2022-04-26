@@ -69,7 +69,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/dialogic/Example Assets/History/HistoryRow.gd"
 }, {
-"base": "ColorRect",
+"base": "TextureRect",
 "class": "MemoryCard",
 "language": "GDScript",
 "path": "res://Scripts/Minigames/Memory/MemoryCard.gd"

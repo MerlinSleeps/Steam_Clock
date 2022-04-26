@@ -201,7 +201,7 @@
 			"character": "character-1638131868.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "(Oh Mist. Nicht schon wieder...) Achso ja, ich meinte die andere Elektrische Leitung im Anwesen dieses anderen Grafen, Lord [speed=40]...[speed=3] Dennis!"
+			"text": "Ich bin mir nicht sicher. Aber es kann nicht schwerer sein, die Elektrische Leitungen im Anwesen dieses anderen Grafen, Lord [speed=40]...[speed=3] Dennis!"
 		},
 		{
 			"character": "character-1648722526.json",
@@ -219,13 +219,13 @@
 			"character": "character-1648722526.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Nun denn wollen wir uns nun an die Reperatur wagen?"
+			"text": "Nun denn, wollen wir beginnen? Ich werde mich bemühen ihnen bestmöglichst zu assisstieren. Auch wenn ich fürchte meine Handwerklichen Fähigkeiten sie, wie so viele andere begrenzt."
 		},
 		{
 			"character": "character-1638131868.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Aber natürlich. Du kannst mir bestimmt gut aushelfen. Schau mal hier, ...."
+			"text": "(Puhh, Wilson braucht wirklich wieder mal ein Erfolg, vielleicht kriege ich es ja hin, dass er das Problem löst.) [br]Dann fangen wir mal an!"
 		},
 		{
 			"event_id": "dialogic_022",
