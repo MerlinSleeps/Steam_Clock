@@ -130,7 +130,7 @@
 				"arguments": [
 
 				],
-				"method_name": "_on_WillsonButton_pressed",
+				"method_name": "_on_WilsonButton_pressed",
 				"target_node_path": "PowerlinePuzzle"
 			},
 			"event_id": "dialogic_042"

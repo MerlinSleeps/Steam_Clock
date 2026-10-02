@@ -7,7 +7,7 @@
 			"text": "Sieht irgendwie trostloser aus als sonst...\nOb wohl jemand da ist?"
 		},
 		{
-			"background": "res://Art/backgrounds/Mansion_Placeholder.png",
+			"background": "res://art/backgrounds/mansion_placeholder.png",
 			"event_id": "dialogic_021"
 		},
 		{
@@ -36,7 +36,7 @@
 			"audio_bus": "Master",
 			"event_id": "dialogic_030",
 			"event_name": "AudioEvent",
-			"file": "res://Audio/Effects/door-bang-1wav-14449.mp3",
+			"file": "res://audio/sfx/door_bang.mp3",
 			"volume": 2
 		},
 		{
@@ -102,7 +102,7 @@
 			"character": "character-1638131868.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Verzeihung Willson! Lass mich schnell nochmal klingeln."
+			"text": "Verzeihung Wilson! Lass mich schnell nochmal klingeln."
 		},
 		{
 			"character": "character-1648722526.json",
@@ -140,7 +140,7 @@
 			"audio_bus": "Master",
 			"event_id": "dialogic_030",
 			"event_name": "AudioEvent",
-			"file": "res://Audio/Effects/doorbell.mp3",
+			"file": "res://audio/sfx/doorbell.mp3",
 			"volume": 0
 		},
 		{
@@ -186,7 +186,7 @@
 			"character": "character-1638131868.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "War das jetzt besser Willson?"
+			"text": "War das jetzt besser Wilson?"
 		},
 		{
 			"character": "character-1648722526.json",
@@ -205,14 +205,14 @@
 			"character": "character-1638131868.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "(Hmm. Da war doch was. Willson meinte doch ich sollte doch die Klingel benutzen. Aber wann hat er mir das gesagt?) "
+			"text": "(Hmm. Da war doch was. Wilson meinte doch ich sollte doch die Klingel benutzen. Aber wann hat er mir das gesagt?) "
 		},
 		{
 			"audio": "play",
 			"audio_bus": "Master",
 			"event_id": "dialogic_030",
 			"event_name": "AudioEvent",
-			"file": "res://Audio/Effects/doorbell.mp3",
+			"file": "res://audio/sfx/doorbell.mp3",
 			"volume": 0
 		},
 		{
@@ -395,7 +395,7 @@
 			"text": "Wenn sie mir nun folgen möchten. Ich geleite sie zum Herrn Grafen."
 		},
 		{
-			"background": "res://Art/backgrounds/BLACK.png",
+			"background": "res://art/backgrounds/black.png",
 			"event_id": "dialogic_021",
 			"fade_duration": 2
 		},

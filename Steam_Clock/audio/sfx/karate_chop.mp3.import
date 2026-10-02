@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/karate_chop.mp3-398e6554f896f7b6a31ad97ff26e8917.mp3str"
+
+[deps]
+
+source_file="res://audio/sfx/karate_chop.mp3"
+dest_files=[ "res://.import/karate_chop.mp3-398e6554f896f7b6a31ad97ff26e8917.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

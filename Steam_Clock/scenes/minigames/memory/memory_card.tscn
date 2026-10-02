@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://art/memory_cards/card_back.png" type="Texture" id=1]
+[ext_resource path="res://scripts/minigames/memory/memory_card.gd" type="Script" id=2]
+
+[node name="MemoryCard" type="TextureRect" groups=["MemoryCards"]]
+margin_right = 150.0
+margin_bottom = 195.0
+rect_min_size = Vector2( 187.5, 250 )
+focus_mode = 1
+texture = ExtResource( 1 )
+expand = true
+script = ExtResource( 2 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+expand = true
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="card_selected" from="." to="." method="_on_MemoryCard_card_selected"]
+[connection signal="mouse_entered" from="." to="." method="_on_MemoryCard_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_MemoryCard_mouse_exited"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

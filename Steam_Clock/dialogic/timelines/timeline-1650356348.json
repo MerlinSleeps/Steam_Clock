@@ -211,7 +211,7 @@
 			"event_id": "dialogic_042"
 		},
 		{
-			"change_scene": "res://Scenes/Minigames/Memory/MemoryGame.tscn",
+			"change_scene": "res://scenes/minigames/memory/memory_game.tscn",
 			"event_id": "dialogic_041"
 		}
 	],

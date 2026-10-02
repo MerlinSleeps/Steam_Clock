@@ -1,7 +1,7 @@
 {
 	"events": [
 		{
-			"background": "res://Art/backgrounds/werkstatt bg.jpg",
+			"background": "res://art/backgrounds/workshop.jpg",
 			"event_id": "dialogic_021"
 		},
 		{
@@ -120,7 +120,7 @@
 			"text": "Test End. Start Puzzle"
 		},
 		{
-			"background": "res://Art/backgrounds/BLACK.png",
+			"background": "res://art/backgrounds/black.png",
 			"event_id": "dialogic_021",
 			"fade_duration": 2
 		},
@@ -146,7 +146,7 @@
 			"z_index": 0
 		},
 		{
-			"change_scene": "res://Scenes/Minigames/PowerlinePuzzle/PowerlinePuzzle.tscn",
+			"change_scene": "res://scenes/minigames/powerline_puzzle/powerline_puzzle.tscn",
 			"event_id": "dialogic_041"
 		}
 	],

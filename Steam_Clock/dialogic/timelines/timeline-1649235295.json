@@ -1,7 +1,7 @@
 {
 	"events": [
 		{
-			"background": "res://Art/backgrounds/master's room.jpg",
+			"background": "res://art/backgrounds/masters_room.jpg",
 			"event_id": "dialogic_021"
 		},
 		{
@@ -740,7 +740,7 @@
 			"text": "Sehr wohl. Wenn sie mir folgen mögen. Der Sicherungkasten befindet sich im Keller."
 		},
 		{
-			"change_scene": "res://Scenes/Minigames/PowerlinePuzzle/PowerlinePuzzle.tscn",
+			"change_scene": "res://scenes/minigames/powerline_puzzle/powerline_puzzle.tscn",
 			"event_id": "dialogic_041"
 		},
 		{

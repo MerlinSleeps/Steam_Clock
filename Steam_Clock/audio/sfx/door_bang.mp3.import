@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/door_bang.mp3-dfd9fc307319ea7158b45280a0f4ce90.mp3str"
+
+[deps]
+
+source_file="res://audio/sfx/door_bang.mp3"
+dest_files=[ "res://.import/door_bang.mp3-dfd9fc307319ea7158b45280a0f4ce90.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

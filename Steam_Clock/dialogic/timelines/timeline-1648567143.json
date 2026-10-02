@@ -1,7 +1,7 @@
 {
 	"events": [
 		{
-			"background": "res://Art/backgrounds/werkstatt bg.jpg",
+			"background": "res://art/backgrounds/workshop.jpg",
 			"event_id": "dialogic_021"
 		},
 		{
@@ -14,7 +14,7 @@
 			"audio_bus": "Master",
 			"event_id": "dialogic_030",
 			"event_name": "AudioEvent",
-			"file": "res://Audio/Effects/large-crash-with-cat.mp3",
+			"file": "res://audio/sfx/crash_with_cat.mp3",
 			"volume": 3
 		},
 		{
@@ -151,7 +151,7 @@
 			"audio_bus": "Master",
 			"event_id": "dialogic_030",
 			"event_name": "AudioEvent",
-			"file": "res://Audio/Effects/karate-chop-6357.mp3",
+			"file": "res://audio/sfx/karate_chop.mp3",
 			"volume": 2
 		},
 		{

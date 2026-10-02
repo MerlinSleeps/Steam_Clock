@@ -7,7 +7,7 @@
 			"text": "Nein, nein, nein. So passt das aber nicht meine Gute. Aber mach dir nichts draus. Dein Genie scheint sich wohl nur auf irdische Bezüge zu begrenzen.\nNaja, lassen wir es doch fürs erste sein und lass mich dir doch lieber davon erzählen wie ich einst[ einen Stier beide Hörner in die Nase rammte, die Weltmeisterschaft im Rückenschießen gewann, ich als erster Mensch die Schallmauer durchbrach und das nackt]. Es war damals..."
 		},
 		{
-			"background": "res://Art/backgrounds/BLACK.png",
+			"background": "res://art/backgrounds/black.png",
 			"event_id": "dialogic_021",
 			"fade_duration": 1
 		},
@@ -22,7 +22,7 @@
 			"event_id": "dialogic_042"
 		},
 		{
-			"change_scene": "res://Scenes/TimelineManager.tscn",
+			"change_scene": "res://scenes/timeline_manager.tscn",
 			"event_id": "dialogic_041"
 		}
 	],

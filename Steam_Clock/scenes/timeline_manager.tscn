@@ -1,0 +1,155 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://scripts/current_timeline_loader.gd" type="Script" id=1]
+[ext_resource path="res://scenes/ui/expanding_light.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scripts/minigames/memory/animation_manager.gd" type="Script" id=3]
+[ext_resource path="res://art/memory_cards/sunset_right.png" type="Texture" id=4]
+[ext_resource path="res://art/memory_cards/orange_full.png" type="Texture" id=5]
+[ext_resource path="res://art/memory_cards/sunset_left.png" type="Texture" id=6]
+
+[sub_resource type="Animation" id=1]
+resource_name = "CombineCards"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Left:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.5, 2.5 ),
+"transitions": PoolRealArray( 0.5, 0.75 ),
+"update": 0,
+"values": [ Vector2( 128, 176 ), Vector2( 325, 176 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Right:rect_position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.5, 2.5 ),
+"transitions": PoolRealArray( 0.5, 0.75 ),
+"update": 0,
+"values": [ Vector2( 848, 176 ), Vector2( 625, 176 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Left:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Right:self_modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.5, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("../../CanvasModulate:color")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 1.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.337255, 0.298039, 0.298039, 1 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath(".:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath(".:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 2.9, 4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[node name="TimelineManager" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+
+[node name="AnimationLayer" type="CanvasLayer" parent="."]
+layer = 5
+
+[node name="AnimationManager" type="Node2D" parent="AnimationLayer"]
+position = Vector2( 0, -100 )
+script = ExtResource( 3 )
+
+[node name="Tween" type="Tween" parent="AnimationLayer/AnimationManager"]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimationLayer/AnimationManager"]
+anims/CombineCards = SubResource( 1 )
+
+[node name="Left" type="TextureRect" parent="AnimationLayer/AnimationManager"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 128.644
+margin_top = 176.0
+margin_right = 428.646
+margin_bottom = 576.0
+rect_min_size = Vector2( 300, 400 )
+texture = ExtResource( 6 )
+expand = true
+
+[node name="Right" type="TextureRect" parent="AnimationLayer/AnimationManager"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 847.271
+margin_top = 176.0
+margin_right = 1147.28
+margin_bottom = 576.0
+rect_min_size = Vector2( 300, 400 )
+texture = ExtResource( 4 )
+expand = true
+
+[node name="Position2D" type="Position2D" parent="AnimationLayer/AnimationManager"]
+position = Vector2( 625, 380 )
+
+[node name="Full" type="TextureRect" parent="AnimationLayer/AnimationManager"]
+visible = false
+margin_left = 325.0
+margin_top = 176.0
+margin_right = 925.0
+margin_bottom = 576.0
+rect_min_size = Vector2( 600, 0 )
+texture = ExtResource( 5 )
+expand = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="ExpandingLight" parent="CanvasLayer" instance=ExtResource( 2 )]
+margin_left = -60.0
+margin_top = 0.0
+margin_right = -60.0
+margin_bottom = 0.0

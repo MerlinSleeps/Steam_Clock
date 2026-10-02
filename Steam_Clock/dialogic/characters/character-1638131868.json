@@ -13,7 +13,7 @@
 	"portraits": [
 		{
 			"name": "Default",
-			"path": "res://Art/portraits/alendra.png"
+			"path": "res://art/portraits/alendra.png"
 		}
 	],
 	"scale": 100,

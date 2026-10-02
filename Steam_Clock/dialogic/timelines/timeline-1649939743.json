@@ -1,7 +1,7 @@
 {
 	"events": [
 		{
-			"background": "res://Art/backgrounds/master's room.jpg",
+			"background": "res://art/backgrounds/masters_room.jpg",
 			"event_id": "dialogic_021"
 		},
 		{
@@ -95,7 +95,7 @@
 			"audio_bus": "Master",
 			"event_id": "dialogic_030",
 			"event_name": "AudioEvent",
-			"file": "res://Audio/Effects/switch-5.wav",
+			"file": "res://audio/sfx/switch.wav",
 			"volume": 0
 		},
 		{

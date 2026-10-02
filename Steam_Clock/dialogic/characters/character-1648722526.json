@@ -13,7 +13,7 @@
 	"portraits": [
 		{
 			"name": "Default",
-			"path": "res://Art/portraits/wilson.png"
+			"path": "res://art/portraits/wilson.png"
 		}
 	],
 	"scale": 100,

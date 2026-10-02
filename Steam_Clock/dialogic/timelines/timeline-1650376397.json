@@ -1,7 +1,7 @@
 {
 	"events": [
 		{
-			"background": "res://Art/backgrounds/master's room.jpg",
+			"background": "res://art/backgrounds/masters_room.jpg",
 			"event_id": "dialogic_021"
 		},
 		{
@@ -220,7 +220,7 @@
 			"audio_bus": "Master",
 			"event_id": "dialogic_030",
 			"event_name": "AudioEvent",
-			"file": "res://Audio/Effects/switch-5.wav",
+			"file": "res://audio/sfx/switch.wav",
 			"volume": 0
 		},
 		{
@@ -396,7 +396,7 @@
 			"z_index": 0
 		},
 		{
-			"background": "res://Art/backgrounds/BLACK.png",
+			"background": "res://art/backgrounds/black.png",
 			"event_id": "dialogic_021",
 			"fade_duration": 3
 		},
@@ -474,7 +474,7 @@
 			"event_id": "dialogic_042"
 		},
 		{
-			"change_scene": "res://Scenes/TimelineManager.tscn",
+			"change_scene": "res://scenes/timeline_manager.tscn",
 			"event_id": "dialogic_041"
 		}
 	],

@@ -154,7 +154,7 @@
 			"event_id": "dialogic_042"
 		},
 		{
-			"change_scene": "res://Scenes/TimelineManager.tscn",
+			"change_scene": "res://scenes/timeline_manager.tscn",
 			"event_id": "dialogic_041"
 		}
 	],

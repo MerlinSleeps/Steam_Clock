@@ -13,7 +13,7 @@
 	"portraits": [
 		{
 			"name": "Default",
-			"path": "res://Art/portraits/cassidy.png"
+			"path": "res://art/portraits/cassidy.png"
 		}
 	],
 	"scale": 100,

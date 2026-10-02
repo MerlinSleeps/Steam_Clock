@@ -13,7 +13,7 @@
 	"portraits": [
 		{
 			"name": "Default",
-			"path": "res://Art/portraits/GrafMon.png"
+			"path": "res://art/portraits/graf_mon.png"
 		}
 	],
 	"scale": 100,

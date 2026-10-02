@@ -1,7 +1,7 @@
 {
 	"events": [
 		{
-			"background": "res://Art/backgrounds/BLACK.png",
+			"background": "res://art/backgrounds/black.png",
 			"event_id": "dialogic_021"
 		},
 		{

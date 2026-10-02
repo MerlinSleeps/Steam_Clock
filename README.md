@@ -74,16 +74,20 @@ The game was playtested with about a dozen people: other game developers at the 
 
 ```
 Steam_Clock/
-├── Scripts/
-│   ├── MainMenu.gd                 # menu incl. Hands-Free Mode toggle
-│   ├── SliderButton.gd             # dwell progress indicator
-│   ├── Utillities/HoverButton.gd   # makes any button dwell-activatable
-│   └── Minigames/
-│       ├── Memory/                 # memory game logic
-│       └── PowerlinePuzzle/        # fuse puzzle: rotation, power flow, win condition
-├── Scenes/                         # menus, mini-games, dialogue manager
-├── dialogic/                       # characters and story timelines
-└── addons/dialogic/                # third-party dialogue plugin
+├── scripts/
+│   ├── global.gd                  # autoload: game state, Hands-Free Mode settings
+│   ├── menus/                     # main menu incl. Hands-Free Mode toggle
+│   ├── ui/
+│   │   ├── hover_button.gd        # makes any button dwell-activatable
+│   │   └── slider_button.gd       # dwell progress indicator and fixed cursor
+│   └── minigames/
+│       ├── memory/                # memory game logic
+│       └── powerline_puzzle/      # fuse puzzle: rotation, power flow, win condition
+├── scenes/                        # same structure as scripts/
+├── art/                           # backgrounds, portraits, memory cards, UI, animations
+├── audio/sfx/
+├── dialogic/                      # characters and story timelines
+└── addons/dialogic/               # third-party dialogue plugin
 ```
 
 ## Running the project

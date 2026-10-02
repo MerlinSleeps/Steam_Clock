@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/typewriter_short.wav-39bb703e57442c9691fe920c354bc45b.sample"
+
+[deps]
+
+source_file="res://audio/sfx/typewriter_short.wav"
+dest_files=[ "res://.import/typewriter_short.wav-39bb703e57442c9691fe920c354bc45b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
