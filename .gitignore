@@ -14,3 +14,9 @@ export_presets.cfg
 .mono/
 data_*/
 
+# Builds (publish them as GitHub Releases instead)
+*.exe
+*.pck
+*.zip
+*.TMP
+Steam_Clock/App/
